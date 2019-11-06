@@ -1,2 +1,9 @@
 @import "sass/main";
 @import "bulma";
+
+#hero {
+  background-image: url(./assets/images/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

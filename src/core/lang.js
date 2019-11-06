@@ -5,7 +5,7 @@ export default class Lang{
     constructor() {
         this.lang = Constants.DEFAULT_LOCALE;
         this.data = LangEs;
-        if (this.lang != 'es') {
+        if (this.lang !== 'es') {
             this.data = LangDe;
         }
     };
