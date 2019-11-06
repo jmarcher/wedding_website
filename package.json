@@ -33,6 +33,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.8",
     "bulma": "^0.8.0",
     "vue-affix": "^0.5.2",
+    "vue-mouse-parallax": "^1.2.2",
     "vue-scrollactive": "^0.8.0"
   }
 }

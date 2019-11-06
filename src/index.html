@@ -12,180 +12,73 @@
 </head>
 <body>
 <div id="main_app">
-    <section class="hero is-fullheight-with-navbar" id="hero">
-        <div class="hero-body has-text-centered">
-            <div class="container">
-                <h1 class="title">
-                    Joaquín & Rebecca
-                </h1>
-                <h2 class="subtitle">
-                    Hero subtitle
-                </h2>
-            </div>
-        </div>
-    </section>
     <navbar-component></navbar-component>
-    <section class="container" id="about_us">
-        <h1>About us</h1>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </section>
-    <section class="container" id="what_to_do_in_uruguay">
-        <h1>This thing</h1>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </section>
-    <section class="container" id="what_to_do_in_germany">
-        <h1>This thing</h1>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </section>
-    <section class="container" id="rsvp">
-        <h1>This thing</h1>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-    </section>
-    <section class="container" id="main_container">
-        <div class="field">
-            <label class="label">
-                Name
-            </label>
-            <div class="control">
-                <input class="input" placeholder="Text input" type="text"/>
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">
-                Username
-            </label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" placeholder="Text input" type="text" value="bulma"/>
-                <span class="icon is-small is-left">
-                    <font-awesome-icon :icon="['fas', 'user']"/>
-                </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                </span>
-            </div>
-            <p class="help is-success">
-                This username is available
-            </p>
-        </div>
-        <div class="field">
-            <label class="label">
-                Email
-            </label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" placeholder="Email input" type="email" value="hello@"/>
-                <span class="icon is-small is-left">
-                                <i class="fas fa-envelope">
-                                </i>
-                            </span>
-                <span class="icon is-small is-right">
-                                <i class="fas fa-exclamation-triangle">
-                                </i>
-                            </span>
-            </div>
-            <p class="help is-danger">
-                This email is invalid
-            </p>
-        </div>
-        <div class="field">
-            <label class="label">
-                Subject
-            </label>
-            <div class="control">
-                <div class="select">
-                    <select>
-                        <option>
-                            Select dropdown
-                        </option>
-                        <option>
-                            With options
-                        </option>
-                    </select>
+    <parallax-container :perspective="10000">
+        <section class="hero is-fullheight-with-navbar" id="hero">
+            <div class="hero-body has-text-centered">
+
+                <div class="container">
+
+                    <parallax-element :parallaxStrength="10" type="translation" tag="div">
+                        <h1 class="title is-size-xl">
+                            Joaquín <br>
+                            <span class="icon is-rounded icon-and">&</span><br>
+                            Rebecca
+                        </h1>
+                        <h2 class="subtitle">
+                            Hero subtitle
+                        </h2>
+                    </parallax-element>
                 </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">
-                Message
-            </label>
-            <div class="control">
-                        <textarea class="textarea" placeholder="Textarea">
-                        </textarea>
-            </div>
-        </div>
-        <div class="field">
-            <div class="control">
-                <label class="checkbox">
-                    <input type="checkbox">
-                    I agree to the
-                    <a href="#">
-                        terms and conditions
-                    </a>
-                    </input>
-                </label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="control">
-                <label class="radio">
-                    <input name="question" type="radio">
-                    Yes
-                    </input>
-                </label>
-                <label class="radio">
-                    <input name="question" type="radio">
-                    No
-                    </input>
-                </label>
-            </div>
-        </div>
-        <div class="field is-grouped">
-            <div class="control">
-                <button class="button is-link">
-                    Submit
-                    <font-awesome-icon icon="user-secret"/>
-                </button>
-            </div>
-            <div class="control">
-                <button class="button is-link is-light">
-                    Cancel
-                </button>
-            </div>
-        </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
 
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-
+        </section>
+    </parallax-container>
+    <section class="section" id="about_us">
+        <div class="container">
+            <div class="box">
+                <h1 class="title has-text-grey-dark has-text-centered-desktop">{{ trans('about_us') }}</h1>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
     </section>
+    <section class="section" id="what_to_do_in_uruguay">
+        <div class="container">
+            <div class="box">
+                <h1 class="title has-text-grey-dark has-text-centered-desktop">{{ trans('what_to_do_in_uruguay') }}</h1>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="what_to_do_in_germany">
+        <div class="container">
+            <div class="box">
+                <h1 class="title has-text-grey-dark has-text-centered-desktop">{{ trans('what_to_do_in_germany')}}</h1>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="rsvp">
+        <div class="container">
+            <div class="box">
+                <h1 class="title has-text-grey-dark has-text-centered-desktop">{{ trans('rsvp') }}</h1>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer" id="footer">
         <div class="content has-text-centered">
             <p>
@@ -209,6 +102,7 @@
             </p>
         </div>
     </footer>
+
 </div>
 </body>
 </html>

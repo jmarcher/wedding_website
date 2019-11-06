@@ -7,3 +7,24 @@
   background-position: center;
   background-size: cover;
 }
+
+.icon {
+  &.icon-and {
+    background-color: $primary;
+    padding: .6em;
+
+    &.is-rounded {
+      border-radius: 50%;
+    }
+  }
+}
+
+.hero {
+  .hero-body {
+    .title {
+      &.is-size-xl {
+        font-size: 5rem;
+      }
+    }
+  }
+}

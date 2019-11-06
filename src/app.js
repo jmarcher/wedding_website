@@ -30,6 +30,14 @@ import VueSCrollactive from 'vue-scrollactive';
 // Import scrollspy
 Vue.use(VueSCrollactive);
 
+// import VueMouseParallax from 'vue-mouse-parallax';
+
+// Vue.use(VueMouseParallax);
+import { ParallaxContainer, ParallaxElement } from 'vue-mouse-parallax';
+
+Vue.component('parallax-container', ParallaxContainer);
+Vue.component('parallax-element', ParallaxElement);
+
 const app = new Vue({
     el: '#main_app',
     methods: {
