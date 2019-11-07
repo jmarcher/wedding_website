@@ -34,18 +34,13 @@
 <script>
     import {Affix} from 'vue-affix';
     import Lang from '../core/lang';
+    import Constants from '../core/constants';
 
     export default {
         data() {
             return {
                 is_open: false,
-                sections: [
-                    'about_us',
-                    'what_to_do_in_uruguay',
-                    '$separator$',
-                    'what_to_do_in_germany',
-                    'rsvp',
-                ]
+                sections: Constants.SECTIONS
             };
         },
         components: {
