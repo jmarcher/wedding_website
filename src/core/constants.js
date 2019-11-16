@@ -12,6 +12,7 @@ export default {
             background_image: true,
             location_tips: [
                 {
+                    group: 1,
                     key: 'mercado_del_puerto',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
@@ -25,7 +26,8 @@ export default {
                     },
                 },
                 {
-                    key: 'mercado_del_puerto',
+                    group: 1,
+                    key: 'quebrada_de_los_cuervos',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
@@ -36,9 +38,9 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
                         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
                     },
-                }
-                ,                {
-                    key: 'mercado_del_puerto',
+                }, {
+                    group: 1,
+                    key: 'colonia_del_sacramento',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
@@ -49,8 +51,9 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
                         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
                     },
-                },                {
-                    key: 'mercado_del_puerto',
+                }, {
+                    group: 2,
+                    key: 'punta_del_este',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
@@ -61,8 +64,9 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
                         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
                     },
-                },                {
-                    key: 'mercado_del_puerto',
+                }, {
+                    group: 2,
+                    key: 'virgilio',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
@@ -73,8 +77,9 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
                         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
                     },
-                },                {
-                    key: 'mercado_del_puerto',
+                }, {
+                    group: 2,
+                    key: 'ciudad_vieja',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
@@ -85,8 +90,9 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
                         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
                     },
-                },                {
-                    key: 'mercado_del_puerto',
+                }, {
+                    group: 3,
+                    key: 'la_pedrera',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
                         '/assets/images/sections/uruguay/mercado_parrilla.jpg',

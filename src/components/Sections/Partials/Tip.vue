@@ -32,7 +32,7 @@ export default {
             if (index >= this.tip.images.length) {
               index = 0;
             }
-          }, 1000);
+          }, 3000);
         }
       }
     },
