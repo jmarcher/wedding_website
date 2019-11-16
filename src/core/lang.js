@@ -36,3 +36,11 @@ let trans = (key = null, replacements = null) => {
     return (new Lang).get(key,replacements);
 };
 export {trans};
+
+let transMixin = {
+    methods:{
+        trans,
+    }
+};
+
+export {transMixin};

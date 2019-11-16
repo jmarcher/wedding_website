@@ -21,5 +21,6 @@ Vue.component('single-section-component', require('./Sections/SectionPartial').d
 Vue.component('sections-component', require('./SectionsComponent').default);
 Vue.component('about-us-component', require('./Sections/AboutUsComponent').default);
 Vue.component('rsvp-component', require('./Sections/RsvpComponent').default);
+Vue.component('what-to-do', require('./Sections/WhatToDoComponent.vue').default);
 
 Vue.component('scrollama', Scrollama);
