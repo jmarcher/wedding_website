@@ -1,33 +1,31 @@
 <template>
-    <section class="section" :id="section">
-        <div class="container">
-            <div class="box">
-                <h1 class="title has-text-grey-dark has-text-centered-desktop">{{ trans(section) }}</h1>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
+        <section class="hero is-fullheight bd-index-fullscreen content-section" data-step="a"
+                 :class="{'has-background-white-bis': this.position%2 === 0, 'has-background-white-ter':this.position%2 !== 0}"
+                 :id="this.$vnode.key">
+            <div class="hero-head">
+                <div class="container">
+                    <h1 class="title has-text-grey-dark has-text-centered-desktop">
+                        <slot name="title"></slot>
+                    </h1>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-body">
+                <div class="container">
+                    <slot></slot>
+                </div>
+            </div>
+        </section>
 </template>
 
 <script>
-    import Lang from '../../core/lang';
     export default {
-        props: ['section'],
+        props: ['section', 'position'],
         name: "SectionPartial",
-        created(){
-            console.log(this.section);
-        },
-        methods:{
-            trans: (key, replacements) => {
-                return (new Lang).get(key, replacements)
-            }
-        },
     }
 </script>
 
 <style scoped>
-
+    .hero-head .title {
+        padding-top: 3.5rem;
+    }
 </style>

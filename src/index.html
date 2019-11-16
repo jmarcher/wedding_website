@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html class="has-navbar-fixed-top" lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -34,7 +34,30 @@
 
         </section>
     </parallax-container>
-    <sections-component />
+    <single-section-component key="about_us" position="1">
+        <template v-slot:title>
+            <div v-html="trans('section_title_about_us')"></div>
+        </template>
+        <about-us-component></about-us-component>
+    </single-section-component>
+    <single-section-component key="what_to_do_in_uruguay" position="2">
+        <template v-slot:title>
+            <div v-html="trans('section_title_what_to_do_in_uruguay')"></div>
+        </template>
+        Algo para hacer en Uruguay
+    </single-section-component>
+    <single-section-component key="venue" position="3">
+        Venue
+    </single-section-component>
+    <single-section-component key="what_to_do_in_germany" position="4">
+        Algo para hacer en Alemania
+    </single-section-component>
+    <single-section-component key="rsvp" position="5">
+        <template v-slot:title>
+            <div v-html="trans('section_title_rsvp')"></div>
+        </template>
+        <rsvp-component></rsvp-component>
+    </single-section-component>
     <footer class="footer" id="footer">
         <div class="content has-text-centered">
             <p>
@@ -43,7 +66,7 @@
                 </strong>
                 by
                 <a href="https://jgthms.com">
-                    Jeremy Thomas
+                    Joaquín Marcher
                 </a>
                 . The source code is licensed
                 <a href="http://opensource.org/licenses/mit-license.php">
@@ -58,7 +81,6 @@
             </p>
         </div>
     </footer>
-
 </div>
 </body>
 </html>

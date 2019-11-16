@@ -32,8 +32,11 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.8",
     "bulma": "^0.8.0",
+    "bulma-extensions": "^6.2.7",
+    "intersection-observer": "^0.7.0",
     "vue-affix": "^0.5.2",
     "vue-mouse-parallax": "^1.2.2",
-    "vue-scrollactive": "^0.8.0"
+    "vue-scrollactive": "^0.8.0",
+    "vue-scrollama": "^1.1.9"
   }
 }

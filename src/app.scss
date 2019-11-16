@@ -5,8 +5,12 @@
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 
+@charset "utf-8";
 
 @import "bulma";
+
+// Import Extensions
+@import "~bulma-extensions/bulma-checkradio/src/sass/index";
 
 #hero {
   background-image: url(./assets/images/bg-1.jpg);
@@ -35,3 +39,47 @@ $family-sans-serif: "Nunito", sans-serif;
     }
   }
 }
+
+//
+//
+//.content-section {
+//  position: relative;
+//
+//  &.hero::after {
+//    content: "";
+//    background-size: 137%;
+//    background-position-x: 0;
+//    background-position-y: 0;
+//    background-repeat: no-repeat;
+//    animation: background-animation 120s infinite;
+//    position: absolute;
+//    z-index: -1;
+//    width: 100%;
+//    height: 100%;
+//    opacity: 0.4;
+//    @keyframes background-animation {
+//      0% {
+//        background-position-x: 0;
+//        background-position-y: 0;
+//        background-size: 137%;
+//      }
+//      50% {
+//        background-position-x: 10%;
+//        background-position-y: 5%;
+//        background-size: 100%;
+//      }
+//      100% {
+//        background-position-x: 0;
+//        background-position-y: 0;
+//        background-size: 137%;
+//      }
+//    }
+//  }
+//}
+//
+//#what_to_do_in_germany.hero::after {
+//    background-image: url('./assets/images/sections/germany_cologne_cathedral.jpg');
+//}
+//#what_to_do_in_uruguay.hero::after {
+//    background-image: url('./assets/images/sections/uruguay_montevideo_pocitos.jpg');
+//}

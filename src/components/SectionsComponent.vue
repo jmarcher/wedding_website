@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section-partial v-for="section in sections" :key="section" :section="section"></section-partial>
+        <section-partial v-for="(section, name) in sections" :key="name" :section="section"></section-partial>
     </div>
 </template>
 
@@ -11,9 +11,7 @@
         name: "SectionsComponent",
         data(){
             return {
-                sections: Constants.SECTIONS.filter(section => {
-                    return section !== Constants.SECTION_SEPARATOR;
-                }),
+                sections: Constants.SECTIONS,
             };
         },
         components: {SectionPartial},

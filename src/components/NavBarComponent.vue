@@ -4,7 +4,7 @@
                       aria-label="main navigation">
             <p class="level-item has-text-centered" v-for="item in sections">
                 <a v-if="item !== '$separator$'" class="link is-info navbar-item scrollactive-item" :href="a_hash(item)"
-                   v-text="trans(item)">
+                   v-html="trans(item)">
                 </a>
                 <img v-if="item === '$separator$'" alt="" src="https://bulma.io/images/bulma-type.png"
                      style="height: 30px;"/>
@@ -23,7 +23,7 @@
                 <p class="has-text-centered" v-for="item in sections">
                     <a v-if="item !== '$separator$'" class="link is-info navbar-item scrollactive-item"
                        :href="a_hash(item)"
-                       v-text="trans(item)">
+                       v-html="trans(item)" @click="toggleMenu">
                     </a>
                 </p>
             </scrollactive>
@@ -40,7 +40,7 @@
         data() {
             return {
                 is_open: false,
-                sections: Constants.SECTIONS
+                sections: Object.keys(Constants.SECTIONS),
             };
         },
         components: {

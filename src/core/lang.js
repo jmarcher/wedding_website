@@ -1,7 +1,8 @@
 import Constants from './constants';
 import LangEs from '../lang/es';
 import LangDe from '../lang/de';
-export default class Lang{
+
+export default class Lang {
     constructor() {
         this.lang = Constants.DEFAULT_LOCALE;
         this.data = LangEs;
@@ -9,14 +10,15 @@ export default class Lang{
             this.data = LangDe;
         }
     };
+
     get(key = null, replacements = null) {
         if (key === null) {
             return this.data;
         }
         let result = null;
-        try{
+        try {
             result = this.data[key];
-        }catch(e){
+        } catch (e) {
             return key;
         }
         if (!result) {
@@ -30,3 +32,7 @@ export default class Lang{
         return result;
     }
 };
+let trans = (key = null, replacements = null) => {
+    return (new Lang).get(key,replacements);
+};
+export {trans};

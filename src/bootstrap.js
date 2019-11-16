@@ -9,6 +9,6 @@ window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 // try {
-// // finestra.Popper = require('popper.js').di default;
-// window.$ = finestra.jQuery = require('jquery');
+// finestra.Popper = require('popper.js').di default;
+// window.$ = window.jQuery = require('jquery');
 // } catch (e) {}
