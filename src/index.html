@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>
         Joaquín & Rebecca
     </title>
-    <link href="./app.css" rel="stylesheet"/>
+    <link href="./app.css" rel="stylesheet" />
     <script async="" src="./app.js">
     </script>
 </head>
-<body>
-<div id="main_app">
 
-    <parallax-container :perspective="10000">
+<body>
+    <div id="main_app">
+
         <section class="hero is-fullheight" id="hero">
             <div class="hero-head">
-                    <navbar-component></navbar-component>
+                <navbar-component></navbar-component>
             </div>
             <div class="hero-body has-text-centered">
                 <div class="container">
-                    <parallax-element :parallax-strength="10" type="translation" tag="div">
-                        <h1 class="title is-size-xl">
-                            Joaquín <span class="is-size-xl-1">&</span> Rebecca
-                            <!-- Joaquín <br>
+                    <h1 class="title is-size-xl">
+                        Joaquín <span class="is-size-xl-1">&</span> Rebecca
+                        <!-- Joaquín <br>
                             <span class="icon is-rounded icon-and">&</span><br>
                             Rebecca -->
-                        </h1>
-                        <h2 class="subtitle">
-                            {{ trans('wedding_date') }}
-                        </h2>
-                        <!-- <a class="button is-outlined is-radiusless is-dark px-3" href="#rsvp">{{ trans('rsvp') }}</a> -->
-                    </parallax-element>
+                    </h1>
+                    <h2 class="subtitle">
+                        {{ trans('wedding_date') }}
+                    </h2>
+                    <!-- <a class="button is-outlined is-radiusless is-dark px-3" href="#rsvp">{{ trans('rsvp') }}</a> -->
                 </div>
             </div>
 
         </section>
-    </parallax-container>
-    <single-section-component key="about_us" position="1">
-        <template v-slot:title>
-            <div v-html="trans('section_title_about_us')"></div>
-        </template>
-        <about-us-component></about-us-component>
-    </single-section-component>
-    <single-section-component key="what_to_do_in_uruguay" position="2">
-        <template v-slot:title>
-            <div v-html="trans('section_title_what_to_do_in_uruguay')"></div>
-        </template>
-        <what-to-do country="uruguay"></what-to-do>
-    </single-section-component>
-    <single-section-component key="venue" position="3">
-        Venue
-    </single-section-component>
-    <single-section-component key="what_to_do_in_germany" position="4">
-        Algo para hacer en Alemania
-    </single-section-component>
-    <single-section-component key="rsvp" position="5">
-        <template v-slot:title>
-            <div v-html="trans('section_title_rsvp')"></div>
-        </template>
-        <rsvp-component></rsvp-component>
-    </single-section-component>
-    <footer class="footer" id="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>
-                    Joaquín & Rebecca
-                </strong>
-                by
-                <a href="https://jgthms.com">
-                    Joaquín Marcher
-                </a>
-                . The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">
-                    MIT
-                </a>
-                . The website content
-                is licensed
-                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-                    CC BY NC SA 4.0
-                </a>
-                .
-            </p>
-        </div>
-    </footer>
-</div>
+        <single-section-component key="about_us" position="1">
+            <template v-slot:title>
+                <div v-html="trans('section_title_about_us')"></div>
+            </template>
+            <about-us-component></about-us-component>
+        </single-section-component>
+        <single-section-component key="what_to_do_in_uruguay" position="2">
+            <template v-slot:title>
+                <div v-html="trans('section_title_what_to_do_in_uruguay')"></div>
+            </template>
+            <what-to-do country="uruguay"></what-to-do>
+        </single-section-component>
+        <single-section-component key="venue" position="3">
+            Venue
+        </single-section-component>
+        <single-section-component key="what_to_do_in_germany" position="4">
+            Algo para hacer en Alemania
+        </single-section-component>
+        <single-section-component key="rsvp" position="5">
+            <template v-slot:title>
+                <div v-html="trans('section_title_rsvp')"></div>
+            </template>
+            <rsvp-component></rsvp-component>
+        </single-section-component>
+        <footer class="footer" id="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>
+                        Joaquín & Rebecca
+                    </strong>
+                    by
+                    <a href="https://jgthms.com">
+                        Joaquín Marcher
+                    </a>
+                    . The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">
+                        MIT
+                    </a>
+                    . The website content
+                    is licensed
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        CC BY NC SA 4.0
+                    </a>
+                    .
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <scrollactive class="level navbar is-fixed-top  is-hidden-mobile" role="navigation"
+        <scrollactive class="level navbar  is-hidden-mobile" role="navigation"
                       aria-label="main navigation">
             <p class="level-item has-text-centered" v-for="item in sections">
                 <a v-if="item !== '$separator$'" class="link is-info navbar-item scrollactive-item" :href="a_hash(item)"

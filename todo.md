@@ -13,6 +13,7 @@
 - Transport
 - Restaurants, cafés, car rental, aktivitäten
 - Foto # upload the pictures
+- Link a @uruguayinside
 
 ## Timeline
 - Poner el timeline del casamiento

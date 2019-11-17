@@ -4,6 +4,11 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faCheckCircle, faEnvelope, faTimesCircle, faUser, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 import { faWikipediaW } from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
+
+import Vue2TouchEvents from 'vue2-touch-events'
+
+Vue.use(Vue2TouchEvents)
+
 // Scroller
 import 'intersection-observer'; // for cross-browser support
 import Scrollama from 'vue-scrollama';
