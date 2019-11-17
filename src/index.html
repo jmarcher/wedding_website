@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top" lang="es">
+<html lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -12,9 +12,12 @@
 </head>
 <body>
 <div id="main_app">
-    <navbar-component></navbar-component>
+
     <parallax-container :perspective="10000">
-        <section class="hero is-fullheight-with-navbar" id="hero">
+        <section class="hero is-fullheight" id="hero">
+            <div class="hero-head">
+                    <navbar-component></navbar-component>
+            </div>
             <div class="hero-body has-text-centered">
                 <div class="container">
                     <parallax-element :parallax-strength="10" type="translation" tag="div">
@@ -25,9 +28,9 @@
                             Rebecca -->
                         </h1>
                         <h2 class="subtitle">
-                            {{ trans('wedding_date') }}<br>
-                            <countdown-component />
+                            {{ trans('wedding_date') }}
                         </h2>
+                        <!-- <a class="button is-outlined is-radiusless is-dark px-3" href="#rsvp">{{ trans('rsvp') }}</a> -->
                     </parallax-element>
                 </div>
             </div>

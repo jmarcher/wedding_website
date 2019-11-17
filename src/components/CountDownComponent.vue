@@ -4,8 +4,6 @@
         <span>{{ this.days }}</span>
         <span>{{ this.hours }}</span>
         <span>{{ this.minutes }}</span>
-        <span>{{ this.seconds }}</span>
-        <span v-text="trans.get('popo')"></span>
     </div>
 </template>
 <script>

@@ -51,3 +51,11 @@ $family-sans-serif: "Alata", sans-serif;
     font-size: 4rem;
   }
 }
+.p{
+  &x{
+    &-3{
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+}

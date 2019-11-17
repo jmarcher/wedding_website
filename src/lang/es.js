@@ -1,6 +1,6 @@
 export default {
     // Main hero
-    wedding_date: '2 de enero del 2021',
+    wedding_date: '2 de enero del 2021 | 17:30 | Finca Clara',
 
     // Navbar
     about_us: 'Sobre nosotros',

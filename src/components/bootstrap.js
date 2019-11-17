@@ -1,14 +1,15 @@
 import Vue from 'vue';
 // Initialize Fontawesome for Vue
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faCheckCircle, faEnvelope, faTimesCircle, faUser} from '@fortawesome/free-solid-svg-icons';
+import {faCheckCircle, faEnvelope, faTimesCircle, faUser, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
+import { faWikipediaW } from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 // Scroller
 import 'intersection-observer'; // for cross-browser support
 import Scrollama from 'vue-scrollama';
 
 // Fontawesome
-library.add(faUser, faEnvelope, faCheckCircle, faTimesCircle);
+library.add(faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
