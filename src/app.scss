@@ -1,9 +1,13 @@
 @import "sass/main";
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+// @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Alata", sans-serif;
 
 @charset "utf-8";
 
@@ -13,16 +17,27 @@ $family-sans-serif: "Nunito", sans-serif;
 @import "~bulma-extensions/bulma-checkradio/src/sass/index";
 
 #hero {
-  background-image: url(./assets/images/bg-1.jpg);
+  background-image: url(./assets/images/bg-7.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    word-spacing: 10px;
+    letter-spacing: 6px;
+    text-shadow: 1px 1px 5px #010101;
+    color: #f9f7e7;
+  }
+  h2 {
+    text-shadow: 1px 1px 5px #010101;
+    color: #f9f7e7;
+  }
 }
 
 .icon {
   &.icon-and {
     background-color: $primary;
-    padding: .6em;
+    padding: 0.6em;
 
     &.is-rounded {
       border-radius: 50%;
@@ -30,56 +45,9 @@ $family-sans-serif: "Nunito", sans-serif;
   }
 }
 
-.hero {
-  .hero-body {
-    .title {
-      &.is-size-xl {
-        font-size: 5rem;
-      }
-    }
+.is-size-xl {
+  font-size: 5rem;
+  &-1 {
+    font-size: 4rem;
   }
 }
-
-//
-//
-//.content-section {
-//  position: relative;
-//
-//  &.hero::after {
-//    content: "";
-//    background-size: 137%;
-//    background-position-x: 0;
-//    background-position-y: 0;
-//    background-repeat: no-repeat;
-//    animation: background-animation 120s infinite;
-//    position: absolute;
-//    z-index: -1;
-//    width: 100%;
-//    height: 100%;
-//    opacity: 0.4;
-//    @keyframes background-animation {
-//      0% {
-//        background-position-x: 0;
-//        background-position-y: 0;
-//        background-size: 137%;
-//      }
-//      50% {
-//        background-position-x: 10%;
-//        background-position-y: 5%;
-//        background-size: 100%;
-//      }
-//      100% {
-//        background-position-x: 0;
-//        background-position-y: 0;
-//        background-size: 137%;
-//      }
-//    }
-//  }
-//}
-//
-//#what_to_do_in_germany.hero::after {
-//    background-image: url('./assets/images/sections/germany_cologne_cathedral.jpg');
-//}
-//#what_to_do_in_uruguay.hero::after {
-//    background-image: url('./assets/images/sections/uruguay_montevideo_pocitos.jpg');
-//}
