@@ -3,9 +3,10 @@
     class="tile is-child box"
     :style="cardStyle"
     @mouseover="startImageTransition"
-    @mouseleave="stopImageTransition">
+    @mouseleave="stopImageTransition"
+  >
     <p class="title has-text-light" v-text="trans(this.tip.key)"></p>
-    <p v-html="trans(`${this.tip.key}_description`)" class="has-text-light" v-show="this.timer"></p>
+    <p v-html="trans(`${this.tip.key}_description`)" class="tile-text has-text-light" v-visible="this.timer"></p>
   </div>
 </template>
 
@@ -48,5 +49,13 @@ export default {
 <style scoped>
 div.tile {
   transition: background-image 0.5s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p.title {
+  text-shadow: 2px 2px 2px #777;
+}
+p.tile-text {
+  text-shadow: 1px 1px 1px #777;
 }
 </style>
