@@ -7,7 +7,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 // Update Bulma's global variables
-$family-sans-serif: "Alata", sans-serif;
+$family-sans-serif: "Alata",
+sans-serif;
 
 @charset "utf-8";
 
@@ -21,6 +22,7 @@ $family-sans-serif: "Alata", sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   h1 {
     font-family: "Bebas Neue", cursive;
     word-spacing: 10px;
@@ -28,6 +30,7 @@ $family-sans-serif: "Alata", sans-serif;
     text-shadow: 1px 1px 5px #010101;
     color: #f9f7e7;
   }
+
   h2 {
     text-shadow: 1px 1px 5px #010101;
     color: #f9f7e7;
@@ -47,13 +50,15 @@ $family-sans-serif: "Alata", sans-serif;
 
 .is-size-xl {
   font-size: 5rem;
+
   &-1 {
     font-size: 4rem;
   }
 }
-.p{
-  &x{
-    &-3{
+
+.p {
+  &x {
+    &-3 {
       padding-right: 3rem;
       padding-left: 3rem;
     }
