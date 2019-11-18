@@ -6,6 +6,7 @@ export default {
     ],
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
+    HOTELS: [{ name: 'Hotel 1' }, { name: 'Hotel 2' }, { name: 'Hotel 3' }],
     SECTIONS: {
         'about_us': {
             position: 1,
@@ -15,7 +16,7 @@ export default {
         'what_to_do_in_uruguay': {
             position: 2,
             background_image: true,
-            location_tips: [
+            locations_tips: [
                 {
                     key: 'mercado_del_puerto',
                     images: [
@@ -127,7 +128,8 @@ export default {
 
                 }
             ],
-
+            restaurants_tips:[],
+            activities_tips:[],
         },
         'venue': {
             position: 3,

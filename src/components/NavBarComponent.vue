@@ -2,7 +2,7 @@
     <div>
         <scrollactive class="level navbar  is-hidden-mobile" role="navigation"
                       aria-label="main navigation">
-            <p class="level-item has-text-centered" v-for="item in sections">
+            <p class="level-item has-text-centered" v-for="item in sections" :key="item">
                 <a v-if="item !== '$separator$'" class="link is-info navbar-item scrollactive-item" :href="a_hash(item)"
                    v-html="trans(item)">
                 </a>
@@ -20,7 +20,7 @@
             <scrollactive class="navbar-menu is-fixed-top is-hidden-tablet" :class="{'is-active':is_open}"
                           role="navigation"
                           aria-label="main navigation">
-                <p class="has-text-centered" v-for="item in sections">
+                <p class="has-text-centered" v-for="item in sections" :key="item">
                     <a v-if="item !== '$separator$'" class="link is-info navbar-item scrollactive-item"
                        :href="a_hash(item)"
                        v-html="trans(item)" @click="toggleMenu">

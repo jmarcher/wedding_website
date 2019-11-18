@@ -3,22 +3,35 @@
     Sección de:
     <span v-text="this.country"></span>
     <h3 class="title is-3">{{ trans('tips') }}</h3>
-    <div class="tile is-ancestor">
-      <div class="tile is-8 is-parent">
-        <tip :tip="tips[0]" :key="tips[0].key"></tip>
-      </div>
-      <div class="tile is-4 is-vertical is-parent">
-        <tip :tip="tips[1]" :key="tips[1].key"></tip>
-        <tip :tip="tips[2]" :key="tips[2].key"></tip>
-      </div>
+
+    <div class="tabs is-centered is-toggle is-toggle-rounded">
+      <ul>
+        <li
+          v-for="tab in tabs"
+          :class="{'is-active':tab===activeTab}"
+          @click="makeActiveTab(tab)"
+          :key="tab"
+        >
+          <a>{{ trans(`tips_${tab}`) }}</a>
+        </li>
+      </ul>
     </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-4 is-vertical is-parent">
-        <tip :tip="tips[3]" :key="tips[3].key"></tip>
-        <tip :tip="tips[4]" :key="tips[4].key"></tip>
-      </div>
-      <div class="tile is-8 is-parent">
-        <tip :tip="tips[5]" :key="tips[5].key"></tip>
+    <div class="separator"></div>
+    <div v-if="tips.length > 0">
+      <div class="tile is-ancestor" v-for="(chunked, index) in Collect(tips).chunk(3)" :key="index">
+        <div class="tile is-8 is-parent" v-if="index % 2 === 0">
+          <tip :tip="chunked.shift()"></tip>
+        </div>
+        <div class="tile is-4 is-vertical is-parent">
+          <tip
+            :tip="tip"
+            :key="tip.key"
+            v-for="tip in (((index % 2) === 0) ? chunked : chunked.take(2))"
+          ></tip>
+        </div>
+        <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
+          <tip :tip="chunked.last()"></tip>
+        </div>
       </div>
     </div>
   </div>
@@ -28,6 +41,7 @@
 import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
 import Tip from "./Partials/Tip";
+import collect from "collect.js";
 
 export default {
   props: ["country"],
@@ -35,13 +49,33 @@ export default {
   components: { Tip },
   data() {
     return {
+      tabs: ["locations", "restaurants", "activities"],
+      activeTab: "locations",
       data: Constants.SECTIONS[`what_to_do_in_${this.country}`],
-      tips: this.shuffle(
-        Constants.SECTIONS[`what_to_do_in_${this.country}`].location_tips
-      )
+      tips: []
     };
   },
+  created() {
+    this.setTips();
+  },
   methods: {
+    Collect: collect,
+    makeActiveTab(tab) {
+      this.activeTab = tab;
+      this.setTips();
+    },
+    setTips() {
+      console.log(
+        Constants.SECTIONS[`what_to_do_in_${this.country}`][
+          `${this.activeTab}_tips`
+        ]
+      );
+      this.tips = this.shuffle(
+        Constants.SECTIONS[`what_to_do_in_${this.country}`][
+          `${this.activeTab}_tips`
+        ]
+      );
+    },
     shuffle(a) {
       for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
