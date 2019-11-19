@@ -16,9 +16,9 @@ export default {
     section_title_what_to_do_in_germany: '¿Qué se puede hacer en&nbsp;<span class="has-text-primary is-italic">Alemania</span>?',
     section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
 
+    distance: ':distance km de Finca Clara',
+
     tips: 'nuestros favoritos',
-
-
     // Uruguay
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',

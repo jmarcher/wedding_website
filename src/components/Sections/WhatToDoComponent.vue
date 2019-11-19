@@ -3,16 +3,13 @@
     Sección de:
     <span v-text="this.country"></span>
     <h3 class="title is-3">{{ trans('tips') }}</h3>
-
-    <div class="tabs is-centered is-toggle is-toggle-rounded">
+    <div class="tabs is-centered is-toggle">
       <ul>
-        <li
-          v-for="tab in tabs"
-          :class="{'is-active':tab===activeTab}"
-          @click="makeActiveTab(tab)"
-          :key="tab"
-        >
-          <a>{{ trans(`tips_${tab}`) }}</a>
+        <li v-for="tab in tabs" :class="{'is-active':tab===activeTab}" @click="makeActiveTab(tab)" :key="tab">
+          <a>
+            <span class="icon is-small"><font-awesome-icon :icon="['fas', getIcon(tab)]" /></span>
+            <span class="is-hidden-mobile">{{ trans(`tips_${tab}`) }}</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -23,11 +20,7 @@
           <tip :tip="chunked.shift()"></tip>
         </div>
         <div class="tile is-4 is-vertical is-parent">
-          <tip
-            :tip="tip"
-            :key="tip.key"
-            v-for="tip in (((index % 2) === 0) ? chunked : chunked.take(2))"
-          ></tip>
+          <tip :tip="tip" :key="tip.key" v-for="tip in (((index % 2) === 0) ? chunked : chunked.take(2))"></tip>
         </div>
         <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
           <tip :tip="chunked.last()"></tip>
@@ -60,6 +53,16 @@ export default {
   },
   methods: {
     Collect: collect,
+    getIcon(tab) {
+      switch (tab) {
+        case 'locations':
+          return 'landmark';
+        case 'restaurants':
+          return 'utensils';
+        case 'activities':
+          return 'biking';
+      }
+    },
     makeActiveTab(tab) {
       this.activeTab = tab;
       this.setTips();
@@ -87,5 +90,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped land="scss">
 </style>

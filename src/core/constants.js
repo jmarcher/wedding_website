@@ -1,12 +1,20 @@
 export default {
-    WEDDING_DATE: [
-        2021,
-        1,
-        2
-    ],
+    WEDDING_DATE: [2021, 1, 2],
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
-    HOTELS: [{ name: 'Hotel 1' }, { name: 'Hotel 2' }, { name: 'Hotel 3' }],
+    HOTELS: [{
+        name: 'Hotel Europa',
+        distance_to_venue: 25,
+        image: 'https://thumbnails.trvl-media.com/bw3RUWuw91MaU9GP6HiddY78pE0=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/4000000/3960000/3953000/3952912/660f068d_z.jpg',
+    }, {
+        name: 'Bit Design Hotel',
+        distance_to_venue: 30,
+        image: 'https://thumbnails.trvl-media.com/p0wCyyDjjH23S2e7DWpOaP1EGMw=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/10000000/9190000/9183400/9183358/4abf48a2_z.jpg',
+    }, {
+        name: 'Hotel Carrasco',
+        distance_to_venue: 16,
+        image:'https://thumbnails.trvl-media.com/CuTHbGrEI6Cmg5SSJYNSO_CC5Kc=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/6000000/5500000/5496500/5496466/b9af8188_z.jpg',
+    }],
     SECTIONS: {
         'about_us': {
             position: 1,
@@ -16,8 +24,7 @@ export default {
         'what_to_do_in_uruguay': {
             position: 2,
             background_image: true,
-            locations_tips: [
-                {
+            locations_tips: [{
                     key: 'mercado_del_puerto',
                     images: [
                         '/assets/images/sections/uruguay/mercado_arriba.jpg',
@@ -32,8 +39,7 @@ export default {
 
                     },
 
-                },
-                {
+                }, {
                     key: 'quebrada_de_los_cuervos',
                     images: [
                         '/assets/images/sections/uruguay/quebrada_de_los_cuervos_cascada.jpg',
@@ -48,8 +54,7 @@ export default {
 
                     },
 
-                },
-                {
+                }, {
                     key: 'colonia_del_sacramento',
                     images: [
                         '/assets/images/sections/uruguay/colonia_del_sacramento_callejuela.jpg',
@@ -64,8 +69,7 @@ export default {
 
                     },
 
-                },
-                {
+                }, {
                     key: 'punta_del_este',
                     images: [
                         '/assets/images/sections/uruguay/punta_del_este_horizonte.jpg',
@@ -112,8 +116,7 @@ export default {
 
                     },
 
-                },
-                {
+                }, {
                     key: 'la_pedrera',
                     images: [
                         '/assets/images/sections/uruguay/la_pedrera_desplayado.jpg',
@@ -128,8 +131,8 @@ export default {
 
                 }
             ],
-            restaurants_tips:[],
-            activities_tips:[],
+            restaurants_tips: [],
+            activities_tips: [],
         },
         'venue': {
             position: 3,

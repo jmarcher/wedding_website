@@ -1,11 +1,25 @@
 import Vue from 'vue';
 // Initialize Fontawesome for Vue
-import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-	faCheckCircle, faEnvelope, faTimesCircle, faUser, faMapMarkedAlt, faAngleUp
+    library
+} from '@fortawesome/fontawesome-svg-core';
+import {
+    faCheckCircle,
+    faEnvelope,
+    faTimesCircle,
+    faUser,
+    faMapMarkedAlt,
+    faAngleUp,
+    faLandmark,
+    faUtensils,
+    faBiking
 } from '@fortawesome/free-solid-svg-icons';
-import { faWikipediaW } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {
+    faWikipediaW
+} from '@fortawesome/free-brands-svg-icons';
+import {
+    FontAwesomeIcon
+} from '@fortawesome/vue-fontawesome';
 
 import Vue2TouchEvents from 'vue2-touch-events'
 Vue.use(Vue2TouchEvents);
@@ -16,14 +30,14 @@ import Scrollama from 'vue-scrollama';
 
 // Fontawesome
 library.add(
-	faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp
-	);
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faLandmark, faUtensils, faBiking
+);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 // Directives
-Vue.directive('visible', function (el, binding) {
-	el.style.visibility = !!binding.value ? 'visible' : 'hidden';
+Vue.directive('visible', function(el, binding) {
+    el.style.visibility = !!binding.value ? 'visible' : 'hidden';
 });
 
 

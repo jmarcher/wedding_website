@@ -4,16 +4,15 @@
     <div class="box" v-for="hotel in hotels" :key="hotel.name">
       <article class="media">
         <div class="media-left">
-          <figure class="image is-64x64">
-            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
+          <figure class="image is-1by1 is-128x128">
+            <img src="https://a.cdn-hotels.com/uswest2/da/assets/s/63.0.9757/images/common/core/dio/widget/1.gif" :style="`background-image: url('${hotel.image}');background-size: cover;background-position: center;`" class="hotel_picture" :alt="hotel.name" />
           </figure>
         </div>
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>John Smith</strong>
-              <small>@johnsmith</small>
-              <small>31m</small>
+              <strong v-text="hotel.name"></strong>
+              <small>{{ trans('distance', {distance: hotel.distance_to_venue}) }}</small>
               <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
             </p>
           </div>

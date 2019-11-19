@@ -22,7 +22,11 @@ const app = new Vue({
         trans: (key = null, replacements = null) => {
             return (new LangObject).get(key, replacements);
         },
-        stepEnterHandler({ element, index, direction }) {
+        stepEnterHandler({
+            element,
+            index,
+            direction
+        }) {
             // handle the step-event as required here
         }
     },
