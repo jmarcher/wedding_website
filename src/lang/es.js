@@ -17,8 +17,19 @@ export default {
     section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
 
     distance: ':distance km de Finca Clara',
+    introduction_uruguay:`Uruguay es el tercer país más pequeño de América del Sur, después de Suriname y Trinidad y Tobago, tiene una población de aprox. 3.500.000 habitantes de los cuáles aprox. 2.000.000 viven en la capital Montevideo y el área metropolitana.<br/>
+    Las temperaturas en verano promedian los 18°C de mínima y 28°C con máxima absoluta de 42°C.
+    `,
 
-    tips: 'nuestros favoritos',
+    tips: 'Nuestras recomendaciones',
+    
+
+    // Tabs
+    tips_locations: 'Lugares',
+    tips_restaurants: 'Restaurantes',
+    tips_activities: 'Actividades',
+
+
     // Uruguay
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',

@@ -1,7 +1,8 @@
 <template>
   <div>
-    Sección de:
-    <span v-text="this.country"></span>
+    <div class="content">
+      <p v-html="this.introduction_text"></p>
+    </div>
     <h3 class="title is-3">{{ trans('tips') }}</h3>
     <div class="tabs is-centered is-toggle">
       <ul>
@@ -51,14 +52,19 @@ export default {
   created() {
     this.setTips();
   },
+  computed: {
+    introduction_text(){
+      return this.trans(`introduction_${this.country}`);
+    },
+  },
   methods: {
     Collect: collect,
     getIcon(tab) {
       switch (tab) {
         case 'locations':
-          return 'landmark';
+          return 'archway';
         case 'restaurants':
-          return 'utensils';
+          return 'hamburger';
         case 'activities':
           return 'biking';
       }

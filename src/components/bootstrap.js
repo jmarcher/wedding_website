@@ -10,8 +10,8 @@ import {
     faUser,
     faMapMarkedAlt,
     faAngleUp,
-    faLandmark,
-    faUtensils,
+    faArchway,
+    faHamburger,
     faBiking
 } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -30,7 +30,7 @@ import Scrollama from 'vue-scrollama';
 
 // Fontawesome
 library.add(
-    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faLandmark, faUtensils, faBiking
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
