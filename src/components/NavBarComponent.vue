@@ -33,7 +33,7 @@
 </template>
 <script>
     import {Affix} from 'vue-affix';
-    import Lang from '../core/lang';
+    import {transMixin} from '../core/lang';
     import Constants from '../core/constants';
 
     export default {
@@ -46,6 +46,7 @@
         components: {
             Affix,
         },
+        mixins:[transMixin],
         methods: {
             toggleMenu() {
                 this.is_open = !this.is_open;
@@ -53,9 +54,6 @@
             a_hash: (key) => {
                 return `#${key}`;
             },
-            trans: (key, replacements) => {
-                return (new Lang).get(key, replacements)
-            }
         }
     };
 </script>

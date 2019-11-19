@@ -22,7 +22,7 @@
     export default {
         name: "AboutUsComponent",
         components:{RoundedImage},
-    }
+    };
 </script>
 
 <style scoped>

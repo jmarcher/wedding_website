@@ -8,7 +8,6 @@
 </template>
 <script>
     import Constants from '../core/constants';
-    import Lang from '../core/lang';
     export default {
         props:[],
         data(){
