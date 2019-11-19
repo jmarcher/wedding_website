@@ -13,7 +13,7 @@
             <p>
               <strong v-text="hotel.name"></strong>
               <small>{{ trans('distance', {distance: hotel.distance_to_venue}) }}</small>
-              <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+              <br /><span class="is-size-5">{{ trans('price_from', {price: hotel.price_from}) }} &euro;</span>
             </p>
           </div>
           <nav class="level is-mobile">

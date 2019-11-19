@@ -16,10 +16,16 @@ export default {
     section_title_what_to_do_in_germany: '¿Qué se puede hacer en&nbsp;<span class="has-text-primary is-italic">Alemania</span>?',
     section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
 
+    recommended_hotels: 'Hoteles recomendados',
+    venue_location: 'Lugar de celebración',
     distance: ':distance km de Finca Clara',
+    price_from: 'desde :price',
+
     introduction_uruguay:`Uruguay es el tercer país más pequeño de América del Sur, después de Suriname y Trinidad y Tobago, tiene una población de aprox. 3.500.000 habitantes de los cuáles aprox. 2.000.000 viven en la capital Montevideo y el área metropolitana.<br/>
     Las temperaturas en verano promedian los 18°C de mínima y 28°C con máxima absoluta de 42°C.
     `,
+
+
 
     tips: 'Nuestras recomendaciones',
     

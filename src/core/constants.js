@@ -6,14 +6,18 @@ export default {
         name: 'Hotel Europa',
         distance_to_venue: 25,
         image: 'https://thumbnails.trvl-media.com/bw3RUWuw91MaU9GP6HiddY78pE0=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/4000000/3960000/3953000/3952912/660f068d_z.jpg',
+        price_from: 41,
     }, {
         name: 'Bit Design Hotel',
         distance_to_venue: 30,
         image: 'https://thumbnails.trvl-media.com/p0wCyyDjjH23S2e7DWpOaP1EGMw=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/10000000/9190000/9183400/9183358/4abf48a2_z.jpg',
+        price_from: 90,
     }, {
         name: 'Hotel Carrasco',
         distance_to_venue: 16,
         image:'https://thumbnails.trvl-media.com/CuTHbGrEI6Cmg5SSJYNSO_CC5Kc=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/6000000/5500000/5496500/5496466/b9af8188_z.jpg',
+        price_from:250,
+        
     }],
     SECTIONS: {
         'about_us': {
