@@ -36,10 +36,9 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 // Directives
-Vue.directive('visible', function(el, binding) {
+Vue.directive('visible', function (el, binding) {
     el.style.visibility = !!binding.value ? 'visible' : 'hidden';
 });
-
 
 Vue.component('index-component', require('./IndexComponent.vue').default);
 Vue.component('countdown-component', require('./CountDownComponent.vue').default);

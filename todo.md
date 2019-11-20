@@ -18,13 +18,6 @@
 ## Timeline
 - Poner el timeline del casamiento
 
-
-
-
-
-
-
-
 # Design
 - en los tips arriba de las tarjetas poner unos tabs donde se puede cambiar de:
 Lugares /// Restaurantes /// Actividades

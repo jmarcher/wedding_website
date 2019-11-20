@@ -25,22 +25,63 @@ export default class Lang {
             return key;
         }
         if (replacements !== null) {
-            for (let replacement in replacements) {
-                result = result.replace(`:${replacement}`, replacements[replacement]);
-            }
+            result = this.doReplacements(result, replacements);
+        }
+        return result;
+    };
+
+    doReplacements(transPart, replacements) {
+        let result = transPart;
+        for (let replacement in replacements) {
+            result = result.replace(`:${replacement}`, replacements[replacement]);
         }
         return result;
     }
+
+    getChoice(key = null, replacements = null, count = null) {
+        let result = null;
+        try {
+            result = this.data[key];
+        } catch (e) {
+            return key;
+        }
+        if (count === null) {
+            for (const element in replacements) {
+                if (Number.isInteger(replacements[element])) {
+                    count = replacements[element];
+                    break;
+                }
+            }
+        }
+        result = result.split('|');
+        for (const transPart of result) {
+            if (count > 1) {
+                if (transPart.startsWith('[+] ')) {
+                    return this.doReplacements(transPart.replace('[+]', ''), replacements);
+                }
+            } else {
+                if (transPart.startsWith(`[${count}] `)) {
+                    return this.doReplacements(transPart.replace(`[${count}] `, ''), replacements);
+                }
+            }
+        }
+    };
 };
-let trans = (key = null, replacements = null) => {
-    return (new Lang).get(key,replacements);
-};
-export {trans};
 
 let transMixin = {
-    methods:{
-        trans,
+    data: function () {
+        return {
+            li: new Lang,
+        };
+    },
+    methods: {
+        trans(key = null, replacements = null) {
+            return this.li.get(key, replacements);
+        },
+        trans_choice(key, replacements, count = null) {
+            return this.li.getChoice(key, replacements, count);
+        },
     }
 };
 
-export {transMixin};
+export { transMixin };

@@ -60,4 +60,13 @@ export default {
     // Quebrada de los cuervos
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
     quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
+
+
+
+    // Countdown
+
+    countdown_years: '[0] :years años|[1] :years año|[+] :years años',
+    countdown_days: '[0] :days días|[1] :days día|[+] :days días',
+    countdown_hours: '[0] :hours horas|[1] :hours hora|[+] :hours horas',
+    countdown_minutes: '[0] :minutes minutos|[1] :minutes minuto|[+] :minutes minutos',
 };
