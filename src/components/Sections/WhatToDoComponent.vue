@@ -74,15 +74,10 @@ export default {
       this.setTips();
     },
     setTips() {
-      console.log(
-        Constants.SECTIONS[`what_to_do_in_${this.country}`][
-          `${this.activeTab}_tips`
-        ]
-      );
       this.tips = this.shuffle(
         Constants.SECTIONS[`what_to_do_in_${this.country}`][
           `${this.activeTab}_tips`
-        ]
+        ] || []
       );
     },
     shuffle(a) {
