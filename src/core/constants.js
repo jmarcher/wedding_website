@@ -1,4 +1,5 @@
 import Position from './position';
+import Place from './place';
 export default {
     WEDDING_DATE: [2021, 1, 2, 17, 30, 0],
     DEFAULT_LOCALE: 'es',
@@ -36,114 +37,78 @@ export default {
         'what_to_do_in_uruguay': {
             position: 2,
             background_image: true,
-            locations_tips: [{
-                key: 'mercado_del_puerto',
-                images: [
-                    '/assets/images/sections/uruguay/mercado_arriba.jpg',
-                    '/assets/images/sections/uruguay/mercado_parrilla.jpg',
-                    '/assets/images/sections/uruguay/mercado_fachada.jpg',
+            locations_tips: [
+                new Place(
+                    'mercado_del_puerto',
+                    ['mercado_arriba', 'mercado_parrilla', 'mercado_fachada'],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Mercado_del_Puerto',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
+                        gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
 
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/Mercado_del_Puerto',
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
-                    gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
+                    }
+                ),
+                new Place('quebrada_de_los_cuervos',
+                    ['quebrada_de_los_cuervos_cascada', 'quebrada_de_los_cuervos_sendero', 'quebrada_de_los_cuervos_cabalgata'],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Paisaje_protegido_Quebrada_de_los_Cuervos',
+                        wikipedia_de: 'https://en.wikipedia.org/wiki/Quebrada_de_los_Cuervos',
+                        gmaps: 'https://goo.gl/maps/YgWZLwQ1jU48r2Yu6',
 
-                },
+                    }),
+                new Place('colonia_del_sacramento',
+                    [
+                        'colonia_del_sacramento_callejuela',
+                        'colonia_del_sacramento_puerta',
+                        'colonia_del_sacramento_puerto',
 
-            }, {
-                key: 'quebrada_de_los_cuervos',
-                images: [
-                    '/assets/images/sections/uruguay/quebrada_de_los_cuervos_cascada.jpg',
-                    '/assets/images/sections/uruguay/quebrada_de_los_cuervos_sendero.jpg',
-                    '/assets/images/sections/uruguay/quebrada_de_los_cuervos_cabalgata.jpg',
+                    ],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Colonia_del_Sacramento',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/Colonia_del_Sacramento',
+                        gmaps: 'https://goo.gl/maps/oF9228mqGUwU3R5q7',
 
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/Paisaje_protegido_Quebrada_de_los_Cuervos',
-                    wikipedia_de: 'https://en.wikipedia.org/wiki/Quebrada_de_los_Cuervos',
-                    gmaps: 'https://goo.gl/maps/YgWZLwQ1jU48r2Yu6',
+                    }
 
-                },
+                ), new Place('punta_del_este',
+                    [
+                        'punta_del_este_horizonte',
+                        'punta_del_este_casapueblo',
+                        'punta_del_este_puente_barra',
 
-            }, {
-                key: 'colonia_del_sacramento',
-                images: [
-                    '/assets/images/sections/uruguay/colonia_del_sacramento_callejuela.jpg',
-                    '/assets/images/sections/uruguay/colonia_del_sacramento_puerta.jpg',
-                    '/assets/images/sections/uruguay/colonia_del_sacramento_puerto.jpg',
+                    ],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Punta_del_Este',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/Punta_del_Este',
+                        gmaps: 'https://goo.gl/maps/WoeKT6iSE3WZkBdU8',
 
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/Colonia_del_Sacramento',
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/Colonia_del_Sacramento',
-                    gmaps: 'https://goo.gl/maps/oF9228mqGUwU3R5q7',
+                    }
 
-                },
+                ),
+                new Place('ciudad_vieja',
+                    [
+                        'ciudad_vieja_puerta',
+                        'ciudad_vieja_cerrito',
+                        'ciudad_vieja_plaza_constitucion',
 
-            }, {
-                key: 'punta_del_este',
-                images: [
-                    '/assets/images/sections/uruguay/punta_del_este_horizonte.jpg',
-                    '/assets/images/sections/uruguay/punta_del_este_casapueblo.jpg',
-                    '/assets/images/sections/uruguay/punta_del_este_puente_barra.jpg',
-
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/Punta_del_Este',
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/Punta_del_Este',
-                    gmaps: 'https://goo.gl/maps/WoeKT6iSE3WZkBdU8',
-
-                },
-
-            },
-            // {
-            //     key: 'virgilio',
-            //     images: [
-            //         '/assets/images/sections/uruguay/mercado_arriba.jpg',
-            //         '/assets/images/sections/uruguay/mercado_parrilla.jpg',
-            //         '/assets/images/sections/uruguay/mercado_fachada.jpg',
-
-            //     ],
-            //     links: {
-            //         wikipedia_es: 'https://es.wikipedia.org/wiki/Mercado_del_Puerto',
-            //         wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
-            //         gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
-
-            //     },
-
-            // },
-            {
-                key: 'ciudad_vieja',
-                images: [
-                    '/assets/images/sections/uruguay/ciudad_vieja_puerta.jpg',
-                    '/assets/images/sections/uruguay/ciudad_vieja_cerrito.jpg',
-                    '/assets/images/sections/uruguay/ciudad_vieja_plaza_constitucion.jpg',
-
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
-                    gmaps: 'https://goo.gl/maps/cyFtLVfKWvBL92fP6',
-
-                },
-
-            }, {
-                key: 'la_pedrera',
-                images: [
-                    '/assets/images/sections/uruguay/la_pedrera_desplayado.jpg',
-
-                ],
-                links: {
-                    wikipedia_es: 'https://es.wikipedia.org/wiki/La_Pedrera_(Rocha)',
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/La_Pedrera_(Rocha)',
-                    gmaps: 'https://goo.gl/maps/eu375MCTBpHhA9Pg9',
-
-                },
-
-            }
+                    ],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
+                        gmaps: 'https://goo.gl/maps/cyFtLVfKWvBL92fP6',
+                    }
+                ), new Place('la_pedrera',
+                    [
+                        'la_pedrera_desplayado',
+                    ],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/La_Pedrera_(Rocha)',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/La_Pedrera_(Rocha)',
+                        gmaps: 'https://goo.gl/maps/eu375MCTBpHhA9Pg9',
+                    }
+                )
             ],
-            restaurants_tips: [],
+            restaurants_tips: [{}, {}, {}, {}, {}, {}],
             activities_tips: [],
         },
         'venue': {

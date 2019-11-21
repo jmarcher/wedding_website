@@ -21,12 +21,8 @@ import {
     FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome';
 
-import Vue2TouchEvents from 'vue2-touch-events'
-Vue.use(Vue2TouchEvents);
-
-// Scroller
-import 'intersection-observer'; // for cross-browser support
-import Scrollama from 'vue-scrollama';
+// import Vue2TouchEvents from 'vue2-touch-events'
+// Vue.use(Vue2TouchEvents);
 
 // Fontawesome
 library.add(
@@ -52,4 +48,3 @@ Vue.component('rsvp-component', require('./Sections/RsvpComponent').default);
 Vue.component('what-to-do', require('./Sections/WhatToDoComponent.vue').default);
 Vue.component('venue-component', require('./Sections/VenueComponent').default);
 
-Vue.component('scrollama', Scrollama);

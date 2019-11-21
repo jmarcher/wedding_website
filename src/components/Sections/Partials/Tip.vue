@@ -4,9 +4,9 @@
             :style="cardStyle"
             @mouseover="startImageTransition"
             @mouseleave="stopImageTransition"
-            v-touch:swipe.left="leftPicture"
-            v-touch:swipe.right="rightPicture"
     >
+    <!-- v-touch:swipe.right="rightPicture" -->
+    <!-- v-touch:swipe.left="leftPicture" -->
         <p class="title has-text-light" v-text="trans(this.tip.key)"></p>
         <p
                 v-html="trans(`${this.tip.key}_description`)"

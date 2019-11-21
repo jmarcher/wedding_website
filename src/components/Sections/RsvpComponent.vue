@@ -1,6 +1,5 @@
 <template>
     <form action="/api/guests" method="post" novalidate="true">
-        <Scrollama @step-enter="stepEnterHandler">
             <input-field v-model="main_guest" label="main_guest" type="text" placeholder="main_guest_placeholder"
                          error="main_guest_error" icon="user"
                          :validation="{
@@ -20,18 +19,14 @@
             required:true,
             min:5,
         }"></input-field>
-        </Scrollama>
     </form>
 </template>
 
 <script>
     import InputField from "../Fields/InputField";
-    import 'intersection-observer' // for cross-browser support
-    import Scrollama from 'vue-scrollama'
 
     export default {
         components: {
-            Scrollama,
             InputField,
         },
         name: "RsvpComponent",
@@ -42,12 +37,6 @@
                 brings_plus_one: false,
                 plus_one_name: null,
             };
-        },
-        methods: {
-            stepEnterHandler({element, index, direction}) {
-                // handle the step-event as required here
-                console.log(element, index, direction)
-            }
         }
     }
 </script>
