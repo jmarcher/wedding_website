@@ -39,7 +39,6 @@
     "vue-mouse-parallax": "^1.2.2",
     "vue-scrollactive": "^0.8.0",
     "vue-scrollama": "^1.1.9",
-    "vue2-google-maps": "^0.10.7",
     "vue2-touch-events": "^2.0.1"
   }
 }

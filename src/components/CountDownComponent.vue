@@ -10,6 +10,7 @@
 </template>
 <script>
 import Constants from "../core/constants";
+import moment from 'moment';
 import { transMixin } from "../core/lang";
 export default {
   data() {
