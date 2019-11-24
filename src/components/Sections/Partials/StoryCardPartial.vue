@@ -14,9 +14,9 @@
       </div>
       <!-- <div class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-      </div> -->
+      </div>-->
     </div>
-        <div class="card-image">
+    <div class="card-image">
       <figure class="image is-4by3">
         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
       </figure>
@@ -40,40 +40,42 @@ export default {
 <style scoped lang="scss">
 .card {
   position: relative;
-  &-right {
-    &::before {
-      content: " ";
-      border: 1.5px solid #dedede;
-      position: absolute;
-      left: -13px;
-      width: 13px;
-      display: inline-block;
+  @media (min-width: 992px) {
+    &-right {
+      &::before {
+        content: " ";
+        border: 1.5px solid #dedede;
+        position: absolute;
+        left: -13px;
+        width: 13px;
+        display: inline-block;
+      }
+      &::after {
+        content: " ";
+        border: 5px solid #dedede;
+        position: absolute;
+        left: -17px;
+        top: -3px;
+        border-radius: 50%;
+      }
     }
-    &::after {
-      content: " ";
-      border: 5px solid #dedede;
-      position: absolute;
-      left: -17px;
-      top: -3px;
-      border-radius: 50%;
-    }
-  }
-  &-left {
-    &::before {
-      content: " ";
-      border: 1.5px solid #dedede;
-      position: absolute;
-      right: -13px;
-      width: 13px;
-      display: inline-block;
-    }
-    &::after {
-      content: " ";
-      border: 5px solid #dedede;
-      position: absolute;
-      right: -17px;
-      top: -3px;
-      border-radius: 50%;
+    &-left {
+      &::before {
+        content: " ";
+        border: 1.5px solid #dedede;
+        position: absolute;
+        right: -13px;
+        width: 13px;
+        display: inline-block;
+      }
+      &::after {
+        content: " ";
+        border: 5px solid #dedede;
+        position: absolute;
+        right: -17px;
+        top: -3px;
+        border-radius: 50%;
+      }
     }
   }
 }
