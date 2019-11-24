@@ -1,9 +1,36 @@
 import Position from './position';
 import Place from './place';
+import moment from 'moment';
 export default {
-    WEDDING_DATE: [2021, 1, 2, 17, 30, 0],
+    WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
+    STORY: [
+        {
+            date: moment("2012-12-15", "YYYY-MM-DD"),
+            key: 'first_time',
+            location: 'montevideo_uruguay',
+            position: new Position(-34.915878, -56.158536),
+        },
+        {
+            date: moment("2013-08-05", "YYYY-MM-DD"),
+            key: 'first_time_germany',
+            location: 'muenster_germany',
+            position: new Position(51.952787, 7.611551),
+        },
+        {
+            date: moment("2016-09-15", "YYYY-MM-DD"),
+            key: 'new_apartment',
+            location: 'cologne_germany',
+            position: new Position(50.894829, 6.992504),
+        },
+        {
+            date: moment("2018-09-02", "YYYY-MM-DD"),
+            key: 'proposal',
+            location: 'cologne_germany',
+            position: new Position(50.894829, 6.992504),
+        }
+    ],
     VENUE: {
         name: 'Finca Clara',
         location: new Position(-34.797526, -56.019145),

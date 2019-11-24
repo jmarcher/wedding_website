@@ -10,12 +10,12 @@
 </template>
 <script>
 import Constants from "../core/constants";
-import moment from 'moment';
+import moment from "moment";
 import { transMixin } from "../core/lang";
 export default {
   data() {
     return {
-      date: moment(Constants.WEDDING_DATE),
+      date: Constants.WEDDING_DATE,
       now: moment()
     };
   },
