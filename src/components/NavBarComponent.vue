@@ -32,7 +32,6 @@
     </div>
 </template>
 <script>
-    import {Affix} from 'vue-affix';
     import {transMixin} from '../core/lang';
     import Constants from '../core/constants';
 
@@ -42,9 +41,6 @@
                 is_open: false,
                 sections: Object.keys(Constants.SECTIONS),
             };
-        },
-        components: {
-            Affix,
         },
         mixins:[transMixin],
         methods: {

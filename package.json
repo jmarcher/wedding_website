@@ -1,33 +1,15 @@
 {
+  "name": "wedding_vue",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --lang process.env.npm_package_config_lang"
-  },
-  "devDependencies": {
-    "axios": "^0.19",
-    "cross-env": "^5.1",
-    "bootstrap": "^4.1.1",
-    "collect.js": "^4.16.6",
-    "dinero.js": "^1.6.0",
-    "jquery": "^3.2",
-    "laravel-mix": "^4.0.7",
-    "popper.js": "^1.12",
-    "lodash": "^4.17.13",
-    "resolve-url-loader": "^2.3.1",
-    "sass": "^1.15.2",
-    "sass-loader": "^7.1.0",
-    "vue": "2.*",
-    "sweetalert2": "^8.17.4",
-    "moment": "^2.24.0",
-    "vue-template-compiler": "^2.6.10"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "core-js": "^3.4.3",
+    "vue": "^2.6.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
@@ -39,6 +21,42 @@
     "vue-mouse-parallax": "^1.2.2",
     "vue-scrollactive": "^0.8.0",
     "vue-scrollama": "^1.1.9",
-    "vue2-touch-events": "^2.0.1"
-  }
+    "vue2-touch-events": "^2.0.1",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sweetalert2": "^8.17.4",
+    "moment": "^2.24.0",
+    "popper.js": "^1.12",
+    "lodash": "^4.17.13",
+    "vue-template-compiler": "^2.6.10",
+    "collect.js": "^4.16.6",
+    "dinero.js": "^1.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

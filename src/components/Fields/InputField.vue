@@ -7,10 +7,13 @@
             {{ trans(label) }}
         </label>
         <div class="control has-icons-left has-icons-right" v-if="this.fieldType">
-            <input class="input" @input="updateModel"
+            <input v-if="type !== 'textarea'" class="input" @input="updateModel"
                    :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}" @focus="wasFocused=true"
                    :type="type || 'text'" v-model="value"
                    :placeholder="placeholder || ''">
+            <textarea v-if="type === 'textarea'" class="textarea" @input="updateModel"
+                   :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}" @focus="wasFocused=true"
+                   :placeholder="placeholder || ''"></textarea>
             <span class="icon is-small is-left" v-if="this.icon">
                 <font-awesome-icon :icon="['fas', this.icon]"></font-awesome-icon>
             </span>
@@ -53,8 +56,7 @@
         },
         methods: {
             validEmail(email) {
-                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(email);
+                return /\S+@\S+\.\S+/.test(email);
             },
             checkInputValidity() {
                 switch (this.type) {
