@@ -10,16 +10,7 @@ require('./components/bootstrap');
 Vue.use(VueScrollActive);
 
 import {transMixin} from './core/lang';
-const app = new Vue({
+new Vue({
     el: '#main_app',
     mixins: [transMixin],
-    methods: {
-        stepEnterHandler({
-            element,
-            index,
-            direction
-        }) {
-            // handle the step-event as required here
-        }
-    },
 });

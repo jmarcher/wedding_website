@@ -5,6 +5,7 @@ export default {
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
+    FOOD_MENUS: ['meat', 'vegetarian'],
     STORY: [
         {
             date: moment("2012-12-15", "YYYY-MM-DD"),

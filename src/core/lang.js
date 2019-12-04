@@ -9,7 +9,7 @@ export default class Lang {
         if (this.lang !== 'es') {
             this.data = LangDe;
         }
-    };
+    }
 
     get(key = null, replacements = null) {
         if (key === null) {
@@ -28,7 +28,7 @@ export default class Lang {
             result = this.doReplacements(result, replacements);
         }
         return result;
-    };
+    }
 
     doReplacements(transPart, replacements) {
         let result = transPart;
@@ -65,8 +65,8 @@ export default class Lang {
                 }
             }
         }
-    };
-};
+    }
+}
 
 let transMixin = {
     data: function () {

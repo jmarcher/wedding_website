@@ -61,7 +61,28 @@ export default {
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
     quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
 
+    // RPSV
+    main_guest: 'Tu nombre',
+    main_guest_placeholder: 'Jorge Lopez',
+    main_guest_error: 'El nombre no es correcto',
 
+    brings_plus_one: '¿Venís con alguien?',
+
+    plus_one_name:'Nombre(s) de tu acompañante(s)',
+    plus_one_name_placeholder: 'Laura Socotroco',
+    plus_one_name_error: 'El nombre no es correcto',
+
+    email: 'E-Mail',
+    email_placeholder: 'jorge.lopez@example.com',
+    email_error: 'El E-Mail no es correcto',
+    
+    menu: 'Menú',
+    meat: 'Menú con carnes',
+    vegetarian: 'Menú vegetariano',
+
+    notes: '¿Algo más que nos quieras decis?',
+    notes_placeholder: 'Mi acompañante es vegana',
+    submit: 'Enviar',
 
     // Countdown
 

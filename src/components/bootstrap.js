@@ -33,7 +33,7 @@ Vue.config.productionTip = false;
 
 // Directives
 Vue.directive('visible', function (el, binding) {
-    el.style.visibility = !!binding.value ? 'visible' : 'hidden';
+    el.style.visibility = binding.value ? 'visible' : 'hidden';
 });
 
 Vue.component('index-component', require('./IndexComponent.vue').default);

@@ -38,13 +38,13 @@
             min:5,
         }"
     />
+    <radio-group :values="menus" name="menu" v-model="menu"></radio-group>
     <input-field
       v-model="notes"
       label="notes"
       type="textarea"
       placeholder="notes_placeholder"
       error="notes_error"
-      icon="note"
       :validation="{
             required:false,
             min:5,
@@ -52,20 +52,23 @@
     />
 
     <div class="buttons">
-      <button class="button is-primary" :disabled="!formIsCompleted" v-text="trans('submit')"></button>
+      <button class="button is-primary" :disabled="!formIsComplete" v-text="trans('submit')"></button>
     </div>
   </form>
 </template>
 
 <script>
 import InputField from "../Fields/InputField";
+import RadioGroup from "../Fields/RadioGroup";
+import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
 
 export default {
   name: "RsvpComponent",
   mixins: [transMixin],
   components: {
-    InputField
+    InputField,
+    RadioGroup
   },
   data() {
     return {
@@ -73,14 +76,19 @@ export default {
       email: null,
       brings_plus_one: false,
       plus_one_name: null,
+      menu: Constants.FOOD_MENUS[0],
       notes: null
     };
   },
   computed: {
+    menus() {
+      return Constants.FOOD_MENUS;
+    },
     formIsComplete() {
       return (
         this.main_guest !== null &&
         this.email !== null &&
+        this.menu !== null &&
         (!this.brings_plus_one || this.plus_one_name !== null)
       );
     }
