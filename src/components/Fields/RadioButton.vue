@@ -1,15 +1,19 @@
 <template>
-  <label class="radio">
-    <input
-      type="radio"
-      :name="group"
-      :value="label"
-      v-model="value"
-      :checked="checked"
-      @input="updateModel"
-    />
-    {{ trans(label) }}
-  </label>
+  <span>
+      <input
+        class="is-checkradio"
+        type="radio"
+        :name="group"
+        :id="label"
+        :value="label"
+        v-model="value"
+        :checked="checked"
+        @input="updateModel"
+      />
+    <label :for="label">
+      {{ trans(label) }}
+    </label>
+  </span>
 </template>
 
 <script>

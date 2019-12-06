@@ -50,7 +50,6 @@
             min:5,
         }"
     />
-
     <div class="buttons">
       <button class="button is-primary" :disabled="!formIsComplete" v-text="trans('submit')"></button>
     </div>
