@@ -13,7 +13,7 @@
                 class="tile-text has-text-light"
                 v-visible="this.timer"
         ></p>
-        <p class="links" v-visible="this.timer">
+        <p class="links buttons" v-visible="this.timer">
             <a :href="wikipediaLink" target="_blank" class="button">
                 <font-awesome-icon :icon="['fab', 'wikipedia-w']"/>
             </a>

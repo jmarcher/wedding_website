@@ -17,6 +17,7 @@ $dimensions: 16 24 32 48 64 96 128 256 512;
 
 // Import Extensions
 @import "~bulma-extensions/bulma-checkradio/src/sass/index";
+@import "~bulma-extensions/bulma-timeline/src/sass";
 
 #hero {
   background-image: url(./assets/images/bg-7.jpg);

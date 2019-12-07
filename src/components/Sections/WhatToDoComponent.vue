@@ -16,7 +16,7 @@
     </div>
     <div class="separator"></div>
     <div v-if="tips.length > 0">
-      <div class="tile is-ancestor" v-for="(chunked, index) in Collect(tips).chunk(3)" :key="index">
+      <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-8 is-parent" v-if="index % 2 === 0">
           <tip :tip="chunked.shift()"></tip>
         </div>
@@ -53,6 +53,17 @@ export default {
     this.setTips();
   },
   computed: {
+    chunkedTips(){
+      let tips = collect(this.tips).filter((tip) => {
+        return tip.exists;
+      });
+
+      if(tips.count() > 0){
+        return tips.chunk(3);
+      }
+      
+      return collect();
+    },
     introduction_text(){
       return this.trans(`introduction_${this.country}`);
     },

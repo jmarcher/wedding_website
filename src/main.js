@@ -1,5 +1,5 @@
 // Bootstrap vendors
-// require('./bootstrap');
+require('./bootstrap');
 import Vue from 'vue';
 import VueScrollActive from 'vue-scrollactive';
 import { transMixin } from './core/lang';

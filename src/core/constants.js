@@ -2,6 +2,7 @@ import Position from './position';
 import Place from './place';
 import moment from 'moment';
 export default {
+    API_PATH: 'http://api.test',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',

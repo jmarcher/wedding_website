@@ -1,5 +1,5 @@
 <template>
-  <form action="/api/guests" method="post" novalidate="true">
+  <form method="post" novalidate="true">
     <input-field
       v-model="main_guest"
       label="main_guest"
@@ -51,7 +51,7 @@
         }"
     />
     <div class="buttons">
-      <button class="button is-primary" :disabled="!formIsComplete" v-text="trans('submit')"></button>
+      <button class="button is-primary" :class="{'is-loading':formLoading}" @click.prevent="sendForm()" :disabled="!formIsComplete" v-text="trans('submit')"></button>
     </div>
   </form>
 </template>
@@ -71,6 +71,7 @@ export default {
   },
   data() {
     return {
+      formLoading:false,
       main_guest: null,
       email: null,
       brings_plus_one: false,
@@ -78,6 +79,12 @@ export default {
       menu: Constants.FOOD_MENUS[0],
       notes: null
     };
+  },
+  methods:{
+    sendForm(){
+      this.formLoading = true;
+      window.axios.post(`${Constants.API_PATH}/guests`,{})
+    },
   },
   computed: {
     menus() {

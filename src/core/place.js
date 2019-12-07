@@ -20,4 +20,8 @@ export default class Place {
     get images() {
         return this.data.images;
     }
+
+    get exists(){
+        return true;
+    }
 }
