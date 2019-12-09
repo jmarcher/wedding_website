@@ -14,7 +14,7 @@
                 v-visible="this.timer"
         ></p>
         <p class="links buttons" v-visible="this.timer">
-            <a :href="wikipediaLink" target="_blank" class="button">
+            <a v-id="wikipediaLink" :href="wikipediaLink" target="_blank" class="button">
                 <font-awesome-icon :icon="['fab', 'wikipedia-w']"/>
             </a>
             <a :href="googleMapsLink" target="_blank" class="button">
@@ -34,20 +34,26 @@
         mixins: [transMixin],
         data() {
             return {
-                // actualPicture: this.tip.images[0],
                 actualPictureIndex: 0,
                 timer: null
             };
         },
         computed: {
             wikipediaLink() {
-                return this.tip.links[`wikipedia_${Constants.DEFAULT_LOCALE}`];
+                if(this.tip.links[`wikipedia_${Constants.DEFAULT_LOCALE}`]){
+                    return this.tip.links[`wikipedia_${Constants.DEFAULT_LOCALE}`];
+                }
+
+                return false;
             },
             googleMapsLink() {
                 return this.tip.links["gmaps"];
             },
             actualPicture() {
-                return this.tip.images[this.actualPictureIndex];
+                if(this.tip.images && this.tip.images.length > 0){
+                    return this.tip.images[this.actualPictureIndex];
+                }
+                return Constants.IMAGE_PLACEHOLDER;
             },
             cardStyle() {
                 return `background-image:url(${this.actualPicture})`;

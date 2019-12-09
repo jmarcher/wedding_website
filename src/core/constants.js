@@ -1,7 +1,8 @@
 import Position from './position';
-import Place from './place';
+import Tip from './tip';
 import moment from 'moment';
 export default {
+    IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
     API_PATH: 'http://api.test',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     DEFAULT_LOCALE: 'es',
@@ -67,7 +68,7 @@ export default {
             position: 2,
             background_image: true,
             locations_tips: [
-                new Place(
+                new Tip(
                     'mercado_del_puerto',
                     ['mercado_arriba', 'mercado_parrilla', 'mercado_fachada'],
                     {
@@ -77,7 +78,7 @@ export default {
 
                     }
                 ),
-                new Place('quebrada_de_los_cuervos',
+                new Tip('quebrada_de_los_cuervos',
                     ['quebrada_de_los_cuervos_cascada', 'quebrada_de_los_cuervos_sendero', 'quebrada_de_los_cuervos_cabalgata'],
                     {
                         wikipedia_es: 'https://es.wikipedia.org/wiki/Paisaje_protegido_Quebrada_de_los_Cuervos',
@@ -85,7 +86,7 @@ export default {
                         gmaps: 'https://goo.gl/maps/YgWZLwQ1jU48r2Yu6',
 
                     }),
-                new Place('colonia_del_sacramento',
+                new Tip('colonia_del_sacramento',
                     [
                         'colonia_del_sacramento_callejuela',
                         'colonia_del_sacramento_puerta',
@@ -99,7 +100,7 @@ export default {
 
                     }
 
-                ), new Place('punta_del_este',
+                ), new Tip('punta_del_este',
                     [
                         'punta_del_este_horizonte',
                         'punta_del_este_casapueblo',
@@ -114,7 +115,7 @@ export default {
                     }
 
                 ),
-                new Place('ciudad_vieja',
+                new Tip('ciudad_vieja',
                     [
                         'ciudad_vieja_puerta',
                         'ciudad_vieja_cerrito',
@@ -126,7 +127,7 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
                         gmaps: 'https://goo.gl/maps/cyFtLVfKWvBL92fP6',
                     }
-                ), new Place('la_pedrera',
+                ), new Tip('la_pedrera',
                     [
                         'la_pedrera_desplayado',
                     ],
@@ -137,7 +138,18 @@ export default {
                     }
                 )
             ],
-            restaurants_tips: [{}, {}, {}, {}, {}, {}],
+            restaurants_tips: [
+                new Tip('Rudy Burgers',
+                    ['rudy_main', 'rudy_burgers'],
+                    {
+                        gmaps: 'https://goo.gl/maps/pM5xfZmiQNNQFnzcA'
+                    }),
+                new Tip('Jacinto'),
+                new Tip('La Fonda'),
+                new Tip('La cocina de Pedro'),
+                new Tip('Chivitería Marcos'),
+                new Tip('Cervezería Ramón')
+            ],
             activities_tips: [],
         },
         'venue': {

@@ -1,11 +1,11 @@
-export default class Place {
+export default class Tip {
     constructor(key, images, links, country = 'uruguay') {
         this.data = {
             key,
             links,
-            images: images.map(image => {
+            images: images && images.length > 0 ? images.map(image => {
                 return `/assets/images/sections/${country}/${image}.jpg`;
-            }),
+            }) : [],
         }
     }
 
