@@ -32,15 +32,15 @@
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
     "babel-eslint": "^10.0.3",
+    "collect.js": "^4.16.6",
+    "dinero.js": "^1.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "sweetalert2": "^8.17.4",
+    "lodash": "^4.17.13",
     "moment": "^2.24.0",
     "popper.js": "^1.12",
-    "lodash": "^4.17.13",
-    "vue-template-compiler": "^2.6.10",
-    "collect.js": "^4.16.6",
-    "dinero.js": "^1.6.0"
+    "sweetalert2": "^8.19.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,

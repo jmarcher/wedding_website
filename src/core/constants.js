@@ -23,7 +23,7 @@ export default {
         },
         {
             date: moment("2016-09-15", "YYYY-MM-DD"),
-            key: 'new_apartment',
+            key: 'new_appartment',
             location: 'cologne_germany',
             position: new Position(50.894829, 6.992504),
         },
@@ -32,6 +32,12 @@ export default {
             key: 'proposal',
             location: 'cologne_germany',
             position: new Position(50.894829, 6.992504),
+        },
+        {
+            date: moment("2021-01-02", "YYYY-MM-DD"),
+            key: 'wedding_day',
+            location: 'canelones_uruguay',
+            position: new Position(-34.797526, -56.019145),
         }
     ],
     VENUE: {
@@ -144,11 +150,11 @@ export default {
                     {
                         gmaps: 'https://goo.gl/maps/pM5xfZmiQNNQFnzcA'
                     }),
-                new Tip('Jacinto'),
-                new Tip('La Fonda'),
-                new Tip('La cocina de Pedro'),
-                new Tip('Chivitería Marcos'),
-                new Tip('Cervezería Ramón')
+                new Tip('Jacinto', ['jacinto_front', 'jacinto_wall'], { gmaps: 'https://goo.gl/maps/HfmzFkiT6mSM5z5N8' }),
+                new Tip('La Fonda', ['lafonda_main'], { gmaps: "https://g.page/lafondauy?share" }),
+                new Tip('La cocina de Pedro', ['la_cocina_de_pedro_main'], { gmaps:'https://goo.gl/maps/FEXzZCQvb6zo6uSY8'}),
+                new Tip('Bar Arocena', ['bar_arocena_main'], { gmaps: 'https://goo.gl/maps/FGCAatMr5dJQVyfA7'}),
+                new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7'})
             ],
             activities_tips: [],
         },

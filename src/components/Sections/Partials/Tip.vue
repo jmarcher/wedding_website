@@ -14,10 +14,10 @@
                 v-visible="this.timer"
         ></p>
         <p class="links buttons" v-visible="this.timer">
-            <a v-id="wikipediaLink" :href="wikipediaLink" target="_blank" class="button">
+            <a v-if="wikipediaLink" :href="wikipediaLink" target="_blank" class="button">
                 <font-awesome-icon :icon="['fab', 'wikipedia-w']"/>
             </a>
-            <a :href="googleMapsLink" target="_blank" class="button">
+            <a v-if="googleMapsLink" :href="googleMapsLink" target="_blank" class="button">
                 <font-awesome-icon :icon="['fas', 'map-marked-alt']"/>
             </a>
         </p>
@@ -94,7 +94,7 @@
 
 <style scoped>
     div.tile {
-        transition: background-image 0.5s ease;
+        transition: background 0.5s ease;
         background-size: cover;
         background-repeat: no-repeat;
     }

@@ -8,7 +8,7 @@
   >
     <div class="hero-head">
       <div class="container">
-        <h1 class="title has-text-grey-dark has-text-centered-desktop" :id="this.$vnode.key">
+        <h1 class="title has-text-grey-dark has-text-centered" :id="this.$vnode.key">
           <span v-html="trans(`section_title_${this.$vnode.key}`)"></span>
         </h1>
       </div>

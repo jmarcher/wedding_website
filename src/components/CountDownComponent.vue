@@ -1,10 +1,25 @@
 <template>
   <div class="content has-text-centered">
-    <div class="box is-unselectable is-inline">
-      <span v-text="trans_choice('countdown_years',{years: this.years})"></span>
-      <span v-text="trans_choice('countdown_days',{days: this.days})"></span>
-      <span v-text="trans_choice('countdown_hours',{hours: this.hours})"></span>
-      <span v-text="trans_choice('countdown_minutes',{minutes: this.minutes})"></span>
+    <div class="box is-unselectable is-inline-block">
+      <div class="time_unit">
+        <span class="unit_count" v-text="this.years" />
+        <div class="unit_translation" v-text="trans_choice('countdown_years',{years: this.years})"></div>
+      </div>
+      <div class="time_unit">
+        <span class="unit_count" v-text="this.days" />
+        <div class="unit_translation" v-text="trans_choice('countdown_days',{days: this.days})"></div>
+      </div>
+      <div class="time_unit">
+        <span class="unit_count" v-text="this.hours" />
+        <div class="unit_translation" v-text="trans_choice('countdown_hours',{hours: this.hours})"></div>
+      </div>
+      <div class="time_unit">
+        <span class="unit_count" v-text="this.minutes" />
+        <div
+          class="unit_translation"
+          v-text="trans_choice('countdown_minutes',{minutes: this.minutes})"
+        ></div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,5 +84,20 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+.box {
+  padding-bottom: 1rem;
+  .time_unit {
+    border: 3px solid hsl(0, 0%, 86%);
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    .unit_count {
+      font-size: 2rem;
+    }
+  }
+}
 </style>

@@ -3,7 +3,7 @@
     <h4 class="title is-4 has-text-centered" v-text="trans('our_story')"></h4>
     <div class="timeline is-centered">
       <header class="timeline-header">
-        <span class="tag is-medium is-primary" v-text="trans('timeline_beging')" />
+        <span class="tag is-medium is-primary" v-text="trans('timeline_begin')" />
       </header>
       <!-- <header class="timeline-header" v-for="year in groupedStories" :key="year">
         <span class="tag is-primary" v-text="year"></span>

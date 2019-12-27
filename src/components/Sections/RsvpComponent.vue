@@ -51,7 +51,13 @@
         }"
     />
     <div class="buttons">
-      <button class="button is-primary" :class="{'is-loading':formLoading}" @click.prevent="sendForm()" :disabled="!formIsComplete" v-text="trans('submit')"></button>
+      <button
+        class="button is-primary"
+        :class="{'is-loading':formLoading}"
+        @click.prevent="sendForm()"
+        :disabled="!formIsComplete"
+        v-text="trans('submit')"
+      ></button>
     </div>
   </form>
 </template>
@@ -61,6 +67,7 @@ import InputField from "../Fields/InputField";
 import RadioGroup from "../Fields/RadioGroup";
 import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
+import Swal from "sweetalert2";
 
 export default {
   name: "RsvpComponent",
@@ -71,7 +78,7 @@ export default {
   },
   data() {
     return {
-      formLoading:false,
+      formLoading: false,
       main_guest: null,
       email: null,
       brings_plus_one: false,
@@ -80,11 +87,36 @@ export default {
       notes: null
     };
   },
-  methods:{
-    sendForm(){
-      this.formLoading = true;
-      window.axios.post(`${Constants.API_PATH}/guests`,{})
+  methods: {
+    cleanForm() {
+      this.main_guest = null;
+      this.email = null;
+      this.brings_plus_one = false;
+      this.plus_one_name = null;
+      this.menu = Constants.FOOD_MENUS[0];
+      this.notes = null;
     },
+    sendForm() {
+      this.formLoading = true;
+      window.axios
+        .post(`${Constants.API_PATH}/guests`, {
+          name: this.main_guest,
+          brings_plus_one: this.brings_plus_one,
+          plus_one_name: this.plus_one_name,
+          email: this.email,
+          menu: this.menu,
+          notes: this.notes
+        })
+        .then(() => {
+          this.formLoading = false;
+          Swal.fire({
+            type: "success",
+            title: this.trans("form_sent_successfully"),
+            timer: 2000
+          });
+          this.cleanForm();
+        });
+    }
   },
   computed: {
     menus() {

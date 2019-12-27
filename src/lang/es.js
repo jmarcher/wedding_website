@@ -37,6 +37,7 @@ export default {
 
 
     // Uruguay
+    // Lugares
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',
     mercado_del_puerto_description: 'En el corazón de la Ciudad Vieja, frente a la rambla portuaria, el Mercado del Puerto es un clásico que invita a turistas y montevideanos a disfrutar de su entorno.',
@@ -61,6 +62,23 @@ export default {
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
     quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
 
+    //Restaurantes
+    cerveceria_ramon: 'Cervecería Ramón',
+    cerveceria_ramon_description: '',
+
+    // Bar arocena
+    bar_arocena: 'Bar Arocena',
+    bar_arocena_description: 'El Bar Arocena es conseiderado uno de los lugares más auténticos para comer un típico chivito uruguayo, una visita es más que merecida.',
+
+    jacinto: 'Jacinto',
+    jacinto_description: 'Galardonado restaurante en plena ciudad vieja de Montevideo, una cocina atípica .....',
+
+    la_cocina_de_pedro: 'La cocina de Pedro',
+    la_cocina_de_pedro_description: 'A quién le gusten las carnes en un ambiente con restaurante romático y acogedor, la cocina de pedro es la elección perfecta para ellos.',
+
+    
+
+
     // RPSV
     main_guest: 'Tu nombre',
     main_guest_placeholder: 'Jorge Lopez',
@@ -69,7 +87,7 @@ export default {
     brings_plus_one: '¿Venís con alguien?',
 
     plus_one_name:'Nombre(s) de tu acompañante(s)',
-    plus_one_name_placeholder: 'Laura Socotroco',
+    plus_one_name_placeholder: 'Laura Socotroco, Pedro Palolargo',
     plus_one_name_error: 'El nombre no es correcto',
 
     email: 'E-Mail',
@@ -82,12 +100,30 @@ export default {
 
     notes: '¿Algo más que nos quieras decis?',
     notes_placeholder: 'Mi acompañante es vegana',
+    form_sent_successfully: 'RSVP fue enviado correctamente, ¡gracias!',
     submit: 'Enviar',
 
     // Countdown
 
-    countdown_years: '[0] :years años|[1] :years año|[+] :years años',
-    countdown_days: '[0] :days días|[1] :days día|[+] :days días',
-    countdown_hours: '[0] :hours horas|[1] :hours hora|[+] :hours horas',
-    countdown_minutes: '[0] :minutes minutos|[1] :minutes minuto|[+] :minutes minutos',
+    countdown_years: '[0] años|[1] año|[+] años',
+    countdown_days: '[0] días|[1] día|[+] días',
+    countdown_hours: '[0] horas|[1] hora|[+] horas',
+    countdown_minutes: '[0] minutos|[1] minuto|[+] minutos',
+
+    // timeline
+    our_story:'Nuestra historia',
+    timeline_begin: 'Inicio',
+    timeline_end: 'Continuará...',
+    first_time:"Primer encuentro",
+    montevideo_uruguay:"Montevideo, Uruguay",
+    first_time_germany:"Primera vez Alemania",
+    muenster_germany:'Münster, Alemania',
+    new_appartment: "Nuevo apartamento juntos",
+    cologne_germany:"Colonia, Alemania",
+    proposal: 'Propuesta de matrimonio',
+    wedding_day: 'Casamiento, festejo con ustedes',
+    canelones_uruguay:'Canelones, Uruguay'
+
+
+    
 };

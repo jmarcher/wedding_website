@@ -8,7 +8,7 @@
       <ul>
         <li v-for="tab in tabs" :class="{'is-active':tab===activeTab}" @click="makeActiveTab(tab)" :key="tab">
           <a>
-            <span class="icon is-small"><font-awesome-icon :icon="['fas', getIcon(tab)]" /></span>
+            <span class="icon is-small is-marginless-mobile"><font-awesome-icon :icon="['fas', getIcon(tab)]" /></span>
             <span class="is-hidden-mobile">{{ trans(`tips_${tab}`) }}</span>
           </a>
         </li>

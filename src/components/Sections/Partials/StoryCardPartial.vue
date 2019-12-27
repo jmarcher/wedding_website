@@ -2,6 +2,7 @@
   <div class="timeline-content">
     <p class="heading" v-text="formattedDate"></p>
     <p v-text="trans(story.key)"></p>
+    <p v-text="trans(story.location)" class="is-size-7"></p>
   </div>
 </template>
 

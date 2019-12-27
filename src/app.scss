@@ -7,9 +7,12 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 // Update Bulma's global variables
-$family-sans-serif: "Alata",
-sans-serif;
+$family-sans-serif: "Alata", sans-serif;
 $dimensions: 16 24 32 48 64 96 128 256 512;
+$pink: #FA7C91;
+$tabs-toggle-link-active-background-color:$pink;
+$tabs-toggle-link-active-border-color: darken($pink, 10%);
+$primary: $pink;
 
 @charset "utf-8";
 
@@ -55,6 +58,14 @@ $dimensions: 16 24 32 48 64 96 128 256 512;
 
   &-1 {
     font-size: 4rem;
+  }
+}
+
+.is-marginless {
+  &-mobile {
+    @media (max-width: 768px) {
+      margin: 0 !important;
+    }
   }
 }
 
