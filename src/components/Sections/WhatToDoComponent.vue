@@ -17,6 +17,17 @@
     <div class="separator"></div>
     <div v-if="tips.length > 0">
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
+        <!-- <div class="tile is-8 is-parent" v-if="index % 2 === 0">
+          <tip :tip="chunked.shift()"></tip>
+        </div> -->
+        <div class="tile is-3 is-parent" v-for="tip in  chunked" :key="tip.key">
+          <tip :tip="tip" :key="tip.key" ></tip>
+        </div>
+        <!-- <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
+          <tip :tip="chunked.last()"></tip>
+        </div> -->
+      </div>
+      <!-- <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-8 is-parent" v-if="index % 2 === 0">
           <tip :tip="chunked.shift()"></tip>
         </div>
@@ -26,7 +37,7 @@
         <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
           <tip :tip="chunked.last()"></tip>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -36,6 +47,8 @@ import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
 import Tip from "./Partials/Tip";
 import collect from "collect.js";
+
+const CHUNK_SIZE = 4;
 
 export default {
   props: ["country"],
@@ -59,7 +72,7 @@ export default {
       });
 
       if(tips.count() > 0){
-        return tips.chunk(3);
+        return tips.chunk(CHUNK_SIZE);
       }
       
       return collect();
@@ -77,7 +90,7 @@ export default {
         case 'restaurants':
           return 'hamburger';
         case 'activities':
-          return 'biking';
+          return 'ticket-alt';
       }
     },
     makeActiveTab(tab) {
@@ -85,18 +98,9 @@ export default {
       this.setTips();
     },
     setTips() {
-      this.tips = this.shuffle(
-        Constants.SECTIONS[`what_to_do_in_${this.country}`][
+      this.tips = Constants.SECTIONS[`what_to_do_in_${this.country}`][
           `${this.activeTab}_tips`
-        ] || []
-      );
-    },
-    shuffle(a) {
-      for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-      }
-      return a;
+        ] || [];
     }
   }
 };

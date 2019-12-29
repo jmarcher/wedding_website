@@ -1,6 +1,6 @@
 <template>
     <div
-            class="tile is-child box"
+            class="box"
             :style="cardStyle"
             @mouseover="startImageTransition"
             @mouseleave="stopImageTransition"
@@ -84,7 +84,7 @@
                 }
             },
             stopImageTransition() {
-                // this.actualPictureIndex = 0;
+                this.actualPictureIndex = 0;
                 clearInterval(this.timer);
                 this.timer = null;
             }
@@ -93,7 +93,7 @@
 </script>
 
 <style scoped>
-    div.tile {
+    div.box {
         transition: background 0.5s ease;
         background-size: cover;
         background-repeat: no-repeat;

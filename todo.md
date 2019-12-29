@@ -14,6 +14,7 @@
 - Restaurants, cafés, car rental, aktivitäten
 - Foto # upload the pictures
 - Link a @uruguayinside
+- Botones para cambiar el idioma (cambiar de dominio)
 
 ## Timeline
 - Poner el timeline del casamiento
@@ -21,4 +22,7 @@
 # Design
 - en los tips arriba de las tarjetas poner unos tabs donde se puede cambiar de:
 Lugares /// Restaurantes /// Actividades
+
+- fotos mobile sin borde
+- 
 

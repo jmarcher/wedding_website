@@ -115,6 +115,14 @@ export default {
             timer: 2000
           });
           this.cleanForm();
+        })
+        .catch(() => {
+          this.formLoading = false;
+          Swal.fire({
+            type: "error",
+            title: this.trans("form_sent_error"),
+            // timer: 2000
+          });
         });
     }
   },

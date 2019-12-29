@@ -101,6 +101,7 @@ export default {
     notes: '¿Algo más que nos quieras decis?',
     notes_placeholder: 'Mi acompañante es vegana',
     form_sent_successfully: 'RSVP fue enviado correctamente, ¡gracias!',
+    form_sent_error: 'RSVP no pudo ser enviado, intentá más tarde.',
     submit: 'Enviar',
 
     // Countdown

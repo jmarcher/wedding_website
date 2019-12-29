@@ -3,7 +3,7 @@ import Tip from './tip';
 import moment from 'moment';
 export default {
     IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
-    API_PATH: 'http://api.test',
+    API_PATH: 'https://api.joaquinundrebecca.de',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
@@ -154,7 +154,11 @@ export default {
                 new Tip('La Fonda', ['lafonda_main'], { gmaps: "https://g.page/lafondauy?share" }),
                 new Tip('La cocina de Pedro', ['la_cocina_de_pedro_main'], { gmaps:'https://goo.gl/maps/FEXzZCQvb6zo6uSY8'}),
                 new Tip('Bar Arocena', ['bar_arocena_main'], { gmaps: 'https://goo.gl/maps/FGCAatMr5dJQVyfA7'}),
-                new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7'})
+                new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7'}),
+                new Tip('bardot'),
+                new Tip('el_club_del_pan'),
+                new Tip('sometimes_sunday_cafe'),
+                new Tip('the_puta_madre'),
             ],
             activities_tips: [],
         },
@@ -164,12 +168,12 @@ export default {
 
         },
         'what_to_do_in_germany': {
-            position: 4,
+            position: 5,
             background_image: true,
 
         },
         'rsvp': {
-            position: 5,
+            position: 4,
             background_image: null,
 
         },
