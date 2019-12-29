@@ -5,6 +5,15 @@ import LangDe from '../lang/de';
 export default class Lang {
     constructor() {
         this.lang = Constants.DEFAULT_LOCALE;
+        this.setLocale(this.lang);
+    }
+
+    getLocale(){
+        return this.lang;
+    }
+
+    setLocale(locale = 'es'){
+        this.lang = locale;
         this.data = LangEs;
         if (this.lang !== 'es') {
             this.data = LangDe;
@@ -68,11 +77,18 @@ export default class Lang {
     }
 }
 
+const li = new Lang;
+
 let transMixin = {
     data: function () {
         return {
-            li: new Lang,
+            li,
         };
+    },
+    computed:{
+        get_locale(){
+            return this.li.getLocale();
+        }
     },
     methods: {
         trans(key = null, replacements = null) {
@@ -80,6 +96,9 @@ let transMixin = {
         },
         trans_choice(key, replacements, count = null) {
             return this.li.getChoice(key, replacements, count);
+        },
+        set_locale(locale = 'es'){
+            this.li.setLocale(locale);
         },
     }
 };

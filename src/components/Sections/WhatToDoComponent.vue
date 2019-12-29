@@ -17,15 +17,9 @@
     <div class="separator"></div>
     <div v-if="tips.length > 0">
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
-        <!-- <div class="tile is-8 is-parent" v-if="index % 2 === 0">
-          <tip :tip="chunked.shift()"></tip>
-        </div> -->
         <div class="tile is-3 is-parent" v-for="tip in  chunked" :key="tip.key">
           <tip :tip="tip" :key="tip.key" ></tip>
         </div>
-        <!-- <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
-          <tip :tip="chunked.last()"></tip>
-        </div> -->
       </div>
       <!-- <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-8 is-parent" v-if="index % 2 === 0">
