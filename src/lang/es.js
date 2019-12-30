@@ -4,16 +4,16 @@ export default {
 
     // Navbar
     about_us: 'Sobre nosotros',
-    what_to_do_in_uruguay: '¿Qué se puede hacer en Uruguay?',
-    what_to_do_in_germany: '¿Qué se puede hacer en Alemania?',
+    party_uruguay: 'Fiesta Uruguay',
+    party_germany: 'Fiesta Alemania',
     rsvp: 'RSVP',
     venue: '¿Cómo llegar?',
 
     // Sections
     section_title_about_us: 'Sobre&nbsp;<span class="has-text-primary is-italic">Nosotros</span>',
     section_title_venue: '¿Cómo&nbsp;<span class="has-text-primary is-italic">llegar</span>?',
-    section_title_what_to_do_in_uruguay: '¿Qué se puede hacer en&nbsp;<span class="has-text-primary is-italic">Uruguay</span>?',
-    section_title_what_to_do_in_germany: '¿Qué se puede hacer en&nbsp;<span class="has-text-primary is-italic">Alemania</span>?',
+    section_title_party_uruguay: 'Fiesta&nbsp;<span class="has-text-primary is-italic">Uruguay</span>',
+    section_title_party_germany: 'Fiesta&nbsp;<span class="has-text-primary is-italic">Alemania</span>',
     section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
 
     recommended_hotels: 'Hoteles recomendados',
@@ -76,7 +76,10 @@ export default {
     la_cocina_de_pedro: 'La cocina de Pedro',
     la_cocina_de_pedro_description: 'A quién le gusten las carnes en un ambiente con restaurante romático y acogedor, la cocina de pedro es la elección perfecta para ellos.',
 
+    rudy_burgers: 'Rudy Burgers',
+    rudy_burgers_description: 'Rudy Rudyyyy',
     
+    la_fonda: 'La Fonda',
 
 
     // RPSV

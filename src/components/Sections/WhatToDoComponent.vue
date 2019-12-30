@@ -52,7 +52,7 @@ export default {
     return {
       tabs: ["locations", "restaurants", "activities"],
       activeTab: "locations",
-      data: Constants.SECTIONS[`what_to_do_in_${this.country}`],
+      data: Constants.SECTIONS[`party_${this.country}`],
       tips: []
     };
   },
@@ -92,7 +92,7 @@ export default {
       this.setTips();
     },
     setTips() {
-      this.tips = Constants.SECTIONS[`what_to_do_in_${this.country}`][
+      this.tips = Constants.SECTIONS[`party_${this.country}`][
           `${this.activeTab}_tips`
         ] || [];
     }

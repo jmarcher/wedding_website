@@ -2,10 +2,10 @@ import Position from './position';
 import Tip from './tip';
 import moment from 'moment';
 export default {
+    DEFAULT_LOCALE: 'es',
     IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
     API_PATH: 'https://api.joaquinundrebecca.de',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
-    DEFAULT_LOCALE: 'es',
     SECTION_SEPARATOR: '$separator$',
     FOOD_MENUS: ['meat', 'vegetarian'],
     STORY: [
@@ -70,7 +70,7 @@ export default {
             background_image: null,
 
         },
-        'what_to_do_in_uruguay': {
+        'party_uruguay': {
             position: 2,
             background_image: true,
             locations_tips: [
@@ -162,12 +162,12 @@ export default {
             ],
             activities_tips: [],
         },
-        'venue': {
-            position: 3,
-            background_image: null,
+        // 'venue': {
+        //     position: 3,
+        //     background_image: null,
 
-        },
-        'what_to_do_in_germany': {
+        // },
+        'party_germany': {
             position: 5,
             background_image: true,
 

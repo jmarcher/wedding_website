@@ -4,15 +4,15 @@ import LangDe from '../lang/de';
 
 export default class Lang {
     constructor() {
-        this.lang = Constants.DEFAULT_LOCALE;
+        this.lang = window.location.hostname ? (window.location.hostname == 'joaquinundrebecca.de' ? 'de' : 'es') : Constants.DEFAULT_LOCALE;
         this.setLocale(this.lang);
     }
 
-    getLocale(){
+    getLocale() {
         return this.lang;
     }
 
-    setLocale(locale = 'es'){
+    setLocale(locale = 'es') {
         this.lang = locale;
         this.data = LangEs;
         if (this.lang !== 'es') {
@@ -85,8 +85,8 @@ let transMixin = {
             li,
         };
     },
-    computed:{
-        get_locale(){
+    computed: {
+        get_locale() {
             return this.li.getLocale();
         }
     },
@@ -97,7 +97,7 @@ let transMixin = {
         trans_choice(key, replacements, count = null) {
             return this.li.getChoice(key, replacements, count);
         },
-        set_locale(locale = 'es'){
+        set_locale(locale = 'es') {
             this.li.setLocale(locale);
         },
     }
