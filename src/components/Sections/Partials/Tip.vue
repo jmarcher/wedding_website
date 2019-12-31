@@ -1,6 +1,6 @@
 <template>
     <div
-            class="box"
+            class="box is-radiusless-mobile"
             :style="cardStyle"
             @mouseover="startImageTransition"
             @mouseleave="stopImageTransition"

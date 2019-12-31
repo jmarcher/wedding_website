@@ -17,7 +17,7 @@ let sluggifyString = (string) => {
     return string;
 }
 export default class Tip {
-    constructor(key, images, links, country = 'uruguay') {
+    constructor(key, images = [], links = {}, country = 'uruguay') {
         this.data = {
             key,
             links,

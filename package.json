@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "cp -r ./src/assets ./public && vue-cli-service serve",
     "build": "vue-cli-service build && gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },

@@ -92,17 +92,26 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 .nav-container {
   z-index: 999;
   width: 100%;
   background-color: #fff;
 }
-span.has-cursor-pointer{
-    cursor: pointer;
+span.has-cursor-pointer {
+  cursor: pointer;
 }
 
 nav.level {
   padding: 10px;
+}
+.navbar.is-fixed-top {
+  width: 50%;
+  right: 0;
+  left: auto;
+  .navbar-menu{
+    background-color: #FFFFFFE8;
+    border-radius: 0.4rem;
+  }
 }
 </style>

@@ -2,9 +2,12 @@ import Position from './position';
 import Tip from './tip';
 import moment from 'moment';
 export default {
+    RSVP_DEADLINE: moment('2020-06-15T00:00:00Z'),
+    RSVP_DEADLINE_WARNING: 30, // Days
     DEFAULT_LOCALE: 'es',
     IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
-    API_PATH: 'https://api.joaquinundrebecca.de',
+    // API_PATH: 'https://api.joaquinundrebecca.de',
+    API_PATH: 'http://api.test',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     SECTION_SEPARATOR: '$separator$',
     FOOD_MENUS: ['meat', 'vegetarian'],
@@ -74,16 +77,7 @@ export default {
             position: 2,
             background_image: true,
             locations_tips: [
-                new Tip(
-                    'mercado_del_puerto',
-                    ['mercado_arriba', 'mercado_parrilla', 'mercado_fachada'],
-                    {
-                        wikipedia_es: 'https://es.wikipedia.org/wiki/Mercado_del_Puerto',
-                        wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
-                        gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
 
-                    }
-                ),
                 new Tip('quebrada_de_los_cuervos',
                     ['quebrada_de_los_cuervos_cascada', 'quebrada_de_los_cuervos_sendero', 'quebrada_de_los_cuervos_cabalgata'],
                     {
@@ -142,9 +136,22 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/La_Pedrera_(Rocha)',
                         gmaps: 'https://goo.gl/maps/eu375MCTBpHhA9Pg9',
                     }
-                )
+                ),
+                new Tip('salto_del_penitente'),
+                new Tip('piriapolis'),
+                new Tip('cabo_polonio'),
             ],
             restaurants_tips: [
+                new Tip(
+                    'mercado_del_puerto',
+                    ['mercado_arriba', 'mercado_parrilla', 'mercado_fachada'],
+                    {
+                        wikipedia_es: 'https://es.wikipedia.org/wiki/Mercado_del_Puerto',
+                        wikipedia_de: 'https://de.wikipedia.org/wiki/Mercado_del_Puerto',
+                        gmaps: 'https://goo.gl/maps/By6F5Cx8TLdrrQRc8',
+
+                    }
+                ),
                 new Tip('Rudy Burgers',
                     ['rudy_main', 'rudy_burgers'],
                     {
@@ -152,15 +159,24 @@ export default {
                     }),
                 new Tip('Jacinto', ['jacinto_front', 'jacinto_wall'], { gmaps: 'https://goo.gl/maps/HfmzFkiT6mSM5z5N8' }),
                 new Tip('La Fonda', ['lafonda_main'], { gmaps: "https://g.page/lafondauy?share" }),
-                new Tip('La cocina de Pedro', ['la_cocina_de_pedro_main'], { gmaps:'https://goo.gl/maps/FEXzZCQvb6zo6uSY8'}),
-                new Tip('Bar Arocena', ['bar_arocena_main'], { gmaps: 'https://goo.gl/maps/FGCAatMr5dJQVyfA7'}),
-                new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7'}),
-                new Tip('bardot'),
-                new Tip('el_club_del_pan'),
-                new Tip('sometimes_sunday_cafe'),
-                new Tip('the_puta_madre'),
+                new Tip('La cocina de Pedro', ['la_cocina_de_pedro_main'], { gmaps: 'https://goo.gl/maps/FEXzZCQvb6zo6uSY8' }),
+                new Tip('Bar Arocena', ['bar_arocena_main'], { gmaps: 'https://goo.gl/maps/FGCAatMr5dJQVyfA7' }),
+                new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7' }),
+                new Tip('bardot', ['bardot_main'], { gmaps: 'https://goo.gl/maps/kJcKxuFvdHxpJUEn7' }),
+                new Tip('el_club_del_pan', ['el_club_del_pan_main'], { gmaps: 'https://goo.gl/maps/cGSpTW38n2CJAVM39' }),
+                new Tip('sometimes_sunday_cafe', ['sometimes_sunday_main'], { gmaps: 'https://g.page/sometimessundaycafe?share' }),
+                new Tip('the_putamadre', ['the_puta_madre_main'], { gmaps: 'https://goo.gl/maps/drQVgwn5EA75JSoZ6' }),
             ],
-            activities_tips: [],
+            activities_tips: [
+                new Tip('tristan_narvaja'),
+                new Tip('karumbe'),
+                new Tip('surfen'),
+                new Tip('reiten'),
+                new Tip('keit'),
+                new Tip('museo_joaquin_torres_garcia'),
+                new Tip('teatro_solis'),
+
+            ],
         },
         // 'venue': {
         //     position: 3,

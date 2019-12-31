@@ -1,5 +1,11 @@
 <template>
   <form method="post" novalidate="true">
+    <article class="message is-warning" v-if="aboutToExpire">
+      <div class="message-body" v-text="trans('rsvp_is_about_to_expire')"></div>
+    </article>
+    <article class="message is-danger" v-if="expiredRSVP">
+      <div class="message-body" v-text="trans('rsvp_can_not_be_sent_anymore')"></div>
+    </article>
     <input-field
       v-model="main_guest"
       label="main_guest"
@@ -68,6 +74,7 @@ import RadioGroup from "../Fields/RadioGroup";
 import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
 import Swal from "sweetalert2";
+import moment from "moment";
 
 export default {
   name: "RsvpComponent",
@@ -78,6 +85,9 @@ export default {
   },
   data() {
     return {
+      aboutToExpire: false,
+      expiredRSVP: false,
+      servertime: null,
       formLoading: false,
       main_guest: null,
       email: null,
@@ -97,6 +107,9 @@ export default {
       this.notes = null;
     },
     sendForm() {
+      if (this.expiredRSVP) {
+        return;
+      }
       this.formLoading = true;
       window.axios
         .post(`${Constants.API_PATH}/guests`, {
@@ -120,11 +133,29 @@ export default {
           this.formLoading = false;
           Swal.fire({
             type: "error",
-            title: this.trans("form_sent_error"),
+            title: this.trans("form_sent_error")
             // timer: 2000
           });
         });
     }
+  },
+  created() {
+    window.axios
+      .get(`${Constants.API_PATH}/servertime`)
+      .then(({ data }) => {
+        this.servertime = moment(data.servertime);
+        if (this.servertime.isAfter(Constants.RSVP_DEADLINE)) {
+          this.expiredRSVP = true;
+        } else if (
+          Constants.RSVP_DEADLINE.diff(this.servertime, "days") <
+          Constants.RSVP_DEADLINE_WARNING
+        ) {
+          this.aboutToExpire = true;
+        }
+      })
+      .catch(() => {
+        this.servertime = moment();
+      });
   },
   computed: {
     menus() {
@@ -132,6 +163,7 @@ export default {
     },
     formIsComplete() {
       return (
+        !this.expiredRSVP &&
         this.main_guest !== null &&
         this.email !== null &&
         this.menu !== null &&

@@ -3,7 +3,7 @@
     <div class="content">
       <p v-html="this.introduction_text"></p>
     </div>
-    <h3 class="title is-3">{{ trans('tips') }}</h3>
+    <h4 class="title is-4">{{ trans('tips') }}</h4>
     <div class="tabs is-centered is-toggle">
       <ul>
         <li v-for="tab in tabs" :class="{'is-active':tab===activeTab}" @click="makeActiveTab(tab)" :key="tab">
