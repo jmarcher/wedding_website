@@ -11,7 +11,7 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong v-text="hotel.name"></strong>
+              <strong v-text="hotel.name"></strong> / 
               <small>{{ trans('distance', {distance: hotel.distance_to_venue}) }}</small>
               <br /><span class="is-size-5">{{ trans('price_from', {price: hotel.price_from}) }} &euro;</span>
             </p>
