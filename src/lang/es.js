@@ -1,7 +1,7 @@
 import Constants from '@/core/constants';
 export default {
     // Main hero
-    wedding_date: '2 de enero del 2021 | 17:30 | Finca Clara',
+    wedding_date: '2 de enero del 2021 | 17:30 Horas | Finca Clara',
 
     // Navbar
     about_us: 'Sobre nosotros',
@@ -26,7 +26,11 @@ export default {
     Las temperaturas en verano promedian los 18°C de mínima y 28°C con máxima absoluta de 42°C.
     `,
 
-
+    about_us_intro: `"Bienvenidos a todos a nuestra página, acá vas a encontrar información sobre nuestro casamiento.<br>
+    Creamos esta página para compartir de forma interactiva toda la información y detalles sobre la fiesta, destinos a visitar y asi facilitarles la estadía en Uruguay.<br>
+    Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br>
+Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor.<br>
+¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
 
     tips: 'Nuestras recomendaciones',
 
@@ -39,6 +43,10 @@ export default {
 
     // Uruguay
     // Lugares
+
+    piriapolis: 'Piriápolis',
+    piriapolis_description: 'Piriápolis es un balneario emblemático del departamento de Maldonado, situado entre el mar y los cerros y exhibiendo una arquitectura única para la zona.',
+
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',
     mercado_del_puerto_description: 'En el corazón de la Ciudad Vieja, frente a la rambla portuaria, el Mercado del Puerto es un clásico que invita a turistas y montevideanos a disfrutar de su entorno.',
@@ -81,7 +89,7 @@ export default {
     rudy_burgers_description: 'Es el lugar perfecto para los amantes de las hamburguesas, la carta del tamaño de una tarjeta de visita habla por si misma.',
 
     la_fonda: 'La Fonda',
-    la_fonda_description: '....',
+    la_fonda_description: 'Restaurante con cocina abierta abierto hasta altas horas de la noche, personal muy amable, un ambiente urbano y cómodo con comida casera.',
     
     the_putamadre: 'The Puta Madre Bar',
     the_putamadre_description: 'Este bar con un muy lindo ambiente en el cruce de Cordón, Palermo y Parque Rodó, muy buenos tragos y la posibilidad de bailar llegada la noche.',
@@ -115,7 +123,7 @@ export default {
     meat: 'Menú con carnes',
     vegetarian: 'Menú vegetariano',
 
-    notes: '¿Algo más que nos quieras decis?',
+    notes: '¿Algo más que nos quieras decir?',
     notes_placeholder: 'Mi acompañante es vegana',
     form_sent_successfully: 'RSVP fue enviado correctamente, ¡gracias!',
     form_sent_error: 'RSVP no pudo ser enviado, intentá más tarde.',
@@ -142,8 +150,8 @@ export default {
     cologne_germany: "Colonia, Alemania",
     proposal: 'Propuesta de matrimonio',
     wedding_day: 'Casamiento, festejo con ustedes',
-    canelones_uruguay: 'Canelones, Uruguay'
+    canelones_uruguay: 'Canelones, Uruguay',
 
 
-
+    intro_party_uruguay: '',
 };

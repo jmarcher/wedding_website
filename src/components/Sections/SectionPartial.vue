@@ -15,7 +15,11 @@
     </div>
     <div class="hero-body">
       <div class="container">
+        <slot name="header"></slot>
+        <div class="separator"><br></div>
         <slot></slot>
+        <div class="separator"><br></div>
+        <slot name="footer"></slot>
       </div>
     </div>
     <div class="hero-foot">

@@ -5,7 +5,14 @@
 // @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
-
+@import url("https://use.typekit.net/eef8zrz.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.is-text-highlighted {
+  font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+}
 // Update Bulma's global variables
 $family-sans-serif: "Alata", sans-serif;
 $dimensions: 16 24 32 48 64 96 128 256 512;

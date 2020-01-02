@@ -1,6 +1,6 @@
 <template>
   <div>
-    <countdown-component></countdown-component>
+    <!-- <countdown-component></countdown-component> -->
     <div class="columns">
       <div class="column">
         <hotels-component></hotels-component>

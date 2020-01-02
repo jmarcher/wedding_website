@@ -3,12 +3,22 @@
     <div class="content">
       <p v-html="this.introduction_text"></p>
     </div>
+    <div class="content">
+      <slot name="after_intro"></slot>
+    </div>
     <h4 class="title is-4">{{ trans('tips') }}</h4>
     <div class="tabs is-centered is-toggle">
       <ul>
-        <li v-for="tab in tabs" :class="{'is-active':tab===activeTab}" @click="makeActiveTab(tab)" :key="tab">
+        <li
+          v-for="tab in tabs"
+          :class="{'is-active':tab===activeTab}"
+          @click="makeActiveTab(tab)"
+          :key="tab"
+        >
           <a>
-            <span class="icon is-small is-marginless-mobile"><font-awesome-icon :icon="['fas', getIcon(tab)]" /></span>
+            <span class="icon is-small is-marginless-mobile">
+              <font-awesome-icon :icon="['fas', getIcon(tab)]" />
+            </span>
             <span class="is-hidden-mobile">{{ trans(`tips_${tab}`) }}</span>
           </a>
         </li>
@@ -18,20 +28,13 @@
     <div v-if="tips.length > 0">
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-3 is-parent" v-for="tip in  chunked" :key="tip.key">
-          <tip :tip="tip" :key="tip.key" ></tip>
+          <tip :tip="tip" :key="tip.key"></tip>
         </div>
       </div>
-      <!-- <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
-        <div class="tile is-8 is-parent" v-if="index % 2 === 0">
-          <tip :tip="chunked.shift()"></tip>
-        </div>
-        <div class="tile is-4 is-vertical is-parent">
-          <tip :tip="tip" :key="tip.key" v-for="tip in (((index % 2) === 0) ? chunked : chunked.take(2))"></tip>
-        </div>
-        <div class="tile is-8 is-parent" v-if="index % 2 !== 0">
-          <tip :tip="chunked.last()"></tip>
-        </div>
-      </div> -->
+    </div>
+
+    <div class="content">
+      <slot name="footer"></slot>
     </div>
   </div>
 </template>
@@ -60,31 +63,31 @@ export default {
     this.setTips();
   },
   computed: {
-    chunkedTips(){
-      let tips = collect(this.tips).filter((tip) => {
+    chunkedTips() {
+      let tips = collect(this.tips).filter(tip => {
         return tip.exists;
       });
 
-      if(tips.count() > 0){
+      if (tips.count() > 0) {
         return tips.chunk(CHUNK_SIZE);
       }
-      
+
       return collect();
     },
-    introduction_text(){
+    introduction_text() {
       return this.trans(`introduction_${this.country}`);
-    },
+    }
   },
   methods: {
     Collect: collect,
     getIcon(tab) {
       switch (tab) {
-        case 'locations':
-          return 'archway';
-        case 'restaurants':
-          return 'hamburger';
-        case 'activities':
-          return 'ticket-alt';
+        case "locations":
+          return "archway";
+        case "restaurants":
+          return "hamburger";
+        case "activities":
+          return "ticket-alt";
       }
     },
     makeActiveTab(tab) {
@@ -92,9 +95,9 @@ export default {
       this.setTips();
     },
     setTips() {
-      this.tips = Constants.SECTIONS[`party_${this.country}`][
-          `${this.activeTab}_tips`
-        ] || [];
+      this.tips =
+        Constants.SECTIONS[`party_${this.country}`][`${this.activeTab}_tips`] ||
+        [];
     }
   }
 };

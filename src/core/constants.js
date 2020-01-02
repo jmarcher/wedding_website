@@ -137,8 +137,12 @@ export default {
                         gmaps: 'https://goo.gl/maps/eu375MCTBpHhA9Pg9',
                     }
                 ),
-                new Tip('salto_del_penitente'),
-                new Tip('piriapolis'),
+                new Tip('salto_del_penitente_minas'),
+                new Tip('piriapolis', [
+                    'piriapolis_main'
+                ], {
+                    wikipedia_de: 'https://de.wikipedia.org/wiki/Piri%C3%A1polis', wikipedia_es: 'https://es.wikipedia.org/wiki/Piri%C3%A1polis', gmaps: 'https://goo.gl/maps/v1FE4CZrmfMsS5YG8'
+                }),
                 new Tip('cabo_polonio'),
             ],
             restaurants_tips: [
@@ -172,8 +176,11 @@ export default {
                 new Tip('karumbe'),
                 new Tip('surfen'),
                 new Tip('reiten'),
+                new Tip('cerro_de_montevideo'),
                 new Tip('keit'),
                 new Tip('museo_joaquin_torres_garcia'),
+                new Tip('museo_nacional_de_artes_visuales'),
+                new Tip('museo_artes_precolombino', [], { gmaps: 'https://g.page/MAPIMuseo?share'}),
                 new Tip('teatro_solis'),
 
             ],

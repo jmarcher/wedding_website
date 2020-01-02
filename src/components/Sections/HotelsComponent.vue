@@ -5,7 +5,7 @@
       <article class="media">
         <div class="media-left">
           <figure class="image is-1by1 is-128x128">
-            <img src="https://a.cdn-hotels.com/uswest2/da/assets/s/63.0.9757/images/common/core/dio/widget/1.gif" :style="`background-image: url('${hotel.image}');background-size: cover;background-position: center;`" class="hotel_picture" :alt="hotel.name" />
+            <img src="/assets/Clear.gif" :style="`background-image: url('${hotel.image}');background-size: cover;background-position: center;`" class="hotel_picture" />
           </figure>
         </div>
         <div class="media-content">
