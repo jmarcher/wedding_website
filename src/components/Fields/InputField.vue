@@ -1,36 +1,10 @@
 <template>
   <div class="field">
-    <input
-      v-if="this.type === 'checkbox'"
-      @change="updateModel"
-      class="is-checkradio"
-      :id="label"
-      :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}"
-      @focus="wasFocused=true"
-      :type="this.type"
-      v-model="value"
-      :checked="value"
-    />
+    <input v-if="this.type === 'checkbox'" @change="updateModel" class="is-checkradio" :id="label" :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}" @focus="wasFocused=true" :type="this.type" v-model="value" :checked="value" />
     <label class="label" :for="label">{{ trans(label) }}</label>
     <div class="control has-icons-left has-icons-right" v-if="this.fieldType">
-      <input
-        v-if="type !== 'textarea'"
-        class="input"
-        @input="updateModel"
-        :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}"
-        @focus="wasFocused=true"
-        :type="type || 'text'"
-        v-model="value"
-        :placeholder="placeholderTranslated || ''"
-      />
-      <textarea
-        v-if="type === 'textarea'"
-        class="textarea"
-        @input="updateModel"
-        :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}"
-        @focus="wasFocused=true"
-        :placeholder="placeholderTranslated || ''"
-      ></textarea>
+      <input v-if="type !== 'textarea'" class="input" @input="updateModel" @change="updateModel" @keyup="updateModel" :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}" @focus="wasFocused=true" :type="type || 'text'" v-model="value" :placeholder="placeholderTranslated || ''" />
+      <textarea v-if="type === 'textarea'" class="textarea" @input="updateModel" :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}" @focus="wasFocused=true" :placeholder="placeholderTranslated || ''"></textarea>
       <span class="icon is-small is-left" v-if="this.icon">
         <font-awesome-icon :icon="['fas', this.icon]"></font-awesome-icon>
       </span>
@@ -47,13 +21,24 @@
 
 <script>
 import { transMixin } from "../../core/lang";
+import * as bulmaTagsinput from 'bulma-tagsinput';
 
 export default {
   props: ["label", "type", "placeholder", "error", "icon", "validation"],
   name: "InputField",
   mixins: [transMixin],
+  mounted() {
+    setTimeout(() => {
+      if (!this.attached) {
+        bulmaTagsinput.attach();
+        this.attached = true;
+      }
+    }, 100);
+
+  },
   data() {
     return {
+      attached: false,
       wasFocused: false,
       value: this.type === "checkbox" ? false : "",
       validatables: this.validation || {}
@@ -101,6 +86,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

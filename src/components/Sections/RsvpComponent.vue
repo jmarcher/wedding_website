@@ -20,10 +20,10 @@
     />
     <input-field v-model="brings_plus_one" label="brings_plus_one" type="checkbox" icon="user"></input-field>
     <input-field
-      v-if="brings_plus_one"
+      v-show="brings_plus_one"
       v-model="plus_one_name"
       label="plus_one_name"
-      type="text"
+      type="tags"
       placeholder="plus_one_name_placeholder"
       error="plus_one_name_error"
       icon="user"
@@ -158,6 +158,19 @@ export default {
       });
   },
   computed: {
+    guests(){
+      let result = [];
+      if(this.main_guest){
+        result.push(this.main_guest);
+      }
+      if(this.plus_one_name){
+        let plusOnes = this.plus_one_name.split(',');
+        for (var index = plusOnes.length - 1; index >= 0; index--) {
+          result.push(plusOnes[index]);
+        }
+      }
+      return result;
+    },
     menus() {
       return Constants.FOOD_MENUS;
     },
@@ -174,5 +187,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 </style>
