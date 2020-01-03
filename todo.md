@@ -20,9 +20,15 @@
 - Poner el timeline del casamiento
 
 # Design
+- Agregar menú vegano y menú para niños
+- Preguntar per persona cuál menú (separados por comas)
 - en los tips arriba de las tarjetas poner unos tabs donde se puede cambiar de:
 Lugares /// Restaurantes /// Actividades
 
-- fotos mobile sin borde
+- fotos mobile sin borde;
+
+RSVP: Hinweis fuer Uruguay, evtl. zwei fuer Alemania. Absagemoglichkeit
+
+Konzept: Zielgruppe Deutschland und Uruguay in einer Internetseite oder zwei Plattformen
 - 
 

@@ -40,8 +40,8 @@
         },
         computed: {
             wikipediaLink() {
-                if(this.tip.links[`wikipedia_${Constants.DEFAULT_LOCALE}`]){
-                    return this.tip.links[`wikipedia_${Constants.DEFAULT_LOCALE}`];
+                if(this.tip.links[`wikipedia_${this.get_locale}`]){
+                    return this.tip.links[`wikipedia_${this.get_locale}`];
                 }
 
                 return false;

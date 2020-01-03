@@ -16,10 +16,10 @@
 // Update Bulma's global variables
 $family-sans-serif: "Alata", sans-serif;
 $dimensions: 16 24 32 48 64 96 128 256 512;
-// $pink: #FA7C91;
-// $tabs-toggle-link-active-background-color:$pink;
-// $tabs-toggle-link-active-border-color: darken($pink, 10%);
-// $primary: $pink;
+ $pink: #faab9b;
+$tabs-toggle-link-active-background-color:$pink;
+$tabs-toggle-link-active-border-color: darken($pink, 5%);
+$primary: $pink;
 
 @charset "utf-8";
 

@@ -26,11 +26,11 @@ export default {
     Las temperaturas en verano promedian los 18°C de mínima y 28°C con máxima absoluta de 42°C.
     `,
 
-    about_us_intro: `"Bienvenidos a todos a nuestra página, acá vas a encontrar información sobre nuestro casamiento.<br>
-    Creamos esta página para compartir de forma interactiva toda la información y detalles sobre la fiesta, destinos a visitar y asi facilitarles la estadía en Uruguay.<br>
-    Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br>
-Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor.<br>
-¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
+    about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
+    Creamos esta página para compartir de forma interactiva toda la información sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
+    Sobre la fiesta en Alemania publicaremos más información en el futuro.
+    <br>Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br><br>
+Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
 
     tips: 'Nuestras recomendaciones',
 
@@ -71,6 +71,22 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor.<br>
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
     quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
 
+    salto_del_penitente_minas: "Salto del penitente / Minas",
+    salto_del_penitente_minas_description: 'El salto del penitente',
+
+    cabo_polonio: 'Cabo Polonio',
+    cabo_polonio_description: '...',
+
+
+    /////// ------------------ ////
+    // Activities
+    tristan_narvaja: 'Feria de Tristán Narvaja',
+    tristan_narvaja_descripton: '....',
+
+    karumbe: 'Karumbé',
+    karumbe_description: 'Centro de rehabilitación de tortugas marinas, y protección de la biodiversidad uruguaya.',
+
+    //// -------------- /////// 
     //Restaurantes
     cerveceria_ramon: 'Cervecería Ramón',
     cerveceria_ramon_description: 'Una variedad de cervezas increíble, con sabores de todas partes del mundo, muy recomendable para los amantes de la cerveza artesanal.',
@@ -144,14 +160,37 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor.<br>
     timeline_end: 'Continuará...',
     first_time: "Primer encuentro",
     montevideo_uruguay: "Montevideo, Uruguay",
-    first_time_germany: "Primera vez Alemania",
+    first_time_germany: "Reencuentro en Alemania",
+    second_time_germany: "Año juntos en Alemania",
+    travel_uruguay: 'Año juntos en Uruguay',
     muenster_germany: 'Münster, Alemania',
-    new_appartment: "Nuevo apartamento juntos",
+    new_appartment: "Primer apartamento juntos",
     cologne_germany: "Colonia, Alemania",
     proposal: 'Propuesta de matrimonio',
-    wedding_day: 'Casamiento, festejo con ustedes',
+    wedding_day: 'Casamiento',
     canelones_uruguay: 'Canelones, Uruguay',
 
 
-    intro_party_uruguay: '',
+    intro_party_uruguay: `
+    
+    Para reservar vuelos a Montevideo (MVD) recomendamos usar Google Flights (www), porqué acá vas a ver los precios de los vuelos sin comisiones. Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'.
+    Atención: Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br>
+    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no hay posibilidad de hospedarse. 
+    Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo. También así podemos recibir el 2021 juntos en la capital. El camino en auto dura aproximamente 40 minutos.<br>
+    xxx Reservierungsinfokontingent Hotels xxx
+    xxx Transporte xxx
+
+    xxx Kleidung xxx festlich sommerlich xxx
+
+    xxx Organisation und Gastbeitraege, Konakte Familie und Trauzeuegn xxx 
+
+    xxx regalos: El mejor regalo para nosotros es festejar con ustedes. Pero si de todas formas tenés ganas de regalarnos algo, nos alegraríamos. xxx
+
+
+    
+
+
+
+    `,
+
 };

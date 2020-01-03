@@ -1,13 +1,14 @@
 import Position from './position';
 import Tip from './tip';
 import moment from 'moment';
+// const moment = {};
 export default {
     RSVP_DEADLINE: moment('2020-06-15T00:00:00Z'),
     RSVP_DEADLINE_WARNING: 30, // Days
     DEFAULT_LOCALE: 'es',
     IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
     // API_PATH: 'https://api.joaquinundrebecca.de',
-    API_PATH: 'http://api.test',
+    API_PATH: process.env.NODE_ENV !== 'production' ? 'http://api.test' : 'https://api.joaquinundrebecca.de',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     SECTION_SEPARATOR: '$separator$',
     FOOD_MENUS: ['meat', 'vegetarian'],
@@ -22,6 +23,18 @@ export default {
             date: moment("2013-08-05", "YYYY-MM-DD"),
             key: 'first_time_germany',
             location: 'muenster_germany',
+            position: new Position(51.952787, 7.611551),
+        },
+        {
+            date: moment("2014-08-01", "YYYY-MM-DD"),
+            key: 'second_time_germany',
+            location: 'cologne_germany',
+            position: new Position(51.952787, 7.611551),
+        },
+        {
+            date: moment("2015-08-07", "YYYY-MM-DD"),
+            key: 'travel_uruguay',
+            location: 'montevideo_uruguay',
             position: new Position(51.952787, 7.611551),
         },
         {
@@ -137,13 +150,29 @@ export default {
                         gmaps: 'https://goo.gl/maps/eu375MCTBpHhA9Pg9',
                     }
                 ),
-                new Tip('salto_del_penitente_minas'),
+                new Tip('salto_del_penitente_minas', [
+                    'minas_general',
+                    'salto_del_penitente_main',
+                ], {
+                        wikipedia_de:'https://de.wikipedia.org/wiki/Salto_del_Penitente',
+                        wikipedia_es:'https://es.wikipedia.org/wiki/Salto_del_Penitente',
+                        gmaps: 'https://goo.gl/maps/mN4wtpK6dskTe4g39'
+
+                }),
                 new Tip('piriapolis', [
                     'piriapolis_main'
                 ], {
-                    wikipedia_de: 'https://de.wikipedia.org/wiki/Piri%C3%A1polis', wikipedia_es: 'https://es.wikipedia.org/wiki/Piri%C3%A1polis', gmaps: 'https://goo.gl/maps/v1FE4CZrmfMsS5YG8'
+                    wikipedia_de: 'https://de.wikipedia.org/wiki/Piri%C3%A1polis',
+                    wikipedia_es: 'https://es.wikipedia.org/wiki/Piri%C3%A1polis',
+                    gmaps: 'https://goo.gl/maps/v1FE4CZrmfMsS5YG8'
                 }),
-                new Tip('cabo_polonio'),
+                new Tip('cabo_polonio', [
+                    'cabo_polonio_main',
+                ], {
+                    wikipedia_de: 'https://de.wikipedia.org/wiki/Cabo_Polonio',
+                    wikipedia_es: 'https://es.wikipedia.org/wiki/Cabo_Polonio',
+                    gmaps: 'https://goo.gl/maps/1vXLBajg7DdxXR5c8'
+                }),
             ],
             restaurants_tips: [
                 new Tip(
@@ -172,15 +201,19 @@ export default {
                 new Tip('the_putamadre', ['the_puta_madre_main'], { gmaps: 'https://goo.gl/maps/drQVgwn5EA75JSoZ6' }),
             ],
             activities_tips: [
-                new Tip('tristan_narvaja'),
-                new Tip('karumbe'),
+                new Tip('tristan_narvaja',[
+                    'tristan_narvaja_main'
+                ]),
+                new Tip('karumbe', [
+                    'karumbe_main'
+                ], { gmaps: 'https://goo.gl/maps/K9iQaZ3TjCxJdt5o6'}),
                 new Tip('surfen'),
                 new Tip('reiten'),
                 new Tip('cerro_de_montevideo'),
                 new Tip('keit'),
                 new Tip('museo_joaquin_torres_garcia'),
                 new Tip('museo_nacional_de_artes_visuales'),
-                new Tip('museo_artes_precolombino', [], { gmaps: 'https://g.page/MAPIMuseo?share'}),
+                new Tip('museo_artes_precolombino', [], { gmaps: 'https://g.page/MAPIMuseo?share' }),
                 new Tip('teatro_solis'),
 
             ],
