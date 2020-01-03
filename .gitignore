@@ -6,7 +6,7 @@
 # Recommended template: Node.gitignore
 
 node_modules/
-public/
+# public/
 npm-debug.log
 yarn-error.log
 

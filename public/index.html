@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Joaquín & Rebecca
+  </title>
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>wedding_vue</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but wedding_vue doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="main_app">
+
+    <section class="hero is-fullheight" id="hero">
+      <div class="hero-head">
+        <navbar-component></navbar-component>
+      </div>
+      <div class="hero-body has-text-centered">
+        <div class="container">
+          <h1 class="title is-size-xl">
+            Joaquín <span class="is-size-xl-1">&</span> Rebecca
+            <!-- Joaquín <br>
+                                <span class="icon is-rounded icon-and">&</span><br>
+                                Rebecca -->
+          </h1>
+          <h2 class="subtitle">
+            {{ trans('wedding_date') }}
+          </h2>
+          <!-- <a class="button is-outlined is-radiusless is-dark px-3" href="#rsvp">{{ trans('rsvp') }}</a> -->
+        </div>
+      </div>
+
+    </section>
+    <single-section-component key="about_us" position="1">
+      <about-us-component></about-us-component>
+    </single-section-component>
+    <single-section-component key="party_uruguay" position="2">
+      <venue-component></venue-component>
+      <div class="separator"><br></div>
+      <what-to-do country="uruguay"></what-to-do>
+      <template v-slot:header>
+        <div v-html="trans('intro_party_uruguay')" class="is-text-highlighted"></div>
+      </template>
+    </single-section-component>
+    <!--     <single-section-component key="venue" position="3">
+      
+    </single-section-component> -->
+    <single-section-component key="party_germany" position="4">
+      <what-to-do country="germany"></what-to-do>
+    </single-section-component>
+    <single-section-component key="rsvp" position="5">
+      <rsvp-component></rsvp-component>
+    </single-section-component>
+    <footer class="footer" id="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>
+            Joaquín & Rebecca
+          </strong>
+          by
+          <a href="mailto:joaquin@marcher.com.uy">
+            Joaquín Marcher
+          </a>
+          . The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">
+            MIT
+          </a>
+          . The website content
+          is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            CC BY NC SA 4.0
+          </a>
+          .
+        </p>
+      </div>
+    </footer>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
