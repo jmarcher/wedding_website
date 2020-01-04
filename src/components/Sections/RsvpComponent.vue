@@ -20,7 +20,7 @@
     />
     <input-field v-model="brings_plus_one" label="brings_plus_one" type="checkbox" icon="user"></input-field>
     <input-field
-      v-show="brings_plus_one"
+      v-if="brings_plus_one"
       v-model="plus_one_name"
       label="plus_one_name"
       type="tags"
@@ -44,7 +44,14 @@
             min:5,
         }"
     />
-    <radio-group :values="menus" name="menu" v-model="menu"></radio-group>
+    <radio-group
+      :values="menus"
+      :name="`menu_${key}`"
+      label="menu"
+      v-for="(guest, key) in guests"
+      :key="key"
+      :guest="guest"
+    ></radio-group>
     <input-field
       v-model="notes"
       label="notes"
@@ -73,12 +80,14 @@ import InputField from "../Fields/InputField";
 import RadioGroup from "../Fields/RadioGroup";
 import Constants from "../../core/constants";
 import { transMixin } from "../../core/lang";
+import { listenMixin } from "@/core/events";
+import { sluggifyString } from "@/core/tip";
 import Swal from "sweetalert2";
 import moment from "moment";
 
 export default {
   name: "RsvpComponent",
-  mixins: [transMixin],
+  mixins: [transMixin, listenMixin],
   components: {
     InputField,
     RadioGroup
@@ -94,10 +103,14 @@ export default {
       brings_plus_one: false,
       plus_one_name: null,
       menu: Constants.FOOD_MENUS[0],
-      notes: null
+      notes: null,
+      guestlist: {}
     };
   },
   methods: {
+    slug(string) {
+      return sluggifyString(string);
+    },
     cleanForm() {
       this.main_guest = null;
       this.email = null;
@@ -118,6 +131,7 @@ export default {
           plus_one_name: this.plus_one_name,
           email: this.email,
           menu: this.menu,
+          menus: this.guestlist,
           notes: this.notes
         })
         .then(() => {
@@ -127,7 +141,7 @@ export default {
             title: this.trans("form_sent_successfully"),
             timer: 2000
           });
-          this.cleanForm();
+          // this.cleanForm();
         })
         .catch(() => {
           this.formLoading = false;
@@ -156,17 +170,19 @@ export default {
       .catch(() => {
         this.servertime = moment();
       });
+
+    this.listen("menu_changed", ({ guest, value }) => {
+      this.guestlist[guest] = value;
+    });
   },
   computed: {
-    guests(){
-      let result = [];
-      if(this.main_guest){
-        result.push(this.main_guest);
-      }
-      if(this.plus_one_name){
-        let plusOnes = this.plus_one_name.split(',');
-        for (var index = plusOnes.length - 1; index >= 0; index--) {
-          result.push(plusOnes[index]);
+    guests() {
+      let result = {};
+      result["_mainguest"] = this.main_guest || null;
+      if (this.plus_one_name) {
+        let plusOnes = this.plus_one_name.split(",");
+        for (var index = 0; index <= plusOnes.length - 1; index++) {
+          result[this.slug(plusOnes[index])] = plusOnes[index];
         }
       }
       return result;

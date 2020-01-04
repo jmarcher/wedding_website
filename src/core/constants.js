@@ -11,7 +11,8 @@ export default {
     API_PATH: process.env.NODE_ENV !== 'production' ? 'http://api.test' : 'https://api.joaquinundrebecca.de',
     WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
     SECTION_SEPARATOR: '$separator$',
-    FOOD_MENUS: ['meat', 'vegetarian'],
+    FOOD_MENUS: ['meat', 'vegetarian', 'vegan', 'kids'],
+
     STORY: [
         {
             date: moment("2012-12-15", "YYYY-MM-DD"),
@@ -113,7 +114,9 @@ export default {
 
                     }
 
-                ), new Tip('punta_del_este',
+                ),
+
+                new Tip('punta_del_este',
                     [
                         'punta_del_este_horizonte',
                         'punta_del_este_casapueblo',
@@ -154,10 +157,17 @@ export default {
                     'minas_general',
                     'salto_del_penitente_main',
                 ], {
-                        wikipedia_de:'https://de.wikipedia.org/wiki/Salto_del_Penitente',
-                        wikipedia_es:'https://es.wikipedia.org/wiki/Salto_del_Penitente',
-                        gmaps: 'https://goo.gl/maps/mN4wtpK6dskTe4g39'
+                    wikipedia_de: 'https://de.wikipedia.org/wiki/Salto_del_Penitente',
+                    wikipedia_es: 'https://es.wikipedia.org/wiki/Salto_del_Penitente',
+                    gmaps: 'https://goo.gl/maps/mN4wtpK6dskTe4g39'
 
+                }),
+                new Tip('punta_del_diablo', [
+                    'punta_del_diablo_main'
+                ], {
+                    wikipedia_de: 'https://de.wikipedia.org/wiki/Punta_del_Diablo',
+                    wikipedia_es: 'https://es.wikipedia.org/wiki/Punta_del_Diablo',
+                    gmaps: 'https://goo.gl/maps/rteayuFDufvcTj6JA'
                 }),
                 new Tip('piriapolis', [
                     'piriapolis_main'
@@ -201,14 +211,18 @@ export default {
                 new Tip('the_putamadre', ['the_puta_madre_main'], { gmaps: 'https://goo.gl/maps/drQVgwn5EA75JSoZ6' }),
             ],
             activities_tips: [
-                new Tip('tristan_narvaja',[
+                new Tip('tristan_narvaja', [
                     'tristan_narvaja_main'
                 ]),
                 new Tip('karumbe', [
                     'karumbe_main'
-                ], { gmaps: 'https://goo.gl/maps/K9iQaZ3TjCxJdt5o6'}),
-                new Tip('surfen'),
-                new Tip('reiten'),
+                ], { gmaps: 'https://goo.gl/maps/K9iQaZ3TjCxJdt5o6' }),
+                new Tip('surfen',[
+                    'punta_del_diablo_surf',
+                ]),
+                new Tip('horse_riding', [
+                    
+                ]),
                 new Tip('cerro_de_montevideo'),
                 new Tip('keit'),
                 new Tip('museo_joaquin_torres_garcia'),
@@ -235,5 +249,8 @@ export default {
         },
 
     },
-
+    ICON_LINK: `
+     <span class="icon is-small is-marginless-mobile">
+    <svg data-v-35b2f07d="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-external-link-alt fa-w-16"><path data-v-35b2f07d="" fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" class=""></path></svg>
+    </span>`,
 };

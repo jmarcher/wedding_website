@@ -1,12 +1,14 @@
+// require('@/components/bootstrap');
 import Constants from '@/core/constants';
+
 export default {
     // Main hero
-    wedding_date: '2 de enero del 2021 | 17:30 Horas | Finca Clara',
+    wedding_date: '2 de enero de 2021 | 17:30 Horas | Finca Clara',
 
     // Navbar
     about_us: 'Sobre nosotros',
     party_uruguay: 'Fiesta Uruguay',
-    party_germany: 'Fiesta Alemania',
+    party_germany: 'Civil Alemania',
     rsvp: 'RSVP',
     venue: '¿Cómo llegar?',
 
@@ -14,7 +16,7 @@ export default {
     section_title_about_us: 'Sobre&nbsp;<span class="has-text-primary is-italic">Nosotros</span>',
     section_title_venue: '¿Cómo&nbsp;<span class="has-text-primary is-italic">llegar</span>?',
     section_title_party_uruguay: 'Fiesta&nbsp;<span class="has-text-primary is-italic">Uruguay</span>',
-    section_title_party_germany: 'Fiesta&nbsp;<span class="has-text-primary is-italic">Alemania</span>',
+    section_title_party_germany: 'Civil&nbsp;<span class="has-text-primary is-italic">Alemania</span>',
     section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
 
     recommended_hotels: 'Hoteles recomendados',
@@ -28,7 +30,7 @@ export default {
 
     about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
     Creamos esta página para compartir de forma interactiva toda la información sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
-    Sobre la fiesta en Alemania publicaremos más información en el futuro.
+    Sobre el civil en Alemania publicaremos más información en el futuro.
     <br>Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br><br>
 Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
 
@@ -72,19 +74,25 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
 
     salto_del_penitente_minas: "Salto del penitente / Minas",
-    salto_del_penitente_minas_description: 'El salto del penitente',
+    salto_del_penitente_minas_description: 'El salto del penitente es una pequeña catarata, el camino hacia ella es lo más disfrutable, Minas es una pequeña ciudad que mantiene el autenticismo de los pequeñas ciudades uruguayas.',
 
     cabo_polonio: 'Cabo Polonio',
-    cabo_polonio_description: '...',
+    cabo_polonio_description: 'Pueblo de pescadores que se mantiene al margen de la civilización, solo se puede entrar en viejos camiones, el pueblo se mantiene prácticamente sin electricidad.',
 
+    punta_del_diablo: 'Punta del diablo',
+    punta_del_diablo_description: 'Pueblo de pescadores a aprox. 300 Km de Montevideo y a solo 45 Km de la frontera con Brasil (Chuy), con hermosas playas y un ambiente muy juvenil.',
 
     /////// ------------------ ////
     // Activities
     tristan_narvaja: 'Feria de Tristán Narvaja',
-    tristan_narvaja_descripton: '....',
+    tristan_narvaja_descripton: 'Enorme mercado de pulgas que copa el barrio del cordón todos los domingos, se pueden encontrar cosas realmente sorprendentes.',
 
     karumbe: 'Karumbé',
     karumbe_description: 'Centro de rehabilitación de tortugas marinas, y protección de la biodiversidad uruguaya.',
+
+    surfen:'Surfeo',
+    surfen_description: 'Las playas de Rocha se prestan muy bien para surfear lugares como: Punta del Diablo, La Paloma y La Pedrera',
+    
 
     //// -------------- /////// 
     //Restaurantes
@@ -106,10 +114,10 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     la_fonda: 'La Fonda',
     la_fonda_description: 'Restaurante con cocina abierta abierto hasta altas horas de la noche, personal muy amable, un ambiente urbano y cómodo con comida casera.',
-    
+
     the_putamadre: 'The Puta Madre Bar',
     the_putamadre_description: 'Este bar con un muy lindo ambiente en el cruce de Cordón, Palermo y Parque Rodó, muy buenos tragos y la posibilidad de bailar llegada la noche.',
-    
+
     bardot: 'Bardot',
     bardot_description: 'Un lugar con un ambiente muy cálido, buena comida y atención muy buena, los precios no son de los más baratos pero muy rencomendable de igual forma',
 
@@ -135,9 +143,13 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     email_placeholder: 'jorge.lopez@example.com',
     email_error: 'El E-Mail no es correcto',
 
-    menu: 'Menú',
+    menu: 'Menú para: :for',
+    menu_you: 'Menú',
+    you: 'vos',
     meat: 'Menú con carnes',
     vegetarian: 'Menú vegetariano',
+    vegan: 'Menú vegano',
+    kids: 'Menú para niños',
 
     notes: '¿Algo más que nos quieras decir?',
     notes_placeholder: 'Mi acompañante es vegana',
@@ -173,24 +185,23 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     intro_party_uruguay: `
     
-    Para reservar vuelos a Montevideo (MVD) recomendamos usar Google Flights (www), porqué acá vas a ver los precios de los vuelos sin comisiones. Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'.
-    Atención: Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br>
-    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no hay posibilidad de hospedarse. 
-    Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo. También así podemos recibir el 2021 juntos en la capital. El camino en auto dura aproximamente 40 minutos.<br>
-    xxx Reservierungsinfokontingent Hotels xxx
+    Para reservar vuelos a Montevideo (MVD) recomendamos usar <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, acá vas a ver los precios de los vuelos sin comisiones. <!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
+    <article class="message is-info">
+        <div class="message-body">
+            Atención: Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).
+        </div>
+    </article>
+    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no es recomendable hospedarse, Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo.<br>
+    También así podemos recibir el 2021 juntos en la capital. El camino en auto desde el centro de Montevideo hasta Finca Clara dura aproximamente 40 minutos.<br>
+    <!-- xxx Reservierungsinfokontingent Hotels xxx
     xxx Transporte xxx
 
     xxx Kleidung xxx festlich sommerlich xxx
 
     xxx Organisation und Gastbeitraege, Konakte Familie und Trauzeuegn xxx 
 
-    xxx regalos: El mejor regalo para nosotros es festejar con ustedes. Pero si de todas formas tenés ganas de regalarnos algo, nos alegraríamos. xxx
-
-
-    
-
-
-
+    xxx regalos: El mejor regalo para nosotros es festejar con ustedes. Pero si de todas formas tenés ganas de regalarnos algo, nos alegraríamos. xxx -->
     `,
+    party_germany_disabled: `Próximamente daremos más información sobre el civil en Alemania`,
 
 };

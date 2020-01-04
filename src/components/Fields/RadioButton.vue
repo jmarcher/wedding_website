@@ -4,13 +4,13 @@
         class="is-checkradio"
         type="radio"
         :name="group"
-        :id="label"
+        :id="$vnode.key+label"
         :value="label"
         v-model="value"
         :checked="checked"
         @input="updateModel"
       />
-    <label :for="label">
+    <label :for="$vnode.key+label">
       {{ trans(label) }}
     </label>
   </span>

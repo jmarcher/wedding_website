@@ -14,7 +14,7 @@ import {
     faHamburger,
     faBiking,
     faTicketAlt,
-    faHeart
+    faHeart,
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faWikipediaW

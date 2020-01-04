@@ -1,4 +1,5 @@
-# wedding_vue
+# Wedding website
+
 
 ## Project setup
 ```

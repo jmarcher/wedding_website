@@ -8,7 +8,6 @@ require('./components/bootstrap');
 
 // Import scrollspy
 Vue.use(VueScrollActive);
-
 import {transMixin} from './core/lang';
 new Vue({
     el: '#main_app',

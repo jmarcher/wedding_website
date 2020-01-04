@@ -53,7 +53,13 @@
       
     </single-section-component> -->
     <single-section-component key="party_germany" position="4">
-      <what-to-do country="germany"></what-to-do>
+      <template v-slot:header>
+        <article class="message">
+          <div class="message-body" v-text="trans('party_germany_disabled')">
+          </div>
+        </article>
+      </template>
+      <what-to-do country="germany" :disabled="true"></what-to-do>
     </single-section-component>
     <single-section-component key="rsvp" position="5">
       <rsvp-component></rsvp-component>
@@ -65,7 +71,7 @@
             Joaquín & Rebecca
           </strong>
           by
-          <a href="mailto:joaquin@marcher.com.uy">
+          <a href="https://github.com/jmarcher/wedding_website" target="_blank"
             Joaquín Marcher
           </a>
           . The source code is licensed

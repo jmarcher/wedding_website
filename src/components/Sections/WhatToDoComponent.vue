@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="content">
+  <div v-if="!disabled">
+    <!-- <div class="content">
       <p v-html="this.introduction_text"></p>
-    </div>
+    </div> -->
     <div class="content">
       <slot name="after_intro"></slot>
     </div>
@@ -48,7 +48,7 @@ import collect from "collect.js";
 const CHUNK_SIZE = 4;
 
 export default {
-  props: ["country"],
+  props: ["country", 'disabled'],
   mixins: [transMixin],
   components: { Tip },
   data() {

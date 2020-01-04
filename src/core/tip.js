@@ -14,8 +14,9 @@ let sluggifyString = (string) => {
             string = string.replace(new RegExp(toBeReplaced, 'g'), replacement);
         }
     }
-    return string;
+    return string.toLowerCase();
 }
+export {sluggifyString};
 export default class Tip {
     constructor(key, images = [], links = {}, country = 'uruguay') {
         this.data = {
@@ -28,8 +29,7 @@ export default class Tip {
     }
 
     get key() {
-        return sluggifyString(this.data.key
-            .toLowerCase());
+        return sluggifyString(this.data.key);
     }
 
     get links() {

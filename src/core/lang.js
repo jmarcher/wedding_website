@@ -27,6 +27,7 @@ export default class Lang {
         let result = null;
         try {
             result = this.data[key];
+            result = result.replace('!icon-link!', Constants.ICON_LINK);
         } catch (e) {
             return key;
         }
