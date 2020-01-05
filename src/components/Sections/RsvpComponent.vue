@@ -6,6 +6,13 @@
     <article class="message is-danger" v-if="expiredRSVP">
       <div class="message-body" v-text="trans('rsvp_can_not_be_sent_anymore')"></div>
     </article>
+    <radio-group
+      :values="comming"
+      asist="true"
+      v-model="is_comming"
+      name="are_you_comming"
+      label="are_you_comming"
+    ></radio-group>
     <input-field
       v-model="main_guest"
       label="main_guest"
@@ -104,7 +111,9 @@ export default {
       plus_one_name: null,
       menu: Constants.FOOD_MENUS[0],
       notes: null,
-      guestlist: {}
+      guestlist: {},
+      is_comming: 'im_comming',
+      comming: ['im_comming', 'im_not_comming'],
     };
   },
   methods: {
@@ -126,6 +135,7 @@ export default {
       this.formLoading = true;
       window.axios
         .post(`${Constants.API_PATH}/guests`, {
+          is_comming: this.is_comming === 'is_comming',
           name: this.main_guest,
           brings_plus_one: this.brings_plus_one,
           plus_one_name: this.plus_one_name,

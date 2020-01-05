@@ -1,5 +1,6 @@
 import Position from './position';
 import Tip from './tip';
+import BestTip from './bestTip';
 import moment from 'moment';
 // const moment = {};
 export default {
@@ -93,7 +94,13 @@ export default {
             locations_tips: [
 
                 new Tip('quebrada_de_los_cuervos',
-                    ['quebrada_de_los_cuervos_cascada', 'quebrada_de_los_cuervos_sendero', 'quebrada_de_los_cuervos_cabalgata'],
+                    [
+                        'quebrada_de_los_cuervos_2',
+                        'quebrada_de_los_cuervos_3',
+                        'quebrada_de_los_cuervos_cascada',
+                        'quebrada_de_los_cuervos_sendero',
+                        'quebrada_de_los_cuervos_cabalgata'
+                    ],
                     {
                         wikipedia_es: 'https://es.wikipedia.org/wiki/Paisaje_protegido_Quebrada_de_los_Cuervos',
                         wikipedia_de: 'https://en.wikipedia.org/wiki/Quebrada_de_los_Cuervos',
@@ -146,6 +153,10 @@ export default {
                 ), new Tip('la_pedrera',
                     [
                         'la_pedrera_desplayado',
+                        'la_pedrera_2',
+                        'la_pedrera_3',
+                        'la_pedrera_4',
+                        'la_pedrera_5',
                     ],
                     {
                         wikipedia_es: 'https://es.wikipedia.org/wiki/La_Pedrera_(Rocha)',
@@ -178,6 +189,10 @@ export default {
                 }),
                 new Tip('cabo_polonio', [
                     'cabo_polonio_main',
+                    'cabo_polonio_3',
+                    'cabo_polonio_4',
+                    'cabo_polonio_5',
+                    'cabo_polonio_6'
                 ], {
                     wikipedia_de: 'https://de.wikipedia.org/wiki/Cabo_Polonio',
                     wikipedia_es: 'https://es.wikipedia.org/wiki/Cabo_Polonio',
@@ -185,7 +200,7 @@ export default {
                 }),
             ],
             restaurants_tips: [
-                new Tip(
+                new BestTip(
                     'mercado_del_puerto',
                     ['mercado_arriba', 'mercado_parrilla', 'mercado_fachada'],
                     {
@@ -200,10 +215,18 @@ export default {
                     {
                         gmaps: 'https://goo.gl/maps/pM5xfZmiQNNQFnzcA'
                     }),
+                new Tip('el_buen_suspiro', [
+                    'el_buen_suspiro_main',
+                    'el_buen_suspiro_2',
+                    'el_buen_suspiro_3',
+                    'el_buen_suspiro_4',
+                ], { gmaps: 'https://g.page/bardevinosypicadas?share' }, 'colonia_del_sacramento'),
                 new Tip('Jacinto', ['jacinto_front', 'jacinto_wall'], { gmaps: 'https://goo.gl/maps/HfmzFkiT6mSM5z5N8' }),
                 new Tip('La Fonda', ['lafonda_main'], { gmaps: "https://g.page/lafondauy?share" }),
                 new Tip('La cocina de Pedro', ['la_cocina_de_pedro_main'], { gmaps: 'https://goo.gl/maps/FEXzZCQvb6zo6uSY8' }),
                 new Tip('Bar Arocena', ['bar_arocena_main'], { gmaps: 'https://goo.gl/maps/FGCAatMr5dJQVyfA7' }),
+                new Tip('la_huella', ['la_huella_main'], { gmaps: 'https://g.page/paradorlahuella?share' }, 'jose_ignacio'),
+                new Tip('petisco', ['petisco_main'], { gmaps: 'https://goo.gl/maps/QX3Dmz818PVhqNt87' }, 'la_pedrera'),
                 new Tip('Cervecería Ramón', ['cerveceria_ramon_main'], { gmaps: 'https://goo.gl/maps/jvgYmjC65Q4KX9gZ7' }),
                 new Tip('bardot', ['bardot_main'], { gmaps: 'https://goo.gl/maps/kJcKxuFvdHxpJUEn7' }),
                 new Tip('el_club_del_pan', ['el_club_del_pan_main'], { gmaps: 'https://goo.gl/maps/cGSpTW38n2CJAVM39' }),
@@ -212,24 +235,31 @@ export default {
             ],
             activities_tips: [
                 new Tip('tristan_narvaja', [
-                    'tristan_narvaja_main'
+                    'tristan_narvaja_main',
+                    'tristan_narvaja_2'
                 ]),
                 new Tip('karumbe', [
                     'karumbe_main'
                 ], { gmaps: 'https://goo.gl/maps/K9iQaZ3TjCxJdt5o6' }),
-                new Tip('surfen',[
+                new Tip('surfen', [
                     'punta_del_diablo_surf',
                 ]),
                 new Tip('horse_riding', [
-                    
+                    'horse_riding_main',
+                    'horse_riding_2'
                 ]),
-                new Tip('cerro_de_montevideo'),
-                new Tip('keit'),
-                new Tip('museo_joaquin_torres_garcia'),
-                new Tip('museo_nacional_de_artes_visuales'),
-                new Tip('museo_artes_precolombino', [], { gmaps: 'https://g.page/MAPIMuseo?share' }),
-                new Tip('teatro_solis'),
-
+                new Tip('cerro_de_montevideo', ['cerro_de_montevideo_main']),
+                new Tip('keit', ['keit_main']),
+                new Tip('museo_joaquin_torres_garcia', ['museo_joaquin_torres_garcia_main']),
+                new Tip('museo_nacional_de_artes_visuales', ['museo_nacional_de_artes_visuales_main']),
+                new Tip('museo_artes_precolombino', ['museo_de_arte_precolombino_main'], { gmaps: 'https://g.page/MAPIMuseo?share' }),
+                new Tip('teatro_solis', ['teatro_solis_main', 'teatro_solis_2']),
+                new Tip('sinergia_design', ['sinergia_design_main']),
+                new Tip('wine_experience',['wine_experience_main']),
+                new Tip('carnaval', ['carnaval_main']),
+                new Tip('experience_gaucho',['experiencia_gaucho_main']),
+                new Tip('estadio_centenario', ['estadio_centenario_main']),
+                new Tip('rambla_de_montevideo', ['rambla_montevideo_main']),
             ],
         },
         // 'venue': {

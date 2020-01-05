@@ -15,6 +15,9 @@ import {
     faBiking,
     faTicketAlt,
     faHeart,
+    faAngleLeft,
+    faAngleRight,
+    faCertificate
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faWikipediaW
@@ -28,7 +31,7 @@ import {
 
 // Fontawesome
 library.add(
-    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt,faAngleLeft,faAngleRight, faCertificate
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

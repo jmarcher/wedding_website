@@ -3,7 +3,7 @@ import Constants from '@/core/constants';
 
 export default {
     // Main hero
-    wedding_date: '2 de enero de 2021 | 17:30 Horas | Finca Clara',
+    wedding_date: '2 de enero de 2021 | Finca Clara',
 
     // Navbar
     about_us: 'Sobre nosotros',
@@ -51,7 +51,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',
-    mercado_del_puerto_description: 'En el corazón de la Ciudad Vieja, frente a la rambla portuaria, el Mercado del Puerto es un clásico que invita a turistas y montevideanos a disfrutar de su entorno.',
+    mercado_del_puerto_description: 'Aquí se encuentra el clásico „Asado“ para ver, oler y obviamente comer. La antigüa terminal de trenes alberga muchísimos restaurantes, las innumerables clásicas opciones de carnes asadas en la tradicional parrilla uruguaya a cocina abierta. A la visita se le puede sumar una recorrida por la ciudad vieja de Montevideo',
 
     // Ciudad vieja
     ciudad_vieja: 'Ciudad vieja',
@@ -59,40 +59,78 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // La pedera
     la_pedrera: 'La Pedrera',
-    la_pedrera_description: 'La Pedrera es un balneario uruguayo en la costa del departamento de Rocha. Está ubicado sobre el océano Atlántico, a 230 km al este de Montevideo por la ruta 10.',
+    la_pedrera_description: 'La primera quincena de Enero es donde muchísimos jovenes Uruguayos pasan su verano y salir a bailar prácticamente todos los días. Los surfistas más avanzados pueden disfrutar de los grandes oleajes.',
 
     // Colonia del sacramento
-    colonia_del_sacramento: 'Colonia del sacramento',
-    colonia_del_sacramento_description: 'Es conocida por su Barrio Histórico con calles de adoquines rodeadas de edificios que datan de la época en que era un asentamiento portugués.',
+    colonia_del_sacramento: 'Colonia del Sacramento',
+    colonia_del_sacramento_description: 'Colonia del Sacramento es la ciudad más antigüa de Uruguay, fundada por los Portugueses. Desde Colonia del Sacramento se puede ir diariamente en Ferry a Buenos Aires.',
 
     // Punta del este
     punta_del_este: 'Punta del este',
-    punta_del_este_description: 'La popular playa Brava es conocida por su fuerte oleaje y por "La mano", una escultura gigante de 5 dedos. En la costa oeste, la playa Mansa tiene aguas tranquilas y poco profundas.',
+    punta_del_este_description:"Punta del Este el lugar de los ricos y famosos. Año tras año vienen personalidades internacionales, a una de sus islas (Isla Gorriti). En Punta del Este mismo hay muchísimos hoteles de lujo, fiestas, restaurantes y el famoso Casino Conrad. Uno puede ir fácilmente de compras o ir a la playa. A diferencia de los demás balnearios de Uruguay, Punta del Este está repleto de Hoteles.",
 
     // Quebrada de los cuervos
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
-    quebrada_de_los_cuervos_description: 'La Quebrada de los Cuervos es un accidente geográfico en forma de garganta, situada a 45 km de la ciudad de Treinta y Tres.',
+    quebrada_de_los_cuervos_description: 'Se trata de uno de los tantas reservas nacionales del país. Una caminata de tres horas nos lleva a la quebrada. También hay lugares para bañarse en el agua.',
 
-    salto_del_penitente_minas: "Salto del penitente / Minas",
-    salto_del_penitente_minas_description: 'El salto del penitente es una pequeña catarata, el camino hacia ella es lo más disfrutable, Minas es una pequeña ciudad que mantiene el autenticismo de los pequeñas ciudades uruguayas.',
+    salto_del_penitente_minas: "Minas / Salto del penitente",
+    salto_del_penitente_minas_description: 'En las afueras de la ciudad de Minas hay variados hoteles, como por ejemplo uno con vagones de tren transformados en cuartos de hotel. El salto del penitente es una pequeña catarata, el camino hacia ella es lo más disfrutable, Minas es una pequeña ciudad que mantiene el autenticismo de los pequeñas ciudades uruguayas.',
 
     cabo_polonio: 'Cabo Polonio',
-    cabo_polonio_description: 'Pueblo de pescadores que se mantiene al margen de la civilización, solo se puede entrar en viejos camiones, el pueblo se mantiene prácticamente sin electricidad.',
+    cabo_polonio_description: 'A este pueblo pescador solo es posible entrar en viejos caminones que pertenecían a los militares durante la dictadura, en un viaje de aprox. 15 minutos se llega a este pueblo pescador con ambiente hippie. En la reserva natural se pueden ver Ballenas Francas, Flamentos y Lobos Marinos a los pies del Faro entre otras muchas especies.',
 
     punta_del_diablo: 'Punta del diablo',
-    punta_del_diablo_description: 'Pueblo de pescadores a aprox. 300 Km de Montevideo y a solo 45 Km de la frontera con Brasil (Chuy), con hermosas playas y un ambiente muy juvenil.',
+    punta_del_diablo_description: 'Punta del Diablo es el paraíso para novatos del Surf. Además de su proximidad con la frontera Brasileña, cerca estan las reservas naturales de Santa Teresa y La Coronilla, en estas se pueden encontrar playas hermosas que se pueden recorrer a pie, en alguna de estas el baño está prohibido. En La Coronilla se encuentra la reserva de biodiversidad y tortugas Karumbé (ver Actividades).',
 
     /////// ------------------ ////
     // Activities
     tristan_narvaja: 'Feria de Tristán Narvaja',
-    tristan_narvaja_descripton: 'Enorme mercado de pulgas que copa el barrio del cordón todos los domingos, se pueden encontrar cosas realmente sorprendentes.',
+    tristan_narvaja_description: 'Enorme mercado de pulgas que copa el barrio del cordón todos los domingos, se pueden encontrar cosas realmente sorprendentes.',
 
     karumbe: 'Karumbé',
     karumbe_description: 'Centro de rehabilitación de tortugas marinas, y protección de la biodiversidad uruguaya.',
 
     surfen:'Surfeo',
     surfen_description: 'Las playas de Rocha se prestan muy bien para surfear lugares como: Punta del Diablo, La Paloma y La Pedrera',
+
+    horse_riding: 'Cabalgatas',
+    horse_riding_description: '...',
+
+    cerro_de_montevideo: 'Cerro de Montevideo',
+    cerro_de_montevideo_description: '...',
+
+    keit: 'Kitesurfing',
+    keit_description: '....',
+
+    museo_joaquin_torres_garcia: 'Museo Joaquín Torres García',
+    museo_joaquin_torres_garcia_description: '...',
+
+    museo_nacional_de_artes_visuales:'Museo nacional de artes visuales',
+    museo_nacional_de_artes_visuales_description: '....',
+
+    museo_artes_precolombino: 'Museo de arte precolombino',
+    museo_artes_precolombino_description: '...',
+
+    teatro_solis: 'Teatro Solís',
+    teatro_solis_description: '....',
     
+    sinergia_design: 'Sinergia Design',
+    sinergia_design_description: '....',
+
+    estadio_centenario: 'Estadio Centenario',
+    estadio_centenario_description: '...',
+
+    rambla_de_montevideo: 'Rambla de Montevideo',
+    rambla_de_montevideo_description: 'Rambla de Montevideo',
+    
+    carnaval: 'Carnaval',
+    carnaval_description: '...',
+
+    experience_gaucho: 'Experiencia Gaucho',
+    experience_gaucho_description: '...',
+    
+    wine_experience: 'Experiencia de Vino',
+    wine_experience_description: '...',
 
     //// -------------- /////// 
     //Restaurantes
@@ -107,7 +145,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     jacinto_description: 'Galardonado restaurante en plena ciudad vieja de Montevideo, una cocina atípica pero con una mezcla de sabores deslumbrante.',
 
     la_cocina_de_pedro: 'La cocina de Pedro',
-    la_cocina_de_pedro_description: 'A quién le gusten las carnes en un ambiente con restaurante romático y acogedor, la cocina de pedro es la elección perfecta para ellos.',
+    la_cocina_de_pedro_description: 'A quién le gusten las carnes en un ambiente con restaurante romántico y acogedor, la cocina de pedro es la elección perfecta para ellos.',
 
     rudy_burgers: 'Rudy Burgers',
     rudy_burgers_description: 'Es el lugar perfecto para los amantes de las hamburguesas, la carta del tamaño de una tarjeta de visita habla por si misma.',
@@ -127,6 +165,18 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     sometimes_sunday_cafe: 'Sometimes Sunday Café & Restaurante',
     sometimes_sunday_cafe_description: 'A pasitos del Mercado del puerto, una cafetería con un estilo nuevo, una pausa gastronómica para quienes recorren la ciudad vieja.',
 
+    el_buen_suspiro: 'El buen suspiro',
+    el_buen_suspiro_description: 'Es un pequeño restaurant hubicado en la histórica Calle de los Suspiros, con degustación de quesos y vinos y una atención de primera.',
+
+    petisco: 'Petisco',
+    petisco_description: 'Petisco es un restaurante con excelente comida y también cocktaisl, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche el lugar se transforma este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
+
+    la_huella: 'La Huella',
+    la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahi, mirar los precios antes¡',
+
+    jose_ignacio: "José Ignacio",
+    can_not_miss: '¡No puede faltar!',
+
 
     // RPSV
     main_guest: 'Tu nombre',
@@ -143,6 +193,10 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     email_placeholder: 'jorge.lopez@example.com',
     email_error: 'El E-Mail no es correcto',
 
+    are_you_comming: 'Confirmar asistencia',
+    im_comming: '¡Voy a estar ahi!',
+    im_not_comming: 'No voy a poder ir',
+
     menu: 'Menú para: :for',
     menu_you: 'Menú',
     you: 'vos',
@@ -152,7 +206,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     kids: 'Menú para niños',
 
     notes: '¿Algo más que nos quieras decir?',
-    notes_placeholder: 'Mi acompañante es vegana',
+    notes_placeholder: 'Mis tres canciones favoritas para la noche son: La Cucaracha,',
     form_sent_successfully: 'RSVP fue enviado correctamente, ¡gracias!',
     form_sent_error: 'RSVP no pudo ser enviado, intentá más tarde.',
     submit: 'Enviar',
@@ -186,11 +240,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     intro_party_uruguay: `
     
     Para reservar vuelos a Montevideo (MVD) recomendamos usar <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, acá vas a ver los precios de los vuelos sin comisiones. <!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
-    <article class="message is-info">
-        <div class="message-body">
-            Atención: Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).
-        </div>
-    </article>
+    <strong>Atención:</strong> Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br>
     La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no es recomendable hospedarse, Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo.<br>
     También así podemos recibir el 2021 juntos en la capital. El camino en auto desde el centro de Montevideo hasta Finca Clara dura aproximamente 40 minutos.<br>
     <!-- xxx Reservierungsinfokontingent Hotels xxx
@@ -204,4 +254,6 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     `,
     party_germany_disabled: `Próximamente daremos más información sobre el civil en Alemania`,
 
+    montevideo: 'Montevideo',
+    // colonia_del_sacramento: 'Colonia del Sacramento',
 };

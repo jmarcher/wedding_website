@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="field">
-      <label class="label" :for="name" v-text="!guest ? trans('menu_you') : trans(label,{for: guest || trans('you')})" />
+      <label
+        class="label"
+        :for="name"
+        v-text="!guest ? trans(asist ? label:'menu_you') : trans(label,{for: guest || trans('you')})"
+      />
       <div class="control">
         <radio-button
           v-for="v in values"
@@ -22,7 +26,7 @@ import RadioButton from "./RadioButton";
 import { transMixin } from "../../core/lang";
 import { triggerMixin } from "@/core/events";
 export default {
-  props: ["values", "name", "guest", "label"],
+  props: ["values", "name", "guest", "label", "asist"],
   name: "RadioGroup",
   components: { RadioButton },
   mixins: [transMixin, triggerMixin],
@@ -33,18 +37,22 @@ export default {
     };
   },
   mounted() {
-    this.trigger("menu_changed", {
-      guest: this.$vnode.key,
-      value: this.value
-    });
-  },
-  methods: {
-    updateModel() {
-      this.$emit("input", this.value);
+    if (this.$vnode.key) {
       this.trigger("menu_changed", {
         guest: this.$vnode.key,
         value: this.value
       });
+    }
+  },
+  methods: {
+    updateModel() {
+      this.$emit("input", this.value);
+      if (this.$vnode.key) {
+        this.trigger("menu_changed", {
+          guest: this.$vnode.key,
+          value: this.value
+        });
+      }
     }
   }
 };

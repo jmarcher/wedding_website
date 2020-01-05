@@ -18,10 +18,11 @@ let sluggifyString = (string) => {
 }
 export {sluggifyString};
 export default class Tip {
-    constructor(key, images = [], links = {}, country = 'uruguay') {
+    constructor(key, images = [], links = {}, city = 'montevideo', country = 'uruguay') {
         this.data = {
             key,
             links,
+            city,
             images: images && images.length > 0 ? images.map(image => {
                 return `/assets/images/sections/${country}/${image}.jpg`;
             }) : ['/assets/images/placeholder.jpg'],
@@ -43,4 +44,9 @@ export default class Tip {
     get exists() {
         return true;
     }
+    
+    get city() {
+        return this.data.city;
+    }
 }
+

@@ -3,11 +3,11 @@
     <h3 class="title is-4" v-text="trans('recommended_hotels')"></h3>
     <div class="box" v-for="hotel in hotels" :key="hotel.name">
       <article class="media">
-        <div class="media-left">
+        <!-- <div class="media-left">
           <figure class="image is-1by1 is-128x128">
             <img src="/assets/Clear.gif" :style="`background-image: url('${hotel.image}');background-size: cover;background-position: center;`" class="hotel_picture" />
           </figure>
-        </div>
+        </div> -->
         <div class="media-content">
           <div class="content">
             <p>
