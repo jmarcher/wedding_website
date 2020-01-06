@@ -169,7 +169,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     el_buen_suspiro_description: 'Es un pequeño restaurant hubicado en la histórica Calle de los Suspiros, con degustación de quesos y vinos y una atención de primera.',
 
     petisco: 'Petisco',
-    petisco_description: 'Petisco es un restaurante con excelente comida y también cocktails, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche el lugar este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
+    petisco_description: 'Petisco es un restaurante con excelente comida y también cocktails, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
 
     la_huella: 'La Huella',
     la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes¡',
