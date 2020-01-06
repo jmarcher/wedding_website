@@ -94,37 +94,37 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     surfen_description: 'Las playas de Rocha se prestan muy bien para surfear lugares como: Punta del Diablo, La Paloma y La Pedrera',
 
     horse_riding: 'Cabalgatas',
-    horse_riding_description: '...',
+    horse_riding_description: 'Si sos amante de los caballos y te gusta cabalgar, prácticamente en cualquier balneario vas a encontrar lugares para hacer cabalgatas, hay opciones libres o con un guía, como a vos más te guste.',
 
     cerro_de_montevideo: 'Cerro de Montevideo',
-    cerro_de_montevideo_description: '...',
+    cerro_de_montevideo_description: 'El Cerro tiene una altura de 135 metros. En su cima se encuentra la Fortaleza General Artigas, cuya construcción se finalizó en 1811 y que fue protagonista de importantes  momentos de la historia del país. Alberga un museo histórico militar y el primer faro del Río de la Plata. Excelente vista panorámica de la bahía de Montevideo.',
 
     keit: 'Kitesurfing',
     keit_description: '....',
 
     museo_joaquin_torres_garcia: 'Museo Joaquín Torres García',
-    museo_joaquin_torres_garcia_description: '...',
+    museo_joaquin_torres_garcia_description: 'Joaquín Torres García es el creador del universalismo constructivo, en Barcelona se amigó con Antonio Gaudí y junto con el diseñaron los vitrales de la catedral de Palma de Mallorca como también los de la Sagrada Familia.',
 
     museo_nacional_de_artes_visuales:'Museo nacional de artes visuales',
-    museo_nacional_de_artes_visuales_description: '....',
+    museo_nacional_de_artes_visuales_description: 'Alberga la mayor colección de pinturas y esculturas del Uruguay, con obras de Joaquín Torres García, Rafael Barradas, José Cuneo, Juan Manuel Blanes, entre otros. También posee obras de importantes artistas extranjeros como Pablo Picasso, Paul Klee, Goya, Eduardo Rosales, Pablo Serrano, entre otros.',
 
     museo_artes_precolombino: 'Museo de arte precolombino',
-    museo_artes_precolombino_description: '...',
+    museo_artes_precolombino_description: 'El MAPI -Museo de Arte Precolombino e Indígena- ofrece a los visitantes una exposición permanente de piezas arqueológicas y etnográficas pertenecientes a diferentes culturas originarias del continente americano.',
 
     teatro_solis: 'Teatro Solís',
-    teatro_solis_description: '....',
+    teatro_solis_description: 'Inaugurado en 1856. El teatro es uno de los escenarios más importantes del país, con una capacidad para 1.500 espectadores aproximadamente.',
     
     sinergia_design: 'Sinergia Design',
     sinergia_design_description: '....',
 
     estadio_centenario: 'Estadio Centenario',
-    estadio_centenario_description: '...',
+    estadio_centenario_description: 'Emblemático estadio sede, entre otros torneos, de la Copa Mundial de Fútbol de 1930, el Campeonato Sudamericano 1942, el Campeonato Sudamericano 1956, el Campeonato Sudamericano 1967 y la Copa América 1995, todos ganados por Uruguay.',
 
     rambla_de_montevideo: 'Rambla de Montevideo',
-    rambla_de_montevideo_description: 'Rambla de Montevideo',
+    rambla_de_montevideo_description: 'La Rambla de Montevideo es una prolongada avenida de 24 km de largo que bordea la costa del Río de la Plata, las zonas más recomendable son las de la Rambla República del Perú, Rambla Presidente Wilson y Rambla República de México, en esta última llegando a la Plaza de la armada se puede disfrutar de un hermoso atardecer.',
     
     carnaval: 'Carnaval',
-    carnaval_description: '...',
+    carnaval_description: 'Quien se quede hasta fines de enero puede vivir la emoción del carnaval uruguayo por lo general cae entre el 22 al 24 de enero.',
 
     experience_gaucho: 'Experiencia Gaucho',
     experience_gaucho_description: '...',
@@ -172,7 +172,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     petisco_description: 'Petisco es un restaurante con excelente comida y también cocktails, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
 
     la_huella: 'La Huella',
-    la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes¡',
+    la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes!',
 
     jose_ignacio: "José Ignacio",
     can_not_miss: '¡No puede faltar!',
