@@ -4,40 +4,60 @@ import {
     library
 } from '@fortawesome/fontawesome-svg-core';
 import {
-    faCheckCircle,
-    faEnvelope,
-    faTimesCircle,
-    faUser,
-    faMapMarkedAlt,
-    faAngleUp,
-    faArchway,
-    faHamburger,
-    faBiking,
-    faTicketAlt,
-    faHeart,
-    faAngleLeft,
-    faAngleRight,
+    faCheckCircle
+} from '@fortawesome/free-solid-svg-icons/faCheckCircle';
+import {
+    faEnvelope
+} from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import {
+    faTimesCircle
+} from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+import {
+    faUser
+} from '@fortawesome/free-solid-svg-icons/faUser';
+import {
+    faMapMarkedAlt
+} from '@fortawesome/free-solid-svg-icons/faMapMarkedAlt';
+import {
+    faAngleUp
+} from '@fortawesome/free-solid-svg-icons/faAngleUp';
+import {
+    faArchway
+} from '@fortawesome/free-solid-svg-icons/faArchway';
+import {
+    faHamburger
+} from '@fortawesome/free-solid-svg-icons/faHamburger';
+import {
+    faBiking
+} from '@fortawesome/free-solid-svg-icons/faBiking';
+import {
+    faTicketAlt
+} from '@fortawesome/free-solid-svg-icons/faTicketAlt';
+import {
+    faHeart
+} from '@fortawesome/free-solid-svg-icons/faHeart';
+import {
     faCertificate
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons/faCertificate';
 import {
     faWikipediaW
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons/faWikipediaW';
 import {
     FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome';
 
-// import Vue2TouchEvents from 'vue2-touch-events'
-// Vue.use(Vue2TouchEvents);
+
 
 // Fontawesome
 library.add(
-    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt,faAngleLeft,faAngleRight, faCertificate
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt, faCertificate
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
-
+// import Vue2TouchEvents from 'vue2-touch-events'
+// Vue.use(Vue2TouchEvents);
 // Directives
-Vue.directive('visible', function (el, binding) {
+Vue.directive('visible', function(el, binding) {
     el.style.visibility = binding.value ? 'visible' : 'hidden';
 });
 
@@ -52,4 +72,3 @@ Vue.component('about-us-component', require('./Sections/AboutUsComponent').defau
 Vue.component('rsvp-component', require('./Sections/RsvpComponent').default);
 Vue.component('what-to-do', require('./Sections/WhatToDoComponent.vue').default);
 Vue.component('venue-component', require('./Sections/VenueComponent').default);
-
