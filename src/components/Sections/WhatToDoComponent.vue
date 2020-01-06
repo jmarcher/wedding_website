@@ -5,10 +5,12 @@
       <div class="modal-content">
         <div class="level">
           <div class="level-left" @click="picture(-1)">
-            <font-awesome-icon icon="angle-left" v-if="hasMorePicturesLeft" />
+            <i class="arrow left" v-if="hasMorePicturesLeft" />
+            <!-- <font-awesome-icon icon="angle-left" v-if="hasMorePicturesLeft" /> -->
           </div>
           <div class="level-right" @click="picture(1)">
-            <font-awesome-icon icon="angle-right" v-if="hasMorePicturesRight" />
+            <i class="arrow right" v-if="hasMorePicturesRight" />
+            <!-- <font-awesome-icon icon="angle-right" v-if="hasMorePicturesRight" /> -->
           </div>
         </div>
         <p class="image">
@@ -26,12 +28,7 @@
     <h4 class="title is-4">{{ trans('tips') }}</h4>
     <div class="tabs is-centered is-toggle">
       <ul>
-        <li
-          v-for="tab in tabs"
-          :class="{'is-active':tab===activeTab}"
-          @click="makeActiveTab(tab)"
-          :key="tab"
-        >
+        <li v-for="tab in tabs" :class="{'is-active':tab===activeTab}" @click="makeActiveTab(tab)" :key="tab">
           <a>
             <span class="icon is-small is-marginless-mobile">
               <font-awesome-icon :icon="['fas', getIcon(tab)]" />
@@ -46,16 +43,10 @@
       <h5 class="title is-5"><font-awesome-icon icon="certificate" /> {{ trans('can_not_miss') }}</h5>
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-parent" :class="tileClass" v-for="tip in  chunked" :key="tip.key">
-          <tip
-            :tip="tip"
-            :key="tip.key"
-            @click.native="openModal(tip)"
-            :show_city="activeTab === 'restaurants'"
-          ></tip>
+          <tip :tip="tip" :key="tip.key" @click.native="openModal(tip)" :show_city="activeTab === 'restaurants'"></tip>
         </div>
       </div>
     </div>
-
     <div class="content">
       <slot name="footer"></slot>
     </div>
@@ -89,16 +80,22 @@ export default {
   created() {
     this.setTips();
     window.addEventListener("keydown", e => {
+      // Right arrow
       if (e.keyCode == 39) {
         this.picture(1);
       }
+      // Left arrow
       if (e.keyCode == 37) {
         this.picture(-1);
+      }
+      // escape key
+      if (e.keyCode == 27) {
+        this.closeModal();
       }
     });
   },
   computed: {
-    tileClass(){
+    tileClass() {
       return [`is-${12/CHUNK_SIZE}`];
     },
     hasMorePicturesLeft() {
@@ -170,8 +167,7 @@ export default {
     },
     setTips() {
       this.tips =
-        Constants.SECTIONS[`party_${this.country}`][`${this.activeTab}_tips`] ||
-        [];
+        Constants.SECTIONS[`party_${this.country}`][`${this.activeTab}_tips`] || [];
     }
   }
 };
@@ -195,8 +191,27 @@ export default {
         &right,
         &left {
           cursor: pointer;
+          margin-right: 1rem;
+          margin-left: 1rem;
         }
       }
+    }
+  }
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 30px;
+  &.arrow {
+    &.right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    &.left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
     }
   }
 }

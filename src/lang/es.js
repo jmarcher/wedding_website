@@ -24,8 +24,8 @@ export default {
     distance: ':distance km de Finca Clara',
     price_from: 'desde :price',
 
-    introduction_uruguay: `Uruguay es el tercer país más pequeño de América del Sur, después de Suriname y Trinidad y Tobago, tiene una población de aprox. 3.500.000 habitantes de los cuáles aprox. 2.000.000 viven en la capital Montevideo y el área metropolitana.<br/>
-    Las temperaturas en verano promedian los 18°C de mínima y 28°C con máxima absoluta de 42°C.
+    introduction_uruguay: `Uruguay es el tercer país más pequeño de América del Sur, después de Suriname y Trinidad y Tobago, tiene una población de aprox. 3.500.000 habitantes de los cuales aprox. 2.000.000 viven en la capital (Montevideo) y el área metropolitana.<br/>
+    Las temperaturas en verano oscilan entre 18°C y 28°C con una máxima absoluta histórica de 42°C.
     `,
 
     about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
@@ -51,7 +51,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',
-    mercado_del_puerto_description: 'Aquí se encuentra el clásico „Asado“ para ver, oler y obviamente comer. La antigüa terminal de trenes alberga muchísimos restaurantes, las innumerables clásicas opciones de carnes asadas en la tradicional parrilla uruguaya a cocina abierta. A la visita se le puede sumar una recorrida por la ciudad vieja de Montevideo',
+    mercado_del_puerto_description: 'Aquí se encuentra el clásico „Asado“ para ver, oler y obviamente comer. La antigua terminal de trenes alberga muchísimos restaurantes, las innumerables clásicas opciones de carnes asadas en la tradicional parrilla uruguaya a cocina abierta. A la visita se le puede sumar una recorrida por la ciudad vieja de Montevideo',
 
     // Ciudad vieja
     ciudad_vieja: 'Ciudad vieja',
@@ -59,28 +59,28 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // La pedera
     la_pedrera: 'La Pedrera',
-    la_pedrera_description: 'La primera quincena de Enero es donde muchísimos jovenes Uruguayos pasan su verano y salir a bailar prácticamente todos los días. Los surfistas más avanzados pueden disfrutar de los grandes oleajes.',
+    la_pedrera_description: 'La primera quincena de Enero es donde muchísimos jovenes Uruguayos pasan su verano y salen a bailar prácticamente todos los días. Los surfistas más avanzados pueden disfrutar de los grandes oleaje de la zona.',
 
     // Colonia del sacramento
     colonia_del_sacramento: 'Colonia del Sacramento',
-    colonia_del_sacramento_description: 'Colonia del Sacramento es la ciudad más antigüa de Uruguay, fundada por los Portugueses. Desde Colonia del Sacramento se puede ir diariamente en Ferry a Buenos Aires.',
+    colonia_del_sacramento_description: 'Colonia del Sacramento es la ciudad más antigua de Uruguay, fundada por los portugueses. Desde Colonia del Sacramento se puede ir diariamente en Ferry a Buenos Aires.',
 
     // Punta del este
     punta_del_este: 'Punta del este',
-    punta_del_este_description:"Punta del Este el lugar de los ricos y famosos. Año tras año vienen personalidades internacionales, a una de sus islas (Isla Gorriti). En Punta del Este mismo hay muchísimos hoteles de lujo, fiestas, restaurantes y el famoso Casino Conrad. Uno puede ir fácilmente de compras o ir a la playa. A diferencia de los demás balnearios de Uruguay, Punta del Este está repleto de Hoteles.",
+    punta_del_este_description:"Punta del Este el lugar de los ricos y famosos. Año tras año vienen personalidades internacionales, a una de sus islas (Isla Gorriti). En Punta del Este mismo hay muchísimos hoteles de lujo, fiestas, restaurantes y el famoso Casino Enjoy. Uno puede ir fácilmente de compras o ir a la playa. A diferencia de los demás balnearios de Uruguay, Punta del Este está repleto de Hoteles.",
 
     // Quebrada de los cuervos
     quebrada_de_los_cuervos: 'La Quebrada de los Cuervos',
-    quebrada_de_los_cuervos_description: 'Se trata de uno de los tantas reservas nacionales del país. Una caminata de tres horas nos lleva a la quebrada. También hay lugares para bañarse en el agua.',
+    quebrada_de_los_cuervos_description: 'Se trata de uno de las tantas reservas nacionales del país. Una caminata de tres horas nos lleva a la quebrada. También hay lugares para bañarse en el agua.',
 
     salto_del_penitente_minas: "Minas / Salto del penitente",
     salto_del_penitente_minas_description: 'En las afueras de la ciudad de Minas hay variados hoteles, como por ejemplo uno con vagones de tren transformados en cuartos de hotel. El salto del penitente es una pequeña catarata, el camino hacia ella es lo más disfrutable, Minas es una pequeña ciudad que mantiene el autenticismo de los pequeñas ciudades uruguayas.',
 
     cabo_polonio: 'Cabo Polonio',
-    cabo_polonio_description: 'A este pueblo pescador solo es posible entrar en viejos caminones que pertenecían a los militares durante la dictadura, en un viaje de aprox. 15 minutos se llega a este pueblo pescador con ambiente hippie. En la reserva natural se pueden ver Ballenas Francas, Flamentos y Lobos Marinos a los pies del Faro entre otras muchas especies.',
+    cabo_polonio_description: 'A este pueblo pescador sólo es posible entrar en viejos caminones que pertenecían a los militares durante la dictadura, en un viaje de aprox. 15 minutos se llega a este pueblo pescador con ambiente hippie. En la reserva natural se pueden ver Ballenas Francas, Flamencos y Lobos Marinos a los pies del Faro entre otras muchas especies.',
 
     punta_del_diablo: 'Punta del diablo',
-    punta_del_diablo_description: 'Punta del Diablo es el paraíso para novatos del Surf. Además de su proximidad con la frontera Brasileña, cerca estan las reservas naturales de Santa Teresa y La Coronilla, en estas se pueden encontrar playas hermosas que se pueden recorrer a pie, en alguna de estas el baño está prohibido. En La Coronilla se encuentra la reserva de biodiversidad y tortugas Karumbé (ver Actividades).',
+    punta_del_diablo_description: 'Punta del Diablo es el paraíso para novatos del Surf. Además de su proximidad con la frontera Brasileña, cerca están las reservas naturales de Santa Teresa y La Coronilla, en estas se pueden encontrar playas hermosas que se pueden recorrer a pie, en alguna de estas el baño está prohibido. En La Coronilla se encuentra la reserva de biodiversidad y tortugas Karumbé (ver Actividades).',
 
     /////// ------------------ ////
     // Activities
@@ -145,10 +145,10 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     jacinto_description: 'Galardonado restaurante en plena ciudad vieja de Montevideo, una cocina atípica pero con una mezcla de sabores deslumbrante.',
 
     la_cocina_de_pedro: 'La cocina de Pedro',
-    la_cocina_de_pedro_description: 'A quién le gusten las carnes en un ambiente con restaurante romántico y acogedor, la cocina de pedro es la elección perfecta para ellos.',
+    la_cocina_de_pedro_description: 'A quienes les gusten las carnes en un ambiente con restaurante romántico y acogedor, la cocina de pedro es la elección perfecta para ellos.',
 
     rudy_burgers: 'Rudy Burgers',
-    rudy_burgers_description: 'Es el lugar perfecto para los amantes de las hamburguesas, la carta del tamaño de una tarjeta de visita habla por si misma.',
+    rudy_burgers_description: 'Es el lugar perfecto para los amantes de las hamburguesas, la carta del tamaño de una tarjeta de visita habla por sí misma.',
 
     la_fonda: 'La Fonda',
     la_fonda_description: 'Restaurante con cocina abierta abierto hasta altas horas de la noche, personal muy amable, un ambiente urbano y cómodo con comida casera.',
@@ -169,10 +169,10 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     el_buen_suspiro_description: 'Es un pequeño restaurant hubicado en la histórica Calle de los Suspiros, con degustación de quesos y vinos y una atención de primera.',
 
     petisco: 'Petisco',
-    petisco_description: 'Petisco es un restaurante con excelente comida y también cocktaisl, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche el lugar se transforma este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
+    petisco_description: 'Petisco es un restaurante con excelente comida y también cocktails, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.',
 
     la_huella: 'La Huella',
-    la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahi, mirar los precios antes¡',
+    la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes¡',
 
     jose_ignacio: "José Ignacio",
     can_not_miss: '¡No puede faltar!',
@@ -194,7 +194,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     email_error: 'El E-Mail no es correcto',
 
     are_you_comming: 'Confirmar asistencia',
-    im_comming: '¡Voy a estar ahi!',
+    im_comming: '¡Voy a estar ahí!',
     im_not_comming: 'No voy a poder ir',
 
     menu: 'Menú para: :for',

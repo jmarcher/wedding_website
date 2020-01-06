@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import { transMixin } from "../../core/lang";
+import { transMixin } from "@/core/lang";
 import * as bulmaTagsinput from "bulma-tagsinput";
 
 export default {
