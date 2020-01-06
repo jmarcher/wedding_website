@@ -51,7 +51,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // Mercado el puerto
     mercado_del_puerto: 'Mercado del puerto',
-    mercado_del_puerto_description: 'Aquí se encuentra el clásico „Asado“ para ver, oler y obviamente comer. La antigüa terminal de trenes alberga muchísimos restaurantes, las innumerables clásicas opciones de carnes asadas en la tradicional parrilla uruguaya a cocina abierta. A la visita se le puede sumar una recorrida por la ciudad vieja de Montevideo',
+    mercado_del_puerto_description: 'Aquí se encuentra el clásico „Asado“ para ver, oler y obviamente comer. La antigua terminal de trenes alberga muchísimos restaurantes, las innumerables clásicas opciones de carnes asadas en la tradicional parrilla uruguaya a cocina abierta. A la visita se le puede sumar una recorrida por la ciudad vieja de Montevideo',
 
     // Ciudad vieja
     ciudad_vieja: 'Ciudad vieja',
@@ -63,7 +63,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     // Colonia del sacramento
     colonia_del_sacramento: 'Colonia del Sacramento',
-    colonia_del_sacramento_description: 'Colonia del Sacramento es la ciudad más antigüa de Uruguay, fundada por los portugueses. Desde Colonia del Sacramento se puede ir diariamente en Ferry a Buenos Aires.',
+    colonia_del_sacramento_description: 'Colonia del Sacramento es la ciudad más antigua de Uruguay, fundada por los portugueses. Desde Colonia del Sacramento se puede ir diariamente en Ferry a Buenos Aires.',
 
     // Punta del este
     punta_del_este: 'Punta del este',
