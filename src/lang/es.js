@@ -29,7 +29,7 @@ export default {
     `,
 
     about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
-    Creamos esta página para compartir de forma interactiva toda la información sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
+    Creamos esta página para compartir de forma interactiva todo lo relevante sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
     Sobre el civil en Alemania publicaremos más información en el futuro.
     <br>Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br><br>
 Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
@@ -100,7 +100,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     cerro_de_montevideo_description: 'El Cerro tiene una altura de 135 metros. En su cima se encuentra la Fortaleza General Artigas, cuya construcción se finalizó en 1811 y que fue protagonista de importantes  momentos de la historia del país. Alberga un museo histórico militar y el primer faro del Río de la Plata. Excelente vista panorámica de la bahía de Montevideo.',
 
     keit: 'Kitesurfing',
-    keit_description: '....',
+    keit_description: 'En verano ',
 
     museo_joaquin_torres_garcia: 'Museo Joaquín Torres García',
     museo_joaquin_torres_garcia_description: 'Joaquín Torres García es el creador del universalismo constructivo, en Barcelona se amigó con Antonio Gaudí y junto con el diseñaron los vitrales de la catedral de Palma de Mallorca como también los de la Sagrada Familia.',
@@ -115,7 +115,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     teatro_solis_description: 'Inaugurado en 1856. El teatro es uno de los escenarios más importantes del país, con una capacidad para 1.500 espectadores aproximadamente.',
     
     sinergia_design: 'Sinergia Design',
-    sinergia_design_description: '....',
+    sinergia_design_description: 'A metros de la terminal de Tres Cruces, Sinergia Design es un espacio que reune arte con restaurantes y también con moda.',
 
     estadio_centenario: 'Estadio Centenario',
     estadio_centenario_description: 'Emblemático estadio sede, entre otros torneos, de la Copa Mundial de Fútbol de 1930, el Campeonato Sudamericano 1942, el Campeonato Sudamericano 1956, el Campeonato Sudamericano 1967 y la Copa América 1995, todos ganados por Uruguay.',
@@ -127,10 +127,10 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     carnaval_description: 'Quien se quede hasta fines de enero puede vivir la emoción del carnaval uruguayo por lo general cae entre el 22 al 24 de enero.',
 
     experience_gaucho: 'Experiencia Gaucho',
-    experience_gaucho_description: '...',
+    experience_gaucho_description: 'En diversos puntos del país se pueden encontrar chacras turísticas en las cuales se puede hacer tanto una corta visita como también hospedarse por unas noches y así vivir una experiencia criolla.',
     
     wine_experience: 'Experiencia de Vino',
-    wine_experience_description: '...',
+    wine_experience_description: 'Por los alrededores de Montevideo se encuentran numerosos e internacionalmente galardonados viñedos en donde una visita no puede faltar.',
 
     //// -------------- /////// 
     //Restaurantes
@@ -175,6 +175,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     la_huella_description: 'Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes!',
 
     jose_ignacio: "José Ignacio",
+
     can_not_miss: '¡No puede faltar!',
 
 
@@ -206,7 +207,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     kids: 'Menú para niños',
 
     notes: '¿Algo más que nos quieras decir?',
-    notes_placeholder: 'Mis tres canciones favoritas para la noche son: La Cucaracha,',
+    notes_placeholder: 'Mis tres canciones favoritas para la noche son: La Cucaracha',
     form_sent_successfully: 'RSVP fue enviado correctamente, ¡gracias!',
     form_sent_error: 'RSVP no pudo ser enviado, intentá más tarde.',
     submit: 'Enviar',

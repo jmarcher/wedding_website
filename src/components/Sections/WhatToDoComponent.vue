@@ -2,8 +2,9 @@
   <div v-if="!disabled">
     <div class="modal" :class="{'is-active': isModalOpen}">
       <div class="modal-background" @click="closeModal"></div>
+      <!-- v-touch:swipe.left="picture(-1)" v-touch:swipe.right="picture(1)" -->
       <div class="modal-content">
-        <div class="level">
+        <div class="level is-hidden-mobile">
           <div class="level-left" @click="picture(-1)">
             <i class="arrow left" v-if="hasMorePicturesLeft" />
             <!-- <font-awesome-icon icon="angle-left" v-if="hasMorePicturesLeft" /> -->
@@ -144,6 +145,7 @@ export default {
       this.trigger("modal_close");
     },
     picture(offset) {
+      this.trigger('moved');
       if (
         (offset == -1 && this.hasMorePicturesLeft) ||
         (offset == 1 && this.hasMorePicturesRight)

@@ -54,8 +54,7 @@ library.add(
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
-// import Vue2TouchEvents from 'vue2-touch-events'
-// Vue.use(Vue2TouchEvents);
+
 // Directives
 Vue.directive('visible', function(el, binding) {
     el.style.visibility = binding.value ? 'visible' : 'hidden';

@@ -4,7 +4,7 @@ import BestTip from './bestTip';
 import moment from 'moment';
 // const moment = {};
 export default {
-    RSVP_DEADLINE: moment('2020-06-15T00:00:00Z'),
+    RSVP_DEADLINE: moment('2020-09-01T00:00:00Z'),
     RSVP_DEADLINE_WARNING: 30, // Days
     DEFAULT_LOCALE: 'es',
     IMAGE_PLACEHOLDER: '/images/placeholder.jpg',
@@ -138,7 +138,7 @@ export default {
                     }
 
                 ),
-                new Tip('ciudad_vieja',
+                new BestTip('ciudad_vieja',
                     [
                         'ciudad_vieja_puerta',
                         'ciudad_vieja_cerrito',
@@ -150,7 +150,7 @@ export default {
                         wikipedia_de: 'https://de.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)',
                         gmaps: 'https://goo.gl/maps/cyFtLVfKWvBL92fP6',
                     }
-                ), new Tip('la_pedrera',
+                ), new BestTip('la_pedrera',
                     [
                         'la_pedrera_desplayado',
                         'la_pedrera_2',
@@ -187,7 +187,7 @@ export default {
                     wikipedia_es: 'https://es.wikipedia.org/wiki/Piri%C3%A1polis',
                     gmaps: 'https://goo.gl/maps/v1FE4CZrmfMsS5YG8'
                 }),
-                new Tip('cabo_polonio', [
+                new BestTip('cabo_polonio', [
                     'cabo_polonio_main',
                     'cabo_polonio_3',
                     'cabo_polonio_4',
@@ -234,7 +234,7 @@ export default {
                 new Tip('the_putamadre', ['the_puta_madre_main'], { gmaps: 'https://goo.gl/maps/drQVgwn5EA75JSoZ6' }),
             ],
             activities_tips: [
-                new Tip('tristan_narvaja', [
+                new BestTip('tristan_narvaja', [
                     'tristan_narvaja_main',
                     'tristan_narvaja_2'
                 ]),
@@ -249,7 +249,7 @@ export default {
                     'horse_riding_2'
                 ]),
                 new Tip('cerro_de_montevideo', ['cerro_de_montevideo_main']),
-                new Tip('keit', ['keit_main']),
+                // new Tip('keit', ['keit_main']),
                 new Tip('museo_joaquin_torres_garcia', ['museo_joaquin_torres_garcia_main']),
                 new Tip('museo_nacional_de_artes_visuales', ['museo_nacional_de_artes_visuales_main']),
                 new Tip('museo_artes_precolombino', ['museo_de_arte_precolombino_main'], { gmaps: 'https://g.page/MAPIMuseo?share' }),
@@ -257,16 +257,11 @@ export default {
                 new Tip('sinergia_design', ['sinergia_design_main']),
                 new Tip('wine_experience',['wine_experience_main']),
                 new Tip('carnaval', ['carnaval_main']),
-                new Tip('experience_gaucho',['experiencia_gaucho_main']),
-                new Tip('estadio_centenario', ['estadio_centenario_main']),
-                new Tip('rambla_de_montevideo', ['rambla_montevideo_main']),
+                new BestTip('experience_gaucho',['experiencia_gaucho_main']),
+                new BestTip('estadio_centenario', ['estadio_centenario_main']),
+                new BestTip('rambla_de_montevideo', ['rambla_montevideo_main']),
             ],
         },
-        // 'venue': {
-        //     position: 3,
-        //     background_image: null,
-
-        // },
         'party_germany': {
             position: 5,
             background_image: true,
