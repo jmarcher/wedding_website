@@ -1,31 +1,41 @@
 <template>
-  <div
+  <lazy-background
+    class="box is-radiusless-mobile"
+    :src="actualPicture"
+    @mouseover.native="startImageTransition"
+    @mouseleave.native="stopImageTransition"
+  >
+    <div slot="content">
+      <!--   <div
     class="box is-radiusless-mobile"
     :style="cardStyle"
     
-    @mouseover="startImageTransition"
-    @mouseleave="stopImageTransition"
-  >
-
-    <!-- v-touch:swipe.right="rightPicture" -->
-    <!-- v-touch:swipe.left="leftPicture" -->
-    <p class="title has-text-light">{{ trans(tip.key) }} <font-awesome-icon icon="certificate" class="has-text-light is-size-5" v-if="this.tip.isBestTip" /></p>
-    <h6 class="subtitle has-text-light is-6" v-if="show_city" v-text="trans(this.tip.city)"></h6>
     
-    <p
-      v-html="trans(`${this.tip.key}_description`)"
-      class="tile-text has-text-light"
-      v-visible="this.timer"
-    ></p>
-    <p class="links buttons" v-visible="this.timer">
-      <a v-if="wikipediaLink" :href="wikipediaLink" target="_blank" class="button">
-        <font-awesome-icon :icon="['fab', 'wikipedia-w']" />
-      </a>
-      <a v-if="googleMapsLink" :href="googleMapsLink" target="_blank" class="button">
-        <font-awesome-icon :icon="['fas', 'map-marked-alt']" />
-      </a>
-    </p>
-  </div>
+      >-->
+
+      <!-- v-touch:swipe.right="rightPicture" -->
+      <!-- v-touch:swipe.left="leftPicture" -->
+      <p class="title has-text-light">
+        {{ trans(tip.key) }}
+        <font-awesome-icon icon="certificate" class="has-text-light" v-if="this.tip.isBestTip" />
+      </p>
+      <h6 class="subtitle has-text-light is-6" v-if="show_city" v-text="trans(this.tip.city)"></h6>
+
+      <p
+        v-html="trans(`${this.tip.key}_description`)"
+        class="tile-text has-text-light"
+        v-visible="this.timer"
+      ></p>
+      <p class="links buttons" v-visible="this.timer">
+        <a v-if="wikipediaLink" :href="wikipediaLink" target="_blank" class="button">
+          <font-awesome-icon :icon="['fab', 'wikipedia-w']" />
+        </a>
+        <a v-if="googleMapsLink" :href="googleMapsLink" target="_blank" class="button">
+          <font-awesome-icon :icon="['fas', 'map-marked-alt']" />
+        </a>
+      </p>
+    </div>
+  </lazy-background>
 </template>
 
 <script>
@@ -39,7 +49,7 @@ export default {
   data() {
     return {
       actualPictureIndex: 0,
-      timer: null,
+      timer: null
     };
   },
   created() {
@@ -67,7 +77,6 @@ export default {
     }
   },
   methods: {
-
     leftPicture() {
       if (this.actualPictureIndex >= this.tip.images.length - 1) {
         this.actualPictureIndex = 0;
