@@ -15,7 +15,7 @@
           </div>
         </div>
         <p class="image">
-          <img class="has-ratio" :src="activeModalPicture" />
+          <img class="has-ratio" :src="activeModalPicture" v-touch:swipe="swipePicture" />
         </p>
       </div>
       <button class="modal-close is-large" @click.prevent="closeModal" aria-label="close"></button>
@@ -133,6 +133,11 @@ export default {
     }
   },
   methods: {
+    swipePicture(){
+      return (direction) => {
+        this.trigger(direction);
+      }
+    },
     openModal(tip) {
       this.isModalOpen = true;
       this.activeModalTip = tip;
