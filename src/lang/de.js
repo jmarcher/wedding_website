@@ -7,8 +7,8 @@ export default {
 
   // Navbar
   about_us: "Über uns",
-  party_uruguay: "Feier Uruguay",
-  party_germany: "Standesamt Alemania",
+  party_uruguay: "Hochzeitsfeier Uruguay",
+  party_germany: "Standesamtliche Trauung Deutschland",
   rsvp: "RSVP",
   venue: "¿Wie komm ich hin?",
 
@@ -26,8 +26,8 @@ export default {
 
   recommended_hotels: "Hotels, die wir empfehlen",
   venue_location: "Standort der Hochzeitsfeier",
-  distance: ":distance km de Finca Clara",
-  price_from: "desde :price",
+  distance: ":distance km von Finca Clara entfernt",
+  price_from: "ab :price",
 
   introduction_uruguay: `Uruguay es el tercer país más pequeño de América del Sur, después de Suriname y Trinidad y Tobago, tiene una población de aprox. 3.500.000 habitantes de los cuales aprox. 2.000.000 viven en la capital (Montevideo) y el área metropolitana.<br/>
     Las temperaturas en verano oscilan entre 18°C y 28°C con una máxima absoluta histórica de 42°C.
@@ -37,10 +37,10 @@ export default {
 zukommen lassen. Darüber hinaus würden wir euch gerne den Aufenthalt in Uruguay erleichtern, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
 Mit der Zeit wird es hier noch weitere Informationen geben. Die wichtigsten Details der Feier werden euch aber auch noch persönlich, in Papierform erreichen.
 
-Infos zur standesamtlichen Trauung folgen ebenfalls hier auf der Internetseite. 
+Infos zur standesamtlichen Trauung werden ebenfalls hier folgen. 
 
-Schaut euch also gerne ein bisschen um, wir hoffen es gefällt euch. Nicht vergessen - zusagen!
-Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unterstützung und das bisherige Mitfiebern. Wir sind aufgeregt und freuen uns riesig unsere Hochzeit mit unseren Lieblingsmenschen zu feiern!"`,
+Schaut euch also gerne ein bisschen um, wir hoffen es gefällt euch. Nicht vergessen: Zusagen!
+Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unterstützung und das bisherige Mitfiebern. Wir sind schon ganz aufgeregt und freuen uns riesig unsere Hochzeit mit unseren Lieblingsmenschen zu feiern!"`,
 
   tips: "Unsere Empfehlungen",
 
@@ -59,7 +59,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   // Mercado del puerto
   mercado_del_puerto: "Mercado del puerto",
   mercado_del_puerto_description: `Hier kannst du das klassische "Asado" (Grillen) bestaunen, riechen und natürlich probieren. Die antike Bahnstation beherbergt 
- zahlreiche Restaurants, mit unzähligen tollen Optionen von auf dem traditionellen, uruguayischen Holzkohlegrill zubereitetem Fleisch. Mit dem Besuch des 'Mercado del puerto' lässt sich ein Besuch der Altstadt von Montevideo verbinden.`,
+ zahlreiche Restaurants, die eine große Variation von schmackhaftem Fleisch auf dem traditionellen uruguayischen Holzkohlegrill zubereiten. Mit dem Besuch des 'Mercado del puerto' lässt sich ein Besuch der Altstadt von Montevideo verbinden.`,
 
   // Ciudad vieja
   ciudad_vieja: "Ciudad vieja",
@@ -94,7 +94,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   cabo_polonio_description:
     "Das Fischerdorf ist nur über einen organisierten Transport in alten Militärfahrzeugen durch den Nationalpark Cabo Polonio zu erreichen. Nach einer ca. 15-minütigen Fahrt erreicht man das Fischerdorf mit Hippieflair. Neben Flamingos und Walen lebt eine Seelöwenkolonie das ganze Jahr am Fuße des Leuchtturms.",
 
-  punta_del_diablo: "Punta del diablo",
+  punta_del_diablo: "Punta del Diablo",
   punta_del_diablo_description:
     "Punta del Diablo ist ein Paradies für Surfanfänger*innen. Neben der Nähe zu brasilianischen Grenze gibt es noch das Naturschutzgebiet Santa Teresa und La Coronilla, in denen man wunderschöne Strände zu Fuß entdecken kann. Das Baden ist hier jedoch teilweise verständlicherweise verboten. Auch die Tierschutzorganisation Karumbe ist hier zu finden (s. Aktivitäten).",
 
@@ -106,11 +106,11 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   karumbe: "Karumbé",
   karumbe_description:
-    "Karumbe ist eine NGO, die sich für die Rehabilitation von Meeresschildkröten sowie den Schutz der uruguayischen Biodiversität einsetzt.",
+    "Karumbe ist eine NGO, die sich für die Rehabilitation von Meeresschildkröten sowie den Schutz der uruguayischen Biodiversität einsetzt. Wenn du Glück hast, darfst du den Mitarbeiter*innen nach einer kleinen Wanderung am Strand bei der Arbeit zusehen.",
 
   surfen: "Surfen",
   surfen_description:
-    "Die Strände von Rocha eignen sich sehr gut zum Surfen: Punta del Diablo, La Paloma y La Pedrera",
+    "Die Strände von Rocha eignen sich sehr gut zum Surfen: Punta del Diablo, La Paloma sowie La Pedrera",
 
   horse_riding: "Ausritte",
   horse_riding_description:
@@ -153,7 +153,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   carnaval: "Karneval und Uruguay",
   carnaval_description:
-    "Wer bis Ende Januar bleiben sollte, kann die den längsten Karneval der Welt kennenlernen (Normalereweise startet er zwischen dem 22. und 24. Januar).",
+    "Wer bis Ende Januar bleiben sollte, kann den längsten Karneval der Welt kennenlernen (Normalereweise startet er zwischen dem 22. und 24. Januar).",
 
   experience_gaucho: "Gauchos und Uruguay",
   experience_gaucho_description:
@@ -167,16 +167,16 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   //Restaurantes
   cerveceria_ramon: "Cervecería Ramón",
   cerveceria_ramon_description:
-    "Una variedad de cervezas increíble, con sabores de todas partes del mundo, muy recomendable para los amantes de la cerveza artesanal.",
+    "Eine Vielzahl an unglaublichen Bieren aus aller Welt wird geboten. Für Craft-Beer-Liebhaber*innen empfohlen!",
 
   // Bar arocena
   bar_arocena: "Bar Arocena",
   bar_arocena_description:
-    "El Bar Arocena es conseiderado uno de los lugares más auténticos para comer un típico chivito uruguayo, una visita es más que merecida.",
+    "Die Bar Arocena ist einer der authentischsten Orte, um einen 'Chivito' zu essen. Ein Besuch lohnt sich auf jeden Fall.",
 
   jacinto: "Jacinto",
   jacinto_description:
-    "Galardonado restaurante en plena ciudad vieja de Montevideo, una cocina atípica pero con una mezcla de sabores deslumbrante.",
+    "Preisgekröntes Restaurant inmitten der Altstadt, ausgefallene Küche mit atemberaubendem Geschmack.",
 
   la_cocina_de_pedro: "La cocina de Pedro",
   la_cocina_de_pedro_description:
@@ -192,35 +192,35 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   the_putamadre: "The Puta Madre Bar",
   the_putamadre_description:
-    "Este bar con un muy lindo ambiente en el cruce de Cordón, Palermo y Parque Rodó, muy buenos tragos y la posibilidad de bailar llegada la noche.",
+    "Mega Bar in der Nähe der Viertel Cordón, Palermo y Parque Rodó. Sehr gute Cocktails und zu späterer Stunde wird getanzt.",
 
   bardot: "Bardot",
   bardot_description:
-    "Un lugar con un ambiente muy cálido, buena comida y atención muy buena, los precios no son de los más baratos pero muy rencomendable de igual forma",
+    "Ein gemütliches Restaurant mit gutem Essen und sehr nettem Personal. Die Preise sind nicht die günstigsten, aber es lohnt sich!",
 
   el_club_del_pan: "Club del pan",
   el_club_del_pan_description:
-    "Quien quiera un café bien preparado (raro en Uruguay), puede desayunar o merendar acá y luego salir a caminar por la rambla, ubicado en pleno Parque Rodó.",
+    "Wer die uruguaische Seltenheit, einen gut zubereiteten Kaffee, genießen möchte, kann zum Frühstück oder Nachmittagskäffchen hierherkommen. Anschließend kann an der Rambla oder durch den Parque Rodo spaziert werden.",
 
   sometimes_sunday_cafe: "Sometimes Sunday Café & Restaurante",
   sometimes_sunday_cafe_description:
-    "A pasitos del Mercado del puerto, una cafetería con un estilo nuevo, una pausa gastronómica para quienes recorren la ciudad vieja.",
+    "Einige Schritte entfernt vom 'Mercado del puerto' befindet sich dieses hippe kleine Cafe.",
 
   el_buen_suspiro: "El buen suspiro",
   el_buen_suspiro_description:
-    "Es un pequeño restaurant hubicado en la histórica Calle de los Suspiros, con degustación de quesos y vinos y una atención de primera.",
+    "Ein kleines Restaurant in der ältesten Strasse Uruguays. Du kannst Weine und Käse aus Uruguay in stilvoller, gemütlicher Atmosphäre probieren. Sehr nette Kellner*innen.",
 
   petisco: "Petisco",
   petisco_description:
-    "Petisco es un restaurante con excelente comida y también cocktails, directo en el centro del balneario La Pedrera. Hace años que uno de los amigos del liceo de Joaquín trabaja como chef en la temporada alta. En la noche este restaurante con ambiente hippie de buen gusto se transforma en un Bar donde conocidos Djs de la zona hacen su música.",
+    "Petisco ist ein Restaurant mit exzellentem Essen sowie Cocktails, direkt im Zentrum des Badeortes La Pedrera gelegen. Seit Jahren ist Joaquins bester Freund aus Schulzeiten der Küchenchef für die Hauptsaison. Abends verwandelt sich das geschmackvoll eingerichtete hippe Restaurant in eine Bar, in der auch regelmäßig DJ`s auflegen.",
 
   la_huella: "La Huella",
   la_huella_description:
-    "Quien quiera vivir la experiencia de comida galardonada en Uruguay, debe ir al restaurante „La Huella“ en José Ignacio. Este restaurante fue catalogado como uno de los 22 mejores restaurante de 2019 en sudamérica. Comida simpre y ambiente simple es el concepto. -¡Nunca fuimos a comer ahí, mirar los precios antes!",
+    "Wer in Uruguay besonders ausgezeichnete Gastronomie erleben möchte, sollte das Restaurant ‚La Huella‘ in Jose Ignacio besuchen. Das Restaurant wurde 2019 zum 22. besten Restaurant in ganz Südamerika gewählt. Simples Essen in simplem Ambiente ist das Konzept. Wie waren selbst noch nie da. Checkt vorher die Preise!",
 
   jose_ignacio: "José Ignacio",
 
-  can_not_miss: "¡Ich darf nicht fehlen!",
+  can_not_miss: "Ich darf nicht fehlen!",
 
   // RSVP
   main_guest: "Dein Name",
@@ -241,22 +241,22 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   im_comming: "Ich bin dabei!",
   im_not_comming: "Ich kann leider nicht kommen.",
 
-  menu: "Menú para: :for",
-  menu_you: "Gericht für",
+  menu: "Essensauswahl für: :for",
+  menu_you: "Essensauswahl",
   you: "dich",
   meat: "Fleischgericht",
   vegetarian: "Vegetarisches Gericht",
   vegan: "Veganes Gericht",
   kids: "Kinderportion",
 
-  notes: "Gibt es etwas, dass du uns noch mitteilen möchtest?",
+  notes: "Gibt es etwas, das du uns noch mitteilen oder fragen möchtest?",
   notes_placeholder:
     "Drei Lieder, zu denen ich das Tanzbein schwingen würde: La Cucaracha",
   form_sent_successfully: "RSVP wurde gesendet, danke!",
   form_sent_error:
     "RSVP konnte nicht gesendet werden, probier es bitte zu einem späteren Zeitpunkt noch einmal.",
   submit: "Senden",
-  rsvp_is_about_to_expire: `Es bleiben nur noch wenige ${Constants.RSVP_DEADLINE_WARNING} Tage, um das Formular zu versenden.`,
+  rsvp_is_about_to_expire: `Es bleiben nur noch ${Constants.RSVP_DEADLINE_WARNING} Tage, um das Formular zu versenden.`,
   rsvp_can_not_be_sent_anymore:
     "Das spätmöglichste Datum, um das Formular versenden zu können wurde leider überschritten. Bitte nutze einen der oben aufgeführten Kontakte.",
 
@@ -285,20 +285,21 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   intro_party_uruguay: `
     
-    Para reservar vuelos a Montevideo (MVD) recomendamos usar <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, acá vas a ver los precios de los vuelos sin comisiones. <!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
-    <strong>Atención:</strong> Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br>
-    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no es recomendable hospedarse, Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo.<br>
-    También así podemos recibir el 2021 juntos en la capital. El camino en auto desde el centro de Montevideo hasta Finca Clara dura aproximamente 40 minutos.<br>
-    <!-- xxx Reservierungsinfokontingent Hotels xxx
-    xxx Transporte xxx
+    Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Steuern angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
+    <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum).<br>
+    Die Feier findet in der Finca Clara statt. In der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfeheln in Montevideo zu übernachten.<br>
+    Die Autofahrt (Uber, Taxi...) aus dem Zentrum von Montevideo dauert ca. 40 Minuten.<br>
 
-    xxx Kleidung xxx festlich sommerlich xxx
+    Falls jemand Hilfe beim Buchen der Hotels benötigt, gebt uns Bescheid. / Kontingent
 
-    xxx Organisation und Gastbeitraege, Konakte Familie und Trauzeuegn xxx 
+    xxx Kleidung xxx sommerlich elegant xxx
 
-    xxx regalos: El mejor regalo para nosotros es festejar con ustedes. Pero si de todas formas tenés ganas de regalarnos algo, nos alegraríamos. xxx -->
+    xxx Organisation und Gastbeiträge xxx
+                                              Konakt: Familie und Trauzeugen
+
+    
     `,
-  party_germany_disabled: `Próximamente daremos más información sobre el civil en Alemania`,
+  party_germany_disabled: `Bald erhälst du hier erste Informationen zur Standesamtlichen Trauung in Deutschland.`,
 
   montevideo: "Montevideo"
   // colonia_del_sacramento: 'Colonia del Sacramento',

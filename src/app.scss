@@ -49,10 +49,15 @@ $primary: $pink;
 
   h1 {
     font-family: "Bebas Neue", cursive;
-    word-spacing: 10px;
-    letter-spacing: 6px;
+    word-spacing: 1rem;
+    letter-spacing: 0.45rem;
     text-shadow: 1px 1px 5px #010101;
     color: #f9f7e7;
+
+    &.is-hidden-tablet {
+      word-spacing: normal;
+      letter-spacing: normal;
+    }
   }
 
   h2 {

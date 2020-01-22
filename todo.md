@@ -42,3 +42,9 @@ preguntar a los gurises quien puede hospedar a alguien.
 - https://www.booking.com/hotel/uy/dazzler-montevideo.de.html?aid=356932&label=metagha-link-mapresultsDE-hotel-274973_dev-desktop_los-1_bw-29_dow-Monday_defdate-1_room-0_lang-de_curr-EUR_gstadt-2_rateid-0_aud-0_cid-_gacid-6626064167&sid=06b4209858e940f41d7cb56e945c676a&all_sr_blocks=55450711_89181918_2_1_0&checkin=2020-02-03&checkout=2020-02-04&dest_id=-907764&dest_type=city&group_adults=2&group_children=0&hapos=2&highlighted_blocks=55450711_89181918_2_1_0&hpos=2&nflt=popular_nearby_landmarks%3D248875%3Bpri%3D2%3Bht_id%3D204%3B&no_rooms=1&sr_order=popularity&sr_pri_blocks=55450711_89181918_2_1_0__7480&srepoch=1578257751&srpvid=d868932bccc8002a&ucfs=1&from=searchresults;highlight_room=#map_closed
 
 
+# Traducciones que faltan
+
+- Rudys
+- la cocina de pedro
+- la fonda
+<!-- - MEn -->

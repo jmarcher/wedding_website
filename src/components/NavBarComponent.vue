@@ -51,6 +51,19 @@
         role="navigation"
         aria-label="main navigation"
       >
+        <p class="level-item has-text-centered">
+          <span
+            @click.prevent="set_locale('es')"
+            class="has-cursor-pointer"
+            :class="getClassesLocale('es')"
+          >ES</span> |
+          <span
+            @click.prevent="set_locale('de')"
+            class="has-cursor-pointer"
+            :class="getClassesLocale('de')"
+          >DE</span>
+        </p>
+        <p>&nbsp;</p>
         <p class="has-text-centered" v-for="item in sections" :key="item">
           <a
             v-if="item !== '$separator$'"
@@ -109,8 +122,8 @@ nav.level {
   width: 50%;
   right: 0;
   left: auto;
-  .navbar-menu{
-    background-color: #FFFFFFE8;
+  .navbar-menu {
+    background-color: #ffffffe8;
     border-radius: 0.4rem;
   }
 }
