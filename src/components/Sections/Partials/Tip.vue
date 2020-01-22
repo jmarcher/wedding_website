@@ -6,15 +6,6 @@
     @mouseleave.native="stopImageTransition"
   >
     <div slot="content">
-      <!--   <div
-    class="box is-radiusless-mobile"
-    :style="cardStyle"
-    
-    
-      >-->
-
-      <!-- v-touch:swipe.right="rightPicture" -->
-      <!-- v-touch:swipe.left="leftPicture" -->
       <p class="title has-text-light">
         {{ trans(tip.key) }}
         <font-awesome-icon icon="certificate" class="has-text-light" v-if="this.tip.isBestTip" />
@@ -33,6 +24,9 @@
         <a v-if="googleMapsLink" :href="googleMapsLink" target="_blank" class="button">
           <font-awesome-icon :icon="['fas', 'map-marked-alt']" />
         </a>
+        <button v-if="hasMultiplePictures" @click.prevent="openModal()" target="_blank" class="button">
+          <font-awesome-icon :icon="['fas', 'images']" />
+        </button>
       </p>
     </div>
   </lazy-background>
@@ -41,11 +35,12 @@
 <script>
 import Constants from "@/core/constants";
 import { transMixin } from "@/core/lang";
+import { triggerMixin } from '@/core/events';
 
 export default {
   name: "Tip",
   props: ["tip", "show_city"],
-  mixins: [transMixin],
+  mixins: [transMixin, triggerMixin],
   data() {
     return {
       actualPictureIndex: 0,
@@ -62,6 +57,9 @@ export default {
       }
 
       return false;
+    },
+    hasMultiplePictures(){
+      return this.tip.images && this.tip.images.length > 0;
     },
     googleMapsLink() {
       return this.tip.links["gmaps"];
@@ -99,6 +97,9 @@ export default {
           this.timer = true;
         }
       }
+    },
+    openModal(){
+      this.trigger('open_modal', this.tip);
     },
     preloadImages() {},
     stopImageTransition() {

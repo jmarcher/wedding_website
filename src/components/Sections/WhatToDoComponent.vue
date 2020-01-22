@@ -3,19 +3,19 @@
     <div class="modal" :class="{'is-active': isModalOpen}">
       <div class="modal-background" @click="closeModal"></div>
       <!--  -->
-      <div class="modal-content" v-touch:swipe.left="picture(-1, 'swipe')"  v-touch:swipe.right="picture(1, 'swipe')">
+      <div class="modal-content" v-touch:swipe="swipePicture">
         <div class="level is-hidden-mobile">
-          <div class="level-left" @click="picture(-1, 'click')">
+          <div class="level-left" @click="picture(-1)">
             <i class="arrow left" v-if="hasMorePicturesLeft" />
             <!-- <font-awesome-icon icon="angle-left" v-if="hasMorePicturesLeft" /> -->
           </div>
-          <div class="level-right" @click="picture(1, 'click')">
+          <div class="level-right" @click="picture(1)">
             <i class="arrow right" v-if="hasMorePicturesRight" />
             <!-- <font-awesome-icon icon="angle-right" v-if="hasMorePicturesRight" /> -->
           </div>
         </div>
         <p class="image">
-          <img class="has-ratio" :src="activeModalPicture" v-touch:swipe="swipePicture" />
+          <img class="has-ratio" :src="activeModalPicture" />
         </p>
       </div>
       <button class="modal-close is-large" @click.prevent="closeModal" aria-label="close"></button>
@@ -44,7 +44,7 @@
       <h5 class="title is-5"><font-awesome-icon icon="certificate" /> {{ trans('can_not_miss') }}</h5>
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-parent" :class="tileClass" v-for="tip in  chunked" :key="tip.key">
-          <tip :tip="tip" :key="tip.key" @click.native.prevent="openModal(tip)" :show_city="activeTab === 'restaurants'"></tip>
+          <tip :tip="tip" :key="tip.key" :show_city="activeTab === 'restaurants'"></tip>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
 <script>
 import Constants from "../../core/constants";
 import { transMixin } from "@/core/lang";
-import { triggerMixin } from "@/core/events";
+import { triggerMixin, listenMixin } from "@/core/events";
 import Tip from "./Partials/Tip";
 import collect from "collect.js";
 
@@ -65,7 +65,7 @@ const CHUNK_SIZE = 3;
 
 export default {
   props: ["country", "disabled"],
-  mixins: [transMixin, triggerMixin],
+  mixins: [transMixin, triggerMixin, listenMixin],
   components: { Tip },
   data() {
     return {
@@ -94,6 +94,9 @@ export default {
       if (e.keyCode == 27) {
         this.closeModal();
       }
+    });
+    this.listen('open_modal', (openTip) => {
+      this.openModal(openTip);
     });
   },
   computed: {
@@ -134,10 +137,16 @@ export default {
     }
   },
   methods: {
-    swipePicture(){
-      return (direction) => {
-        this.trigger(direction);
-      }
+    swipePicture(direction){
+        switch (direction) {
+          case 'right':
+            this.picture(-1);
+            break;
+        case 'left':
+          this.picture(1);
+          default:
+            break;
+        }
     },
     openModal(tip) {
       this.isModalOpen = true;
@@ -152,17 +161,12 @@ export default {
       this.trigger("modal_close");
       this.htmlTag.setAttribute('class', null);
     },
-    picture(offset, trigger) {
+    picture(offset) {
       if (
         (offset == -1 && this.hasMorePicturesLeft) ||
         (offset == 1 && this.hasMorePicturesRight)
       )
       {
-        if(offset == 1)
-      alert('RIHGT '+trigger);
-      else
-        alert('LEFT '+trigger);
-        this.trigger('moved');
         this.activeModalPictureIndex = this.activeModalPictureIndex + offset;
 
       }

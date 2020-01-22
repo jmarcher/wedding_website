@@ -11,10 +11,10 @@ import "./app.scss";
 require("./components/bootstrap");
 
 import Vue2TouchEvents from 'vue2-touch-events'
-Vue.use(Vue2TouchEvents);
-// Vue.use(Vue2TouchEvents, {
-//     swipeTolerance: 100
-// });
+Vue.use(Vue2TouchEvents, {
+  swipeTolerance:100,
+  diableClick:true,
+});
 
 // Import scrollspy
 Vue.use(VueScrollActive);

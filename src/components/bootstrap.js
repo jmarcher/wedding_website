@@ -39,9 +39,14 @@ import {
 import {
     faCertificate
 } from '@fortawesome/free-solid-svg-icons/faCertificate';
+
+import {
+    faImages
+} from '@fortawesome/free-solid-svg-icons/faImages';
 import {
     faWikipediaW
 } from '@fortawesome/free-brands-svg-icons/faWikipediaW';
+
 import {
     FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome';
@@ -50,7 +55,7 @@ import {
 
 // Fontawesome
 library.add(
-    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt, faCertificate
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt, faCertificate, faImages
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
