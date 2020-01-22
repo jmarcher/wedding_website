@@ -12,13 +12,13 @@
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
-    "axios": "^0.19.1",
+    "axios": "^0.19.2",
     "bulma": "^0.8.0",
     "bulma-extensions": "^6.2.7",
     "bulma-tagsinput": "^2.0.0",
     "core-js": "^3.6.4",
     "intersection-observer": "^0.7.0",
-    "resolve-url-loader": "^2.3.1",
+    "resolve-url-loader": "^3.1.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
@@ -35,7 +35,7 @@
     "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-service": "^4.1.2",
     "babel-eslint": "^10.0.3",
-    "collect.js": "^4.19.2",
+    "collect.js": "^4.20.2",
     "dinero.js": "^1.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
@@ -57,7 +57,6 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }

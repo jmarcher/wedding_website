@@ -2,14 +2,14 @@
   <div v-if="!disabled">
     <div class="modal" :class="{'is-active': isModalOpen}">
       <div class="modal-background" @click="closeModal"></div>
-      <!-- v-touch:swipe.left="picture(-1)" v-touch:swipe.right="picture(1)" -->
-      <div class="modal-content">
+      <!--  -->
+      <div class="modal-content" v-touch:swipe.left="picture(-1, 'swipe')"  v-touch:swipe.right="picture(1, 'swipe')">
         <div class="level is-hidden-mobile">
-          <div class="level-left" @click="picture(-1)">
+          <div class="level-left" @click="picture(-1, 'click')">
             <i class="arrow left" v-if="hasMorePicturesLeft" />
             <!-- <font-awesome-icon icon="angle-left" v-if="hasMorePicturesLeft" /> -->
           </div>
-          <div class="level-right" @click="picture(1)">
+          <div class="level-right" @click="picture(1, 'click')">
             <i class="arrow right" v-if="hasMorePicturesRight" />
             <!-- <font-awesome-icon icon="angle-right" v-if="hasMorePicturesRight" /> -->
           </div>
@@ -44,7 +44,7 @@
       <h5 class="title is-5"><font-awesome-icon icon="certificate" /> {{ trans('can_not_miss') }}</h5>
       <div class="tile is-ancestor" v-for="(chunked, index) in chunkedTips" :key="index">
         <div class="tile is-parent" :class="tileClass" v-for="tip in  chunked" :key="tip.key">
-          <tip :tip="tip" :key="tip.key" @click.native="openModal(tip)" :show_city="activeTab === 'restaurants'"></tip>
+          <tip :tip="tip" :key="tip.key" @click.native.prevent="openModal(tip)" :show_city="activeTab === 'restaurants'"></tip>
         </div>
       </div>
     </div>
@@ -75,7 +75,8 @@ export default {
       tips: [],
       isModalOpen: false,
       activeModalTip: null,
-      activeModalPictureIndex: 0
+      activeModalPictureIndex: 0,
+      htmlTag: document.getElementsByTagName( 'html' )[0],
     };
   },
   created() {
@@ -142,20 +143,29 @@ export default {
       this.isModalOpen = true;
       this.activeModalTip = tip;
       this.trigger("modal_open");
+      this.htmlTag.setAttribute('class', 'is-clipped');
     },
     closeModal() {
       this.isModalOpen = false;
       this.activeModalTip = null;
       this.activeModalPictureIndex = 0;
       this.trigger("modal_close");
+      this.htmlTag.setAttribute('class', null);
     },
-    picture(offset) {
-      this.trigger('moved');
+    picture(offset, trigger) {
       if (
         (offset == -1 && this.hasMorePicturesLeft) ||
         (offset == 1 && this.hasMorePicturesRight)
       )
+      {
+        if(offset == 1)
+      alert('RIHGT '+trigger);
+      else
+        alert('LEFT '+trigger);
+        this.trigger('moved');
         this.activeModalPictureIndex = this.activeModalPictureIndex + offset;
+
+      }
     },
     Collect: collect,
     getIcon(tab) {
