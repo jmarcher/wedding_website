@@ -8,7 +8,7 @@ export default {
   // Navbar
   about_us: "Über uns",
   party_uruguay: "Hochzeitsfeier Uruguay",
-  party_germany: "Standesamtliche Trauung Deutschland",
+  party_germany: "Standesamt und Feier Deutschland",
   rsvp: "RSVP",
   venue: "¿Wie komm ich hin?",
 
@@ -33,9 +33,9 @@ export default {
     Las temperaturas en verano oscilan entre 18°C y 28°C con una máxima absoluta histórica de 42°C.
     `,
 
-  about_us_intro: `"Hallo zusammen! Wir möchten euch mithilfe der Internetseite erste Infos zur Hochzeitsfeier in Uruguay 
+  about_us_intro: `"Hallo zusammen! Wir möchten euch mithilfe der Internetseite erste Infos rund um die Hochzeitsfeier in Uruguay 
 zukommen lassen. Darüber hinaus würden wir euch gerne den Aufenthalt in Uruguay erleichtern, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
-Mit der Zeit wird es hier noch weitere Informationen geben. Die wichtigsten Details der Feier werden euch aber auch noch persönlich, in Papierform erreichen.
+Mit der Zeit wird es hier noch weitere Informationen geben. Die wichtigsten Details der Feier werden euch aber auch noch persönlich, per Einladung in Papierform erreichen.
 
 Infos zur standesamtlichen Trauung werden ebenfalls hier folgen. 
 
@@ -287,17 +287,23 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
     
     Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Steuern angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
     <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum).<br>
-    Die Feier findet in der Finca Clara statt. In der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfeheln in Montevideo zu übernachten.<br>
+    Günstiger könnte es werden, wenn du beispielsweise von Amsterdam fliegst. Auch das Buchen über STA-Travel-Reisebüros könnte Geld einsparen, solltest du noch Student*in sein.
+    Die Hochzeitsfeier findet in der Finca Clara statt. Auf der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara selbst besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfeheln in Montevideo zu übernachten.<br>
     Die Autofahrt (Uber, Taxi...) aus dem Zentrum von Montevideo dauert ca. 40 Minuten.<br>
 
-    Falls jemand Hilfe beim Buchen der Hotels benötigt, gebt uns Bescheid. / Kontingent
+    Falls jemand Hilfe beim Buchen der Hotels/Hostels/Airbnb benötigt, gebt uns Bescheid. Wir unterstützen euch gerne. 
+    Wir wissen selbst noch nicht zu welchem Zeitraum wir in Uruguay sein werden und wo wir genau übernachten. 
+    In den Hotels xxx gibt es folgendes Kontingent.
+
+    Falls jemand Unterstützung beim Buchen der Hotels benötigt, gebt uns bitte Bescheid. / Kontingent
 
     xxx Kleidung xxx sommerlich elegant xxx
 
     xxx Organisation und Gastbeiträge xxx
-                                              Konakt: Familie und Trauzeugen
+   
+    Bei Fragen oder xxx wendet euch an unseren grandiosen Trauzeugen und unsere grandiose Trauzeugin:
 
-    
+       
     `,
   party_germany_disabled: `Bald erhälst du hier erste Informationen zur Standesamtlichen Trauung in Deutschland.`,
 
