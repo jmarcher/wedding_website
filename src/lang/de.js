@@ -8,7 +8,7 @@ export default {
   // Navbar
   about_us: "Über uns",
   party_uruguay: "Hochzeitsfeier Uruguay",
-  party_germany: "Standesamt und Feier Deutschland",
+  party_germany: "Standesamt Deutschland",
   rsvp: "RSVP",
   venue: "¿Wie komm ich hin?",
 
@@ -287,36 +287,30 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
     
     Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Steuern angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
     <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum).<br>
-    Günstiger könnte es werden, wenn du beispielsweise von Amsterdam fliegst. Auch das Buchen über STA-Travel-Reisebüros könnte Geld einsparen, solltest du noch Student*in sein.
-    Die Hochzeitsfeier findet in der Finca Clara statt. Auf der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara selbst besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfeheln in Montevideo zu übernachten.<br>
+    Beim Flugpreis kannst du eventuell Geld sparen, indem du auch nach Flugverbindungen aus Nachbarländern (z.B. Amsterdam) guckst. Buchungen über STA-Travel-Reisebüros sind in der Regel günstiger, solltest du noch Student*in sein. Aber auch für Nicht-Student*innen gibt es dort manchmal gute Angebote. Ein guter Flugpreis in der Hauptsaison (Jan.-Feb.) ist 1.200 - 1.400€. Alles unter 1.000 € wäre ein Schnäppchen.<br>
+    Die Hochzeitsfeier findet in der Finca Clara statt. Auf der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara selbst besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfehlen in Montevideo zu übernachten.<br>
     Die Autofahrt (Uber, Taxi...) aus dem Zentrum von Montevideo dauert ca. 40 Minuten.<br>
+    Das Hotel Europa und Hotel America befinden sich im Zentrum von Montevideo. Der Vorteil daran ist, dass du schnell zu Fuß in der Altstadt bist und die Preise günstiger sind. Der Nachteil ist, dass sehr viel Verkehr herrscht.
+    Das Hotel Bit Design liegt im schönen, ruhigen Viertel Pocitos. In Pocitos gibt es viele sehr gute Restaurants und Einkaufsmöglichkeiten sowie einen schönen Strand-/Ramblaabschnitt, dafür sind die Preise aber auch höher. 
 
-    Falls jemand Hilfe beim Buchen der Hotels/Hostels/Airbnb benötigt, gebt uns Bescheid. Wir unterstützen euch gerne. 
-    Wir wissen selbst noch nicht zu welchem Zeitraum wir in Uruguay sein werden und wo wir genau übernachten. 
-    In den Hotels xxx gibt es folgendes Kontingent.
+    Falls du Hilfe beim Buchen der Hotels/Hostels/Airbnb benötigst, gib uns bitte Bescheid. Wir unterstützen dich gerne.
+    
 
-    Falls jemand Unterstützung beim Buchen der Hotels benötigt, gebt uns bitte Bescheid. / Kontingent
-
-    xxx Kleidung xxx sommerlich elegant xxx
-
-    xxx Organisation und Gastbeiträge xxx
-   
-    Bei Fragen oder xxx wendet euch an unseren grandiosen Trauzeugen und unsere grandiose Trauzeugin:
-
-       
+    
+          
     `,
   party_germany_disabled: `Bald erhälst du hier erste Informationen zur Standesamtlichen Trauung in Deutschland.`,
 
   montevideo: "Montevideo",
-  // colonia_del_sacramento: 'Colonia del Sacramento',
+  // colonia_del_sacramento: 'Colonia del ST 
+  
+  An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
+  contact_our_guys: 'Team Orga & Liebe',
+  contact_our_guys_description: 'Bei organisatorischen Fragen oder dem Wunsch den Hochzeitstag mit/durch xx mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin und unsere famose Trauzeugin Lisa:',
+  lisa_contact_description: `Mit Lisa kannst du dich auf deutsch, englisch und französisch verständigen.`,
+  valentin_contact_description: `Mit Valentin kannst du dich auf deutsch, spanisch, französisch und englisch verständigen.`,
 
-      intro_rsvp: `Te pedimos acá que nos contestes si es que vas a poder venir a la fiesta en Uruguay, además también podés escribirnos algo, como cuáles canciones te parece que no pueden faltar.`,
-  contact_our_guys: 'Equipo organizacional',
-  contact_our_guys_description: 'Por preguntas organizacionales o deseos de participación externa al programa, contactar a nuestros famosos testigos:',
-  lisa_contact_description: `Con Lisa podés escribir en Alemán, Inglés o Francés`,
-  valentin_contact_description: `Con Valentin podés escribir en Alemán, Español, Inglés o Francés`,
-
-  hotel_america_description: 'Con este Hotel conseguimos un 5% de descuento por sobre el precio enBooking. Acá no pudimos reservar cupos.',
-  hotel_europa_description: 'Acá no pudimos reservar cupos, tienen que reservar entonces por Booking.',
-  hotel_bit_description: 'En este Hotel tenemos reservados XX cupos hasta setiembre.',
+  hotel_america_description: 'Hier konnten wir leider kein Zimmerkontingent reservieren. Für dieses Hotel erhälst du 5% Rabatt, wenn du statt über booking.com, direkt beim Hotel buchst.',
+  hotel_europa_description: 'Hier konnten wir leider kein Zimmerkontingent reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.',
+  hotel_bit_description: 'Das Zimmerkontingent von xx Zimmern ist bis zum 15. September reserviert. Bitte nimm deine Buchung selbst vor. Tel: Mail:  ',
 };
