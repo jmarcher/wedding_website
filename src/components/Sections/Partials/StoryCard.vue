@@ -1,7 +1,8 @@
 <template>
     <div class="timeline-item">
-      <div class="timeline-marker is-icon">
-        <font-awesome-icon :icon="['fas', 'heart']"></font-awesome-icon>
+      <div class="timeline-marker is-icon" :class="{'special-icon is-paddingless': story.icon_special}">
+        <img :src="story.icon" v-if="story.icon_special" class="image is-32x32">
+        <font-awesome-icon :icon="['fas', story.icon]" v-if="!story.icon_special"></font-awesome-icon>
       </div>
       <story-card-partial :story="story"></story-card-partial>
     </div>

@@ -1,9 +1,9 @@
 <template>
-  <lazy-background
+  <div
     class="box is-radiusless-mobile"
-    :src="actualPicture"
-    @mouseover.native="startImageTransition"
-    @mouseleave.native="stopImageTransition"
+    :style="cardStyle"
+    @mouseover="startImageTransition"
+    @mouseleave="stopImageTransition"
   >
     <div slot="content">
       <p class="title has-text-light">
@@ -29,7 +29,7 @@
         </button>
       </p>
     </div>
-  </lazy-background>
+  </div>
 </template>
 
 <script>

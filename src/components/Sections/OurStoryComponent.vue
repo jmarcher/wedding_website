@@ -12,7 +12,7 @@
         
       </story-card>
       <header class="timeline-header">
-        <span class="tag is-medium is-primary" v-text="trans('timeline_end')" />
+        <span class="tag is-medium is-primary" v-text="`...`" />
       </header>
     </div>
   </div>
@@ -43,5 +43,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+  .no-background{
+    background-color: transparent !important;
+  }
 </style>

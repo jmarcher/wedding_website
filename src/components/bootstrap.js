@@ -10,6 +10,9 @@ import {
     faEnvelope
 } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import {
+    faBullhorn
+} from '@fortawesome/free-solid-svg-icons/faBullhorn';
+import {
     faTimesCircle
 } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
 import {
@@ -55,7 +58,7 @@ import {
 
 // Fontawesome
 library.add(
-    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt, faCertificate, faImages
+    faUser, faEnvelope, faCheckCircle, faTimesCircle, faWikipediaW, faMapMarkedAlt, faAngleUp, faArchway, faHamburger, faBiking, faHeart, faTicketAlt, faCertificate, faImages, faBullhorn
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;

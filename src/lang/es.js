@@ -257,4 +257,16 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     montevideo: 'Montevideo',
     // colonia_del_sacramento: 'Colonia del Sacramento',
+
+
+    /////NUEVOSS
+    intro_rsvp: `Te pedimos acá que nos contestes si es que vas a poder venir a la fiesta en Uruguay, además también podés escribirnos algo, como cuáles canciones te parece que no pueden faltar.`,
+    contact_our_guys: 'Equipo organizacional',
+    contact_our_guys_description: 'Por preguntas organizacionales o deseos de participación externa al programa, contactar a nuestros famosos testigos:',
+    lisa_contact_description: `Con Lisa podés escribir en Alemán, Inglés o Francés`,
+    valentin_contact_description: `Con Valentin podés escribir en Alemán, Español, Inglés o Francés`,
+
+    hotel_america_description: 'Con este Hotel conseguimos un 5% de descuento por sobre el precio enBooking. Acá no pudimos reservar cupos.',
+    hotel_europa_description: 'Acá no pudimos reservar cupos, tienen que reservar entonces por Booking.',
+    hotel_bit_description: 'En este Hotel tenemos reservados XX cupos hasta setiembre.',
 };
