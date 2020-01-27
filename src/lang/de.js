@@ -302,15 +302,19 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   party_germany_disabled: `Bald erhälst du hier erste Informationen zur Standesamtlichen Trauung in Deutschland.`,
 
   montevideo: "Montevideo",
-  // colonia_del_sacramento: 'Colonia del ST 
-  
-  An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
-  contact_our_guys: 'Team Orga & Liebe',
-  contact_our_guys_description: 'Bei organisatorischen Fragen oder dem Wunsch den Hochzeitstag mit/durch xx mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin und unsere famose Trauzeugin Lisa:',
+  // colonia_del_sacramento: 'Colonia del ST
+
+  intro_rsvp: `An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
+  contact_our_guys: "Team Orga & Liebe",
+  contact_our_guys_description:
+    "Bei organisatorischen Fragen oder dem Wunsch den Hochzeitstag mit/durch xx mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin und unsere famose Trauzeugin Lisa:",
   lisa_contact_description: `Mit Lisa kannst du dich auf deutsch, englisch und französisch verständigen.`,
   valentin_contact_description: `Mit Valentin kannst du dich auf deutsch, spanisch, französisch und englisch verständigen.`,
 
-  hotel_america_description: 'Hier konnten wir leider kein Zimmerkontingent reservieren. Für dieses Hotel erhälst du 5% Rabatt, wenn du statt über booking.com, direkt beim Hotel buchst.',
-  hotel_europa_description: 'Hier konnten wir leider kein Zimmerkontingent reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.',
-  hotel_bit_description: 'Das Zimmerkontingent von xx Zimmern ist bis zum 15. September reserviert. Bitte nimm deine Buchung selbst vor. Tel: Mail:  ',
+  hotel_america_description:
+    "Hier konnten wir leider kein Zimmerkontingent reservieren. Für dieses Hotel erhälst du 5% Rabatt, wenn du statt über booking.com, direkt beim Hotel buchst.",
+  hotel_europa_description:
+    "Hier konnten wir leider kein Zimmerkontingent reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.",
+  hotel_bit_description:
+    "Das Zimmerkontingent von xx Zimmern ist bis zum 15. September reserviert. Bitte nimm deine Buchung selbst vor. Tel: Mail:  "
 };

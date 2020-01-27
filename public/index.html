@@ -10,7 +10,6 @@
     Joaquín & Rebecca
   </title>
   <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-  <title>wedding_vue</title>
 </head>
 
 <body>
@@ -62,7 +61,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Valentin Arnold</strong> <small>valentin_arnold@outlook.com</small> <small>Handy??</small>
+                      <strong>Valentin Arnold</strong> <small  v-text="emails.valentin"></small> <small>Handy??</small>
                       <br>
                       {{ this.trans('valentin_contact_description') }}
                     </p>
@@ -83,7 +82,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Lisa Günster</strong> <small>andere@email.com</small> <small>Handy??</small>
+                      <strong>Lisa Günster</strong> <small v-text="emails.lisa"></small> <small>Handy??</small>
                       <br>
                       {{ this.trans('lisa_contact_description') }}
                     </p>
