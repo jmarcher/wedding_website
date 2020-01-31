@@ -15,11 +15,21 @@
     </div>
     <div class="hero-body">
       <div class="container">
-        <slot name="header"></slot>
-        <div class="separator"><br></div>
-        <slot></slot>
-        <div class="separator"><br></div>
-        <slot name="footer"></slot>
+        <div>
+          <slot name="header"></slot>
+        </div>
+        <div class="separator">
+          <br />
+        </div>
+        <div>
+          <slot></slot>
+        </div>
+        <div class="separator">
+          <br />
+        </div>
+        <div>
+          <slot name="footer"></slot>
+        </div>
       </div>
     </div>
     <div class="hero-foot">
@@ -43,7 +53,7 @@ export default {
 .hero-head .title {
   padding-top: 3.5rem;
 }
-.hero-foot .button{
-    margin-bottom: 1rem;
+.hero-foot .button {
+  margin-bottom: 1rem;
 }
 </style>

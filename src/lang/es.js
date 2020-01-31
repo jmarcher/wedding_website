@@ -31,7 +31,7 @@ export default {
     about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
     Creamos esta página para compartir de forma interactiva todo lo relevante sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
     Sobre el civil en Alemania publicaremos más información en el futuro.
-    <br>Así que divertite, date una vuelta por la página; ¡No te olvides de RSVP!<br><br>
+    <br>¡No te olvides de RSVP!<br><br>
 Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
 
     tips: 'Nuestras recomendaciones',

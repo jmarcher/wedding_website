@@ -37,9 +37,8 @@ export default {
 zukommen lassen. Darüber hinaus würden wir euch gerne den Aufenthalt in Uruguay erleichtern, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
 Mit der Zeit wird es hier noch weitere Informationen geben. Die wichtigsten Details der Feier werden euch aber auch noch persönlich, per Einladung in Papierform erreichen.
 
-Infos zur standesamtlichen Trauung werden ebenfalls hier folgen. 
-
-Schaut euch also gerne ein bisschen um, wir hoffen es gefällt euch. Nicht vergessen: Zusagen!
+Infos zur standesamtlichen Trauung werden ebenfalls hier folgen. <br>
+Nicht vergessen: Zusagen!<br><br>
 Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unterstützung und das bisherige Mitfiebern. Wir sind schon ganz aufgeregt und freuen uns riesig unsere Hochzeit mit unseren Lieblingsmenschen zu feiern!"`,
 
   tips: "Unsere Empfehlungen",

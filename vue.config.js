@@ -1,12 +1,12 @@
 module.exports = {
-    runtimeCompiler:true,
+  runtimeCompiler: true,
 
-    // publicPath: '/demo/'
-    pluginOptions:{
-        moment: {
-            locales: ['de', 'es'],
-        }
-    },
+  //   publicPath: "/dist/",
+  pluginOptions: {
+    moment: {
+      locales: ["de", "es"]
+    }
+  }
 
-    lintOnSave: false
-}
+  //   lintOnSave: true
+};

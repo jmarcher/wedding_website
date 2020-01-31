@@ -14,6 +14,9 @@
         ></iframe>
       </div>
     </div>
+    <div>
+      <slot name="footer"></slot>
+    </div>
   </div>
 </template>
 
@@ -23,7 +26,7 @@ import { transMixin } from "../../core/lang";
 export default {
   name: "VenueComponent",
   mixins: [transMixin],
-  components: { HotelsComponent },
+  components: { HotelsComponent }
 };
 </script>
 

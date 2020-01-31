@@ -112,8 +112,8 @@ export default {
       menu: Constants.FOOD_MENUS[0],
       notes: null,
       guestlist: {},
-      is_comming: 'im_comming',
-      comming: ['im_comming', 'im_not_comming'],
+      is_comming: "im_comming",
+      comming: ["im_comming", "im_not_comming"]
     };
   },
   methods: {
@@ -135,7 +135,7 @@ export default {
       this.formLoading = true;
       window.axios
         .post(`${Constants.API_PATH}/guests`, {
-          is_comming: this.is_comming === 'is_comming',
+          is_comming: this.is_comming == "im_comming",
           name: this.main_guest,
           brings_plus_one: this.brings_plus_one,
           plus_one_name: this.plus_one_name,
