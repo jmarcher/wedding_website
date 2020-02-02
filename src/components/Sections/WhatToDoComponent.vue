@@ -55,18 +55,19 @@
 </template>
 
 <script>
-import Constants from "../../core/constants";
+import Constants from "@/core/constants";
 import { transMixin } from "@/core/lang";
 import { triggerMixin, listenMixin } from "@/core/events";
-import Tip from "./Partials/Tip";
+// import Tip from "./Partials/Tip";
 import collect from "collect.js";
 
 const CHUNK_SIZE = 3;
 
 export default {
+  name: 'WhatToDoComponent',
   props: ["country", "disabled"],
   mixins: [transMixin, triggerMixin, listenMixin],
-  components: { Tip },
+  components: { Tip : () => import("./Partials/Tip") },
   data() {
     return {
       tabs: ["locations", "restaurants", "activities"],
@@ -144,7 +145,8 @@ export default {
             break;
         case 'left':
           this.picture(1);
-          default:
+          break;
+        default:
             break;
         }
     },

@@ -13,7 +13,7 @@ export default {
   mixins: [transMixin],
   computed: {
     formattedDate() {
-      return this.story.date.format("D.M.YYYY");
+        return this.story.date.format(this.story.format? this.story.format : "D.M.YYYY");
     }
   }
 };

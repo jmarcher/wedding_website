@@ -5,9 +5,6 @@
       <header class="timeline-header">
         <span class="tag is-medium is-primary" v-text="trans('timeline_begin')" />
       </header>
-      <!-- <header class="timeline-header" v-for="year in groupedStories" :key="year">
-        <span class="tag is-primary" v-text="year"></span>
-      </header>  -->
       <story-card v-for="(story, index) in stories" :key="index" :story="story">
         
       </story-card>
@@ -19,25 +16,16 @@
 </template>
 
 <script>
-import { transMixin } from "../../core/lang";
-import StoryCard from "./Partials/StoryCard";
-import Constants from "../../core/constants";
-import collect from "collect.js";
+import { transMixin } from "@/core/lang";
+import Constants from "@/core/constants";
 export default {
   mixins: [transMixin],
   name: "OurStoryComponent",
-  components: { StoryCard },
+  components: { StoryCard: () => import("./Partials/StoryCard") },
   data() {
     return {
       stories: Constants.STORY
     };
-  },
-  computed:{
-    groupedStories(){
-      return collect(this.stories).groupBy((e) => {
-        return e.date.format('YYYY');
-      })
-    }
   }
 };
 </script>

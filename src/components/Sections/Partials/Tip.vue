@@ -1,6 +1,6 @@
 <template>
   <div
-    class="box is-radiusless-mobile"
+    class="box "
     :style="cardStyle"
     @mouseover="startImageTransition"
     @mouseleave="stopImageTransition"
@@ -8,7 +8,7 @@
     <div slot="content">
       <p class="title has-text-light">
         {{ trans(tip.key) }}
-        <font-awesome-icon icon="certificate" class="has-text-light" v-if="this.tip.isBestTip" />
+        <font-awesome-icon icon="certificate" class="has-text-light is-size-5" v-if="this.tip.isBestTip" />
       </p>
       <h6 class="subtitle has-text-light is-6" v-if="show_city" v-text="trans(this.tip.city)"></h6>
 

@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h4 class="title is-4">{{ trans('contact_our_guys') }}</h4>
-    <h5 class="subtitle is-5">{{ trans('contact_our_guys_description') }}</h5>
+    <!-- <h4 class="title is-4">{{ trans('contact_our_guys') }}</h4> -->
+    <div class="is-text-highlighted">{{ trans('contact_our_guys_description') }}</div>
+    <br>
     <div class="columns">
       <!-- Left side -->
       <div class="column">
@@ -16,7 +17,7 @@
               <div class="content">
                 <p>
                   <strong>Valentin Arnold</strong><br />  
-                  <small v-text="emails.valentin"></small>
+                  <small v-html="email_valentin"></small>
                   <br />
                   {{ trans('valentin_contact_description') }}
                 </p>
@@ -37,7 +38,7 @@
               <div class="content">
                 <p>
                   <strong>Lisa Günster</strong><br /> 
-                  <small v-text="emails.lisa"></small>
+                  <small v-html="email_lisa"></small>
                   <br />
                   {{ trans('lisa_contact_description') }}
                 </p>
@@ -60,7 +61,17 @@ export default {
         valentin: Constants.EMAIL_VALENTIN,
         lisa: Constants.EMAIL_LISA
       }
+
     };
+  },
+  computed: {
+    // hide emails
+    email_valentin() {
+      return this.emails.valentin.replace('@', '<span>&#64;</span>').replace('.', '<span>.</span>'); 
+    },
+    email_lisa() {
+      return this.emails.lisa.replace('@', '<span>&#64;</span>').replace('.', '<span>.</span>'); 
+    }
   },
   mixins: [transMixin]
 };

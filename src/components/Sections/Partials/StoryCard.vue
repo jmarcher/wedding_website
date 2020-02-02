@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import StoryCardPartial from "./StoryCardPartial";
+// import StoryCardPartial from "./StoryCardPartial";
 export default {
   props: ["story"],
-  components: { StoryCardPartial },
+  components: { StoryCardPartial:() => import( "./StoryCardPartial") },
   computed:{
     storyYear(){
       return this.story.date.format("YYYY");

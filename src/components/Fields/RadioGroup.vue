@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import RadioButton from "./RadioButton";
-import { transMixin } from "../../core/lang";
+// import RadioButton from "./RadioButton";
+import { transMixin } from "@/core/lang";
 import { triggerMixin } from "@/core/events";
 export default {
   props: ["values", "name", "guest", "label", "asist"],
   name: "RadioGroup",
-  components: { RadioButton },
+  components: { RadioButton:()=>import("./RadioButton") },
   mixins: [transMixin, triggerMixin],
   data() {
     return {

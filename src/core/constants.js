@@ -4,12 +4,12 @@ import BestTip from "./bestTip";
 import moment from "moment";
 // const moment = {};
 export default {
-  EMAIL_VALENTIN: "valentin@joaquinundrebecca.de",
-  EMAIL_LISA: "lisa@joaquinundrebecca.de",
+  EMAIL_VALENTIN: "valentin_arnold@outlook.com",
+  EMAIL_LISA: "lisa.guenster@tu-dortmund.de",
 
   RSVP_DEADLINE: moment("2020-09-01T00:00:00Z"),
   RSVP_DEADLINE_WARNING: 30, // Days
-  DEFAULT_LOCALE: "es",
+  DEFAULT_LOCALE: "de",
   IMAGE_PLACEHOLDER: "/images/placeholder.jpg",
   // API_PATH: 'https://api.joaquinundrebecca.de',
   API_PATH:
@@ -33,15 +33,23 @@ export default {
       date: moment("2013-08-05", "YYYY-MM-DD"),
       key: "first_time_germany",
       location: "muenster_germany",
-      icon: "/assets/icons/two-hearts.png",
+      icon: "/assets/icons/honeymoon-luggage.png",
+      icon_special: true,
+      position: new Position(51.952787, 7.611551)
+    },
+    {
+      date: moment("2013-08-11", "YYYY-MM-DD"),
+      key: "euro_trip",
+      location: "europa",
+      icon: "/assets/icons-v3/051-u-bahn.png",
       icon_special: true,
       position: new Position(51.952787, 7.611551)
     },
     {
       date: moment("2014-08-01", "YYYY-MM-DD"),
       key: "second_time_germany",
-      location: "cologne_germany",
-      icon: "/assets/icons/wedding-location.png",
+      location: "paderborn_cologne_germany",
+      icon: "/assets/icons/honeymoon-luggage.png",
       icon_special: true,
       position: new Position(51.952787, 7.611551)
     },
@@ -57,7 +65,7 @@ export default {
       date: moment("2016-09-15", "YYYY-MM-DD"),
       key: "new_appartment",
       location: "cologne_germany",
-      icon: "/assets/icons/loving-home.png",
+      icon: "/assets/icons-v3/055-wohnung.png",
       icon_special: true,
       position: new Position(50.894829, 6.992504)
     },
@@ -66,6 +74,15 @@ export default {
       key: "proposal",
       location: "cologne_germany",
       icon: "/assets/icons/diamond-ring.png",
+      icon_special: true,
+      position: new Position(50.894829, 6.992504)
+    },
+    {
+      date: moment("2020-09-01", "YYYY-MM"),
+      format: "MMMM YYYY",
+      key: "registry",
+      location: "cologne_germany",
+      icon: "/assets/icons-v3/063-ehe.png",
       icon_special: true,
       position: new Position(50.894829, 6.992504)
     },
@@ -106,7 +123,7 @@ export default {
       distance_to_venue: 30,
       image:
         "https://thumbnails.trvl-media.com/p0wCyyDjjH23S2e7DWpOaP1EGMw=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/10000000/9190000/9183400/9183358/4abf48a2_z.jpg",
-      price_from: 90,
+      price_from: 80,
       location: new Position(-34.924342, -56.160789),
       description: "hotel_bit_description"
     }

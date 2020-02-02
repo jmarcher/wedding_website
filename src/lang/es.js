@@ -13,11 +13,12 @@ export default {
     venue: '¿Cómo llegar?',
 
     // Sections
-    section_title_about_us: 'Sobre&nbsp;<span class="has-text-primary is-italic">Nosotros</span>',
-    section_title_venue: '¿Cómo&nbsp;<span class="has-text-primary is-italic">llegar</span>?',
-    section_title_party_uruguay: 'Fiesta&nbsp;<span class="has-text-primary is-italic">Uruguay</span>',
-    section_title_party_germany: 'Civil&nbsp;<span class="has-text-primary is-italic">Alemania</span>',
-    section_title_rsvp: 'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
+    section_title_about_us: 'Sobre&nbsp;<span class="has-text-primary">Nosotros</span>',
+    section_title_venue: '¿Cómo&nbsp;<span class="has-text-primary">llegar</span>?',
+    section_title_party_uruguay: 'Fiesta&nbsp;<span class="has-text-primary">Uruguay</span>',
+    section_title_party_germany: 'Civil&nbsp;<span class="has-text-primary">Alemania</span>',
+    section_title_our_team: 'Equipo&nbsp;<span class="has-text-primary">organizacional</span>',
+    section_title_rsvp: 'Répondez s\'il <span class="has-text-primary">vous plaît</span>',
 
     recommended_hotels: 'Hoteles recomendados',
     venue_location: 'Lugar de celebración',
@@ -28,11 +29,11 @@ export default {
     Las temperaturas en verano oscilan entre 18°C y 28°C con una máxima absoluta histórica de 42°C.
     `,
 
-    about_us_intro: `"Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
+    about_us_intro: `Bienvenidos a todos a nuestra página. Acá vas a encontrar información sobre nuestro casamiento.<br>
     Creamos esta página para compartir de forma interactiva todo lo relevante sobre la fiesta, destinos a visitar y mucho más para facilitarles la estadía en Uruguay.<br>
-    Sobre el civil en Alemania publicaremos más información en el futuro.
+    Sobre el civil en Alemania publicaremos más información en el futuro. <strong>Esta página será actualizada frecuentemente para mantenerlos siempre informados.</strong>
     <br>¡No te olvides de RSVP!<br><br>
-Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!"`,
+Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Estamos muy emocionados de poder compartir este día de fiesta con nuestra gente favorita!`,
 
     tips: 'Nuestras recomendaciones',
 
@@ -226,6 +227,8 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     timeline_begin: 'Inicio',
     timeline_end: 'Continuará...',
     first_time: "Primer encuentro",
+    euro_trip: 'Viaje por Europa',
+    registry: 'Civil',
     montevideo_uruguay: "Montevideo, Uruguay",
     first_time_germany: "Reencuentro en Alemania",
     second_time_germany: "Año juntos en Alemania",
@@ -233,6 +236,8 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     muenster_germany: 'Münster, Alemania',
     new_appartment: "Primer apartamento juntos",
     cologne_germany: "Colonia, Alemania",
+    europa: 'Europa',
+    paderborn_cologne_germany: "Paderborn | Colonia, Alemania",
     proposal: 'Propuesta de matrimonio',
     wedding_day: 'Casamiento',
     canelones_uruguay: 'Canelones, Uruguay',
@@ -241,8 +246,8 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
     intro_party_uruguay: `
     
     Para reservar vuelos a Montevideo (MVD) recomendamos usar <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, acá vas a ver los precios de los vuelos sin comisiones. <!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
-    <strong>Atención:</strong> Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br>
-    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no es recomendable hospedarse, Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo.<br>
+    <strong>Atención:</strong> Vuelos pueden ser reservados recién a partir de febrero (once meses antes del vuelo de retorno).<br><br>
+    La fiesta se realizará en Finca Clara. Acá les dejamos información sobre la ubicación y unos hoteles recomendables. En los alrededores de Finca Clara no es recomendable hospedarse, Finca Clara se encuentra en las afueras de Montevideo, pero se recomienda hospedarse en Montevideo.<br><br>
     También así podemos recibir el 2021 juntos en la capital. El camino en auto desde el centro de Montevideo hasta Finca Clara dura aproximamente 40 minutos.<br>
     <!-- xxx Reservierungsinfokontingent Hotels xxx
     xxx Transporte xxx
@@ -268,5 +273,5 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
     hotel_america_description: 'Con este Hotel conseguimos un 5% de descuento por sobre el precio enBooking. Acá no pudimos reservar cupos.',
     hotel_europa_description: 'Acá no pudimos reservar cupos, tienen que reservar entonces por Booking.',
-    hotel_bit_description: 'En este Hotel tenemos reservados XX cupos hasta setiembre.',
+    hotel_bit_description: 'En este Hotel tenemos un acuerdo hasta el 15 de setiembre con el precio, escribir un correo electrónico y hacer la reserva con el asunto "Reserva casamiento Joaquín Marcher".',
 };

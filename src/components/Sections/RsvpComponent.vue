@@ -12,7 +12,7 @@
       v-model="is_comming"
       name="are_you_comming"
       label="are_you_comming"
-    ></radio-group>
+    ></radio-group><br>
     <input-field
       v-model="main_guest"
       label="main_guest"
@@ -59,6 +59,7 @@
       :key="key"
       :guest="guest"
     ></radio-group>
+    <br>
     <input-field
       v-model="notes"
       label="notes"
@@ -83,10 +84,10 @@
 </template>
 
 <script>
-import InputField from "../Fields/InputField";
-import RadioGroup from "../Fields/RadioGroup";
-import Constants from "../../core/constants";
-import { transMixin } from "../../core/lang";
+// import InputField from "../Fields/InputField";
+// import RadioGroup from "../Fields/RadioGroup";
+import Constants from "@/core/constants";
+import { transMixin } from "@/core/lang";
 import { listenMixin } from "@/core/events";
 import { sluggifyString } from "@/core/tip";
 import Swal from "sweetalert2";
@@ -96,8 +97,8 @@ export default {
   name: "RsvpComponent",
   mixins: [transMixin, listenMixin],
   components: {
-    InputField,
-    RadioGroup
+    InputField:()=> import("../Fields/InputField"),
+    RadioGroup: ()=> import("../Fields/RadioGroup")
   },
   data() {
     return {

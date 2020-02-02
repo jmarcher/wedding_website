@@ -10,19 +10,22 @@ export default {
   party_uruguay: "Hochzeitsfeier Uruguay",
   party_germany: "Standesamt Deutschland",
   rsvp: "RSVP",
-  venue: "¿Wie komm ich hin?",
+  venue: "Wie komm ich hin?",
 
   // Sections
   section_title_about_us:
-    'Über&nbsp;<span class="has-text-primary is-italic">uns</span>',
+    'Über&nbsp;<span class="has-text-primary">uns</span>',
   section_title_venue:
-    '¿Wie komm&nbsp;<span class="has-text-primary is-italic">ich hin</span>?',
+    '¿Wie komm&nbsp;<span class="has-text-primary">ich hin</span>?',
   section_title_party_uruguay:
-    'Hochzeitsfeier&nbsp;<span class="has-text-primary is-italic">Uruguay</span>',
+    'Hochzeitsfeier&nbsp;<span class="has-text-primary">Uruguay</span>',
   section_title_party_germany:
-    'Standesamtliche Trauung&nbsp;<span class="has-text-primary is-italic">Deutschland</span>',
+    'Standesamtliche Trauung&nbsp;<span class="has-text-primary">Deutschland</span>',
+
+  section_title_our_team:
+    'Team Orga &&nbsp;<span class="has-text-primary">Liebe</span>',
   section_title_rsvp:
-    'Répondez s\'il <span class="has-text-primary is-italic">vous plaît</span>',
+    'Répondez s\'il <span class="has-text-primary">vous plaît</span>',
 
   recommended_hotels: "Hotels, die wir empfehlen",
   venue_location: "Standort der Hochzeitsfeier",
@@ -33,13 +36,13 @@ export default {
     Las temperaturas en verano oscilan entre 18°C y 28°C con una máxima absoluta histórica de 42°C.
     `,
 
-  about_us_intro: `"Hallo zusammen! Wir möchten euch mithilfe der Internetseite erste Infos rund um die Hochzeitsfeier in Uruguay 
-zukommen lassen. Darüber hinaus würden wir euch gerne den Aufenthalt in Uruguay erleichtern, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
-Mit der Zeit wird es hier noch weitere Informationen geben. Die wichtigsten Details der Feier werden euch aber auch noch persönlich, per Einladung in Papierform erreichen.
+  about_us_intro: `Hallo zusammen! Wir möchten euch mithilfe dieser Internetseite erste Infos rund um die Hochzeitsfeier in Uruguay 
+zukommen lassen. Darüber hinaus würden wir euch gerne Anregungen für den Aufenthalt in Uruguay geben, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
+<strong>Mit der Zeit wird es hier noch weitere Informationen geben.</strong> Die wichtigsten Details der Feier werden euch aber auch noch persönlich, per Einladung in Papierform erreichen.
 
-Infos zur standesamtlichen Trauung werden ebenfalls hier folgen. <br>
+Infos zur standesamtlichen Trauung in Köln werden ebenfalls hier folgen. <br>
 Nicht vergessen: Zusagen!<br><br>
-Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unterstützung und das bisherige Mitfiebern. Wir sind schon ganz aufgeregt und freuen uns riesig unsere Hochzeit mit unseren Lieblingsmenschen zu feiern!"`,
+Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unterstützung und das bisherige Mitfiebern. Wir sind schon ganz aufgeregt und freuen uns riesig, unsere Hochzeit mit unseren liebsten Menschen zu feiern!`,
 
   tips: "Unsere Empfehlungen",
 
@@ -143,8 +146,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
     "In der Näge des Busbahnhofes 'Tres Cruces' wurde ein Raum geschaffen, der Kunst, Restaurants und Mode verbindet.",
 
   estadio_centenario: "Estadio Centenario",
-  estadio_centenario_description:
-    "Kult ist, neben anderen Turnieren, das der Weltmeisterschaft im Fußball 1930, el Campeonato Sudamericano 1942, el Campeonato Sudamericano 1956, el Campeonato Sudamericano 1967 y la Copa América 1995. Alle gewonnen durch Uruguay.",
+  estadio_centenario_description: 'Das erste Weltmeisterschafts-Finale im Jahre 1930 wurde in diesem historischen Stadion gespielt. Das kleine Fußballmuseum (befindet sich im Stadion selbst) ist auch einen Besuch wert.',
 
   rambla_de_montevideo: "Die Rambla von Montevideo",
   rambla_de_montevideo_description:
@@ -183,11 +185,11 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   rudy_burgers: "Rudy Burgers",
   rudy_burgers_description:
-    "Es el lugar perfecto para los amantes de las hamburguesas, la carta del tamaño de una tarjeta de visita habla por sí misma.",
+    "Hier gibt es die leckersten Burger der Welt! Die Speisekarte in Visitenkartengröße spricht für sich selbst.",
 
   la_fonda: "La Fonda",
   la_fonda_description:
-    "Restaurante con cocina abierta abierto hasta altas horas de la noche, personal muy amable, un ambiente urbano y cómodo con comida casera.",
+    "Das Restaurant besitzt eine offene Küche, wo man bei der Zubereitung des Essens zusehen kann. Es werden neben exzellenten Fleischgerichten auch vegetarische und vegane Köstlichkeiten in Bio-Qualität angeboten.  Die Kellner*innen sind super freundlich und man kann einen gemütlichen Abend mitten in der Altstadt genießen (es gibt auch einen Außenbereich).",
 
   the_putamadre: "The Puta Madre Bar",
   the_putamadre_description:
@@ -226,7 +228,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   main_guest_placeholder: "Lina Meier",
   main_guest_error: "Der Name ist nicht korrekt",
 
-  brings_plus_one: "¿Wer begleitet dich?",
+  brings_plus_one: "Wer begleitet dich?",
 
   plus_one_name: "Name(n) deiner Begleitung",
   plus_one_name_placeholder: "Laura Socotroco, Pedro Palolargo",
@@ -271,6 +273,8 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   timeline_begin: "Beginn",
   timeline_end: "Fortsetzung folgt...",
   first_time: "Erste Begegnung",
+  euro_trip: 'Europareise',
+  registry: 'Standesamt',
   montevideo_uruguay: "Montevideo, Uruguay",
   first_time_germany: "Wiedersehen in Deutschland",
   second_time_germany: "Ein gemeinsames Jahr in Deutschland",
@@ -278,25 +282,32 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   muenster_germany: "Münster, Deutschland",
   new_appartment: "Erste gemeinsame Wohnung",
   cologne_germany: "Köln, Deutschland",
+  europa: 'Europa',
+  paderborn_cologne_germany: "Paderborn | Köln, Deutschland",
   proposal: "Heiratsantrag",
   wedding_day: "Hochzeit",
   canelones_uruguay: "Canelones, Uruguay",
 
   intro_party_uruguay: `
-    
-    Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Steuern angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
-    <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum).<br>
-    Beim Flugpreis kannst du eventuell Geld sparen, indem du auch nach Flugverbindungen aus Nachbarländern (z.B. Amsterdam) guckst. Buchungen über STA-Travel-Reisebüros sind in der Regel günstiger, solltest du noch Student*in sein. Aber auch für Nicht-Student*innen gibt es dort manchmal gute Angebote. Ein guter Flugpreis in der Hauptsaison (Jan.-Feb.) ist 1.200 - 1.400€. Alles unter 1.000 € wäre ein Schnäppchen.<br>
-    Die Hochzeitsfeier findet in der Finca Clara statt. Auf der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara selbst besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfehlen in Montevideo zu übernachten.<br>
-    Die Autofahrt (Uber, Taxi...) aus dem Zentrum von Montevideo dauert ca. 40 Minuten.<br>
+    <!--<h5 class="title is-5">Flüge</h5>-->
+    <p>
+    Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Provision angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
+    <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum). Denkt auch dran die Gültigkeit eurer Reisepässe zu checken.
+    </p>
+    <p>
+    Beim Flugpreis kannst du eventuell Geld sparen, indem du auch nach Flugverbindungen aus Nachbarländern (z.B. Amsterdam) guckst. Buchungen über STA-Travel-Reisebüros sind in der Regel günstiger, solltest du noch Student*in sein. Aber auch für Nicht-Student*innen gibt es dort manchmal gute Angebote. Ein guter Flugpreis in der Hauptsaison (Jan.-Feb.) ist 1.200 - 1.400€. Alles unter 1.000 € wäre ein Schnäppchen.
+    </p><br>
+    <p>
+    Die Hochzeitsfeier findet in der Finca Clara statt. Auf der Karte könnt ihr den Standort der Hochzeitslocation sehen sowie von uns empfohlene Hotels. Finca Clara selbst besitzt keine Übernachtungsmöglichkeiten. In der Umgebung gibt es ein Hotel, jedoch würden wir empfehlen, in Montevideo zu übernachten.<br>
+    Die Autofahrt (Uber, Taxi...) aus dem Zentrum von Montevideo dauert ca. 40 Minuten.<br><br>
     Das Hotel Europa und Hotel America befinden sich im Zentrum von Montevideo. Der Vorteil daran ist, dass du schnell zu Fuß in der Altstadt bist und die Preise günstiger sind. Der Nachteil ist, dass sehr viel Verkehr herrscht.
-    Das Hotel Bit Design liegt im schönen, ruhigen Viertel Pocitos. In Pocitos gibt es viele sehr gute Restaurants und Einkaufsmöglichkeiten sowie einen schönen Strand-/Ramblaabschnitt, dafür sind die Preise aber auch höher. 
+    Das Hotel Bit Design liegt im schönen, ruhigen Viertel Punta Carretas, in der Nähe von Pocitos. In Pocitos gibt es viele sehr gute Restaurants und Einkaufsmöglichkeiten sowie einen schönen Strand-/Ramblaabschnitt, dafür sind die Preise aber auch höher. 
 
     Falls du Hilfe beim Buchen der Hotels/Hostels/Airbnb benötigst, gib uns bitte Bescheid. Wir unterstützen dich gerne.
     
 
     
-          
+    </p>   
     `,
   party_germany_disabled: `Bald erhälst du hier erste Informationen zur Standesamtlichen Trauung in Deutschland.`,
 
@@ -306,14 +317,14 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   intro_rsvp: `An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
   contact_our_guys: "Team Orga & Liebe",
   contact_our_guys_description:
-    "Bei organisatorischen Fragen oder dem Wunsch den Hochzeitstag mit/durch xx mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin und unsere famose Trauzeugin Lisa:",
-  lisa_contact_description: `Mit Lisa kannst du dich auf deutsch, englisch und französisch verständigen.`,
-  valentin_contact_description: `Mit Valentin kannst du dich auf deutsch, spanisch, französisch und englisch verständigen.`,
+    "Bei organisatorischen Fragen oder dem Wunsch die Festivitäten mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin oder unsere famose Trauzeugin Lisa:",
+  lisa_contact_description: `Mit Lisa kannst du dich auf Deutsch, Englisch und Französisch verständigen.`,
+  valentin_contact_description: `Mit Valentin kannst du dich auf Deutsch, Spanisch, Französisch und Englisch verständigen.`,
 
   hotel_america_description:
-    "Hier konnten wir leider kein Zimmerkontingent reservieren. Für dieses Hotel erhälst du 5% Rabatt, wenn du statt über booking.com, direkt beim Hotel buchst.",
+    "Hier ist es leider nicht möglich ein Zimmerkontingent zu reservieren. Für dieses Hotel erhälst du 5% Rabatt, wenn du statt über booking.com, direkt beim Hotel buchst.",
   hotel_europa_description:
-    "Hier konnten wir leider kein Zimmerkontingent reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.",
+    "Hier ist es leider nicht möglich ein Zimmerkontingent zu reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.",
   hotel_bit_description:
-    "Das Zimmerkontingent von xx Zimmern ist bis zum 15. September reserviert. Bitte nimm deine Buchung selbst vor. Tel: Mail:  "
+    "Bitte nimm deine Buchung bis zum 15. September, per E-Mail direkt beim Hotel selbst vor. Nur dann erhaltet ihr den vergünstigten Preis von 80 US$. E-Mail-Betreff: \"Reserva casamiento Joaquín Marcher\""
 };

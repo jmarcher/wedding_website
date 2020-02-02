@@ -10,7 +10,7 @@
           @click.prevent="set_locale('es')"
           class="has-cursor-pointer"
           :class="getClassesLocale('es')"
-        >ES</span> |
+        >ES</span>&nbsp;|&nbsp;
         <span
           @click.prevent="set_locale('de')"
           class="has-cursor-pointer"

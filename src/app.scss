@@ -1,6 +1,6 @@
 @import "sass/main";
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
@@ -8,17 +8,21 @@
   font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 400;
-  text-align: justify;
+  // text-align: justify;
 }
 
 // Update Bulma's global variables
-$family-sans-serif: "Alata",
+$family-sans-serif: "Raleway",
 sans-serif;
 $dimensions: 16 24 32 48 64 96 128 256 512;
-$pink: #faab9b;
+$pink: #fac39b;
 $tabs-toggle-link-active-background-color:$pink;
 $tabs-toggle-link-active-border-color: darken($pink, 5%);
 $primary: $pink;
+// $white-bis: #eae7dc;
+// $white-ter: #eae7dc;
+// $text: #8d8e8a;
+// $text-strong: darken($text, 5%);
 
 @charset "utf-8";
 
@@ -37,7 +41,7 @@ div.special-icon{
 }
 
 #hero {
-  // background-image: url(./assets/images/bg-7.jpg);
+  background-image: url(./assets/images/bg.jpg);
   // background-image: url(https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/66804348_425841894693273_2539612414845206922_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=109&_nc_ohc=QiSF-sM1b2IAX9j74LN&oh=e8d52cf5b823b2f2ed880e56f8911de5&oe=5EA1073A);
   // background-image: url(https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/67348755_171455740557788_7857420567925999982_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=YYt-P2HXtJMAX-1G18A&oh=ef383862e0e488372553f045152b7e1c&oe=5EA2BF03);
 
@@ -48,7 +52,7 @@ div.special-icon{
   // background-image: url(https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/49470469_336639833843468_3725503672248314748_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=S7sSmlB2K2UAX9LfNJq&oh=6180cf08746a4720531c4e34208c0442&oe=5EAF4D74);
   // background-image: url(https://scontent-frx5-1.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/44888738_934560266931862_3050202346799485667_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=110&_nc_ohc=GM-ZcqFFHqcAX-Oru6_&oh=2cc0a7a961fdd9f305a82c31c09b0d27&oe=5EADD1AF);
 
-  background-image: url(https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/38660650_1955707347847789_8419908063795871744_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101&_nc_ohc=H_qn3qIjNX4AX9J4kYZ&oh=6a59125e08ac7e929bca40202b5073f6&oe=5EB0E133);
+  // background-image: url(https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/38660650_1955707347847789_8419908063795871744_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101&_nc_ohc=H_qn3qIjNX4AX9J4kYZ&oh=6a59125e08ac7e929bca40202b5073f6&oe=5EB0E133);
   // background-position-y:200px;
   background-repeat: no-repeat;
   background-position: center;

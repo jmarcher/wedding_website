@@ -14,21 +14,27 @@
         </div>
       </div>
     </nav>
-    <div class="content is-text-highlighted" v-html="trans('about_us_intro')">
+    <div class="content is-text-highlighted" v-html="trans('about_us_intro')"></div>
+    <div class="separator">
+      <br />
+      <br />
+      <br />
     </div>
-    <div class="separator"><br><br><br></div>
     <our-story-component></our-story-component>
   </div>
 </template>
 
 <script>
-import RoundedImage from "./Partials/RoundedImage";
-import OurStoryComponent from './OurStoryComponent';
-import { transMixin} from '@/core/lang';
+// import RoundedImage from "./Partials/RoundedImage";
+// import OurStoryComponent from "./OurStoryComponent";
+import { transMixin } from "@/core/lang";
 export default {
   name: "AboutUsComponent",
-  components: { RoundedImage, OurStoryComponent },
-  mixins:[transMixin],
+  components: {
+    RoundedImage: () => import("./Partials/RoundedImage"),
+    OurStoryComponent: () => import("./OurStoryComponent")
+  },
+  mixins: [transMixin]
 };
 </script>
 

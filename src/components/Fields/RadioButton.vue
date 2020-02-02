@@ -12,7 +12,7 @@
       />
     <label :for="$vnode.key+label">
       {{ trans(label) }}
-    </label>
+    </label><br class="is-hidden-tablet">
   </span>
 </template>
 

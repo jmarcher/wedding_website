@@ -8,7 +8,7 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com https://www.gstatic.com https://maps.gstatic.com; frame-src 'unsafe-eval' *"
+      content="default-src *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com https://www.gstatic.com https://maps.gstatic.com https://ajax.cloudflare.com; frame-src 'unsafe-eval' *"
     />
     <title>
       Joaquín & Rebecca
@@ -52,13 +52,7 @@
         </venue-component>
         <div class="separator"><br /></div>
         <div class="separator"><br /></div>
-        <div class="separator"><br /></div>
-        <div class="separator"><br /></div>
-        <our-team-component></our-team-component>
-        <div class="separator"><br /></div>
-        <div class="separator"><br /></div>
-        <div class="separator"><br /></div>
-        <what-to-do country="uruguay"></what-to-do>
+        <what-to-do-in-uruguay></what-to-do-in-uruguay>
         <template v-slot:header>
           <div
             v-html="trans('intro_party_uruguay')"
@@ -78,9 +72,12 @@
             ></div>
           </article>
         </template>
-        <what-to-do country="germany" :disabled="true"></what-to-do>
+        <what-to-do-in-germany></what-to-do-in-germany>
       </single-section-component>
-      <single-section-component key="rsvp" position="5">
+    <single-section-component key="our_team" position="5">
+      <our-team-component></our-team-component>
+    </single-section-component>
+      <single-section-component key="rsvp" position="6">
         <rsvp-component></rsvp-component>
         <template v-slot:header>
           <div v-html="trans('intro_rsvp')"></div>

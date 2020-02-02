@@ -21,12 +21,11 @@
 </template>
 
 <script>
-import HotelsComponent from "./HotelsComponent";
-import { transMixin } from "../../core/lang";
+import { transMixin } from "@/core/lang";
 export default {
   name: "VenueComponent",
   mixins: [transMixin],
-  components: { HotelsComponent }
+  components: { HotelsComponent: () => import("./HotelsComponent") }
 };
 </script>
 

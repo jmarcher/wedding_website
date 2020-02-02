@@ -64,10 +64,13 @@ Vue.component(
   require("./Sections/AboutUsComponent").default
 );
 Vue.component("rsvp-component", require("./Sections/RsvpComponent").default);
-Vue.component(
-  "what-to-do",
-  require("./Sections/WhatToDoComponent.vue").default
-);
+// Vue.component(
+//   "what-to-do",
+//   require("./Sections/WhatToDoComponent.vue").default
+// );
+
+Vue.component('what-to-do-in-uruguay', require('./WhatToDoInUruguay').default);
+Vue.component('what-to-do-in-germany', require('./WhatToDoInGermany').default);
 Vue.component("venue-component", require("./Sections/VenueComponent").default);
 Vue.component(
   "our-team-component",

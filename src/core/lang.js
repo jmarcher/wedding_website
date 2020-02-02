@@ -4,7 +4,7 @@ import LangDe from '../lang/de';
 
 export default class Lang {
     constructor() {
-        this.lang = window.location.hostname ? (window.location.hostname == 'joaquinundrebecca.de' ? 'de' : 'es') : Constants.DEFAULT_LOCALE;
+        this.lang = window.location.hostname ? (window.location.hostname == 'joaquinyrebecca.com' ? 'es' : 'de') : Constants.DEFAULT_LOCALE;
         this.setLocale(this.lang);
     }
 

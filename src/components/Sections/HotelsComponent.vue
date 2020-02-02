@@ -13,7 +13,7 @@
             <p>
               <strong v-text="hotel.name"></strong> / 
               <small>{{ trans('distance', {distance: hotel.distance_to_venue}) }}</small>
-              <br /><span class="is-size-5">{{ trans('price_from', {price: hotel.price_from}) }} &euro;</span>
+              <br /><span class="is-size-5">{{ trans('price_from', {price: hotel.price_from}) }} US&dollar;</span>
               <br>
               <span v-text="trans(hotel.description)"></span>
             </p>
@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import Constants from '../../core/constants';
-import {transMixin} from '../../core/lang';
+import Constants from '@/core/constants';
+import {transMixin} from '@/core/lang';
 export default {
     name: 'HotelsComponent',
     mixins: [transMixin],
