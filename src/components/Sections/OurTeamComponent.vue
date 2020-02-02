@@ -15,9 +15,8 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Valentin Arnold</strong>
+                  <strong>Valentin Arnold</strong><br />  
                   <small v-text="emails.valentin"></small>
-                  <small>Handy??</small>
                   <br />
                   {{ trans('valentin_contact_description') }}
                 </p>
@@ -37,9 +36,8 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Lisa Günster</strong>
+                  <strong>Lisa Günster</strong><br /> 
                   <small v-text="emails.lisa"></small>
-                  <small>Handy??</small>
                   <br />
                   {{ trans('lisa_contact_description') }}
                 </p>
