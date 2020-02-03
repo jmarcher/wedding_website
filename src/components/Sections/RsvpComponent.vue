@@ -12,7 +12,8 @@
       v-model="is_comming"
       name="are_you_comming"
       label="are_you_comming"
-    ></radio-group><br>
+    ></radio-group>
+    <br />
     <input-field
       v-model="main_guest"
       label="main_guest"
@@ -59,7 +60,7 @@
       :key="key"
       :guest="guest"
     ></radio-group>
-    <br>
+    <br />
     <input-field
       v-model="notes"
       label="notes"
@@ -91,14 +92,14 @@ import { transMixin } from "@/core/lang";
 import { listenMixin } from "@/core/events";
 import { sluggifyString } from "@/core/tip";
 // import Swal from "sweetalert2";
-import moment from "moment";
+// import moment from "moment";
 
 export default {
   name: "RsvpComponent",
   mixins: [transMixin, listenMixin],
   components: {
-    InputField:()=> import("../Fields/InputField"),
-    RadioGroup: ()=> import("../Fields/RadioGroup")
+    InputField: () => import("../Fields/InputField"),
+    RadioGroup: () => import("../Fields/RadioGroup")
   },
   data() {
     return {
@@ -130,9 +131,13 @@ export default {
       this.notes = null;
     },
     async sendForm() {
-      const { default: Swal } = await import(/* webpackChunkName: "sweetalert2" */ 'sweetalert2');
-      const { default: axios } = await import(/* webpackChunkName: "axios" */ 'axios');
-      axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+      const { default: Swal } = await import(
+        /* webpackChunkName: "sweetalert2" */ "sweetalert2"
+      );
+      const { default: axios } = await import(
+        /* webpackChunkName: "axios" */ "axios"
+      );
+      axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
       if (this.expiredRSVP) {
         return;
       }
@@ -168,17 +173,21 @@ export default {
     }
   },
   async created() {
-
-    const { default: axios } = await import(/* webpackChunkName: "axios" */ 'axios');
-    axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    const { default: axios } = await import(
+      /* webpackChunkName: "axios" */ "axios"
+    );
+    const { default: moment } = await import(
+      /* webpackChunkName: "moment" */ "moment"
+    );
+    axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
     axios
       .get(`${Constants.API_PATH}/servertime`)
       .then(({ data }) => {
         this.servertime = moment(data.servertime);
-        if (this.servertime.isAfter(Constants.RSVP_DEADLINE)) {
+        if (this.servertime.isAfter(moment(Constants.RSVP_DEADLINE))) {
           this.expiredRSVP = true;
         } else if (
-          Constants.RSVP_DEADLINE.diff(this.servertime, "days") <
+          moment(Constants.RSVP_DEADLINE).diff(this.servertime, "days") <
           Constants.RSVP_DEADLINE_WARNING
         ) {
           this.aboutToExpire = true;

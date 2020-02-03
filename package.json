@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "cp -r ./src/assets ./public && vue-cli-service serve",
-    "build": "vue-cli-service build && ./node_modules/.bin/gh-pages -d dist",
+    "build": "cp -r ./src/assets ./public && vue-cli-service build",
+    "publish": "cp -r ./src/assets ./public && vue-cli-service build && ./node_modules/.bin/gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -42,7 +43,7 @@
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.13",
     "moment": "^2.24.0",
-    "popper.js": "^1.12",
+    "popper.js": "^1.16.1",
     "sweetalert2": "^8.19.0",
     "vue-cli-plugin-moment": "^0.1.1",
     "vue-cli-plugin-webpack-bundle-analyzer": "^2.0.0",

@@ -1,13 +1,13 @@
 import Position from "./position";
 import Tip from "./tip";
 import BestTip from "./bestTip";
-import moment from "moment";
+// import moment from "moment";
 // const moment = {};
 export default {
   EMAIL_VALENTIN: "valentin_arnold@outlook.com",
   EMAIL_LISA: "lisa.guenster@tu-dortmund.de",
 
-  RSVP_DEADLINE: moment("2020-09-01T00:00:00Z"),
+  RSVP_DEADLINE: "2020-09-01T00:00:00Z",
   RSVP_DEADLINE_WARNING: 30, // Days
   DEFAULT_LOCALE: "de",
   IMAGE_PLACEHOLDER: "/images/placeholder.jpg",
@@ -16,13 +16,13 @@ export default {
     process.env.NODE_ENV !== "production"
       ? "http://api.test"
       : "https://api.joaquinundrebecca.de",
-  WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
+  // WEDDING_DATE: moment("2021-01-02 17:30 -03:00", "YYYY-MM-DD HH:mm ZZ"),
   SECTION_SEPARATOR: "$separator$",
   FOOD_MENUS: ["meat", "vegetarian", "vegan", "kids"],
 
   STORY: [
     {
-      date: moment("2012-12-15", "YYYY-MM-DD"),
+      date: "2012-12-15",
       key: "first_time",
       location: "montevideo_uruguay",
       icon: "/assets/icons/love-potion.png",
@@ -30,7 +30,7 @@ export default {
       position: new Position(-34.915878, -56.158536)
     },
     {
-      date: moment("2013-08-05", "YYYY-MM-DD"),
+      date: "2013-08-05",
       key: "first_time_germany",
       location: "muenster_germany",
       icon: "/assets/icons/honeymoon-luggage.png",
@@ -38,7 +38,7 @@ export default {
       position: new Position(51.952787, 7.611551)
     },
     {
-      date: moment("2013-08-11", "YYYY-MM-DD"),
+      date: "2013-08-11",
       key: "euro_trip",
       location: "europa",
       icon: "/assets/icons-v3/051-u-bahn.png",
@@ -46,7 +46,7 @@ export default {
       position: new Position(51.952787, 7.611551)
     },
     {
-      date: moment("2014-08-01", "YYYY-MM-DD"),
+      date: "2014-08-01",
       key: "second_time_germany",
       location: "paderborn_cologne_germany",
       icon: "/assets/icons/honeymoon-luggage.png",
@@ -54,7 +54,7 @@ export default {
       position: new Position(51.952787, 7.611551)
     },
     {
-      date: moment("2015-08-07", "YYYY-MM-DD"),
+      date: "2015-08-07",
       key: "travel_uruguay",
       location: "montevideo_uruguay",
       icon: "/assets/icons/honeymoon-luggage.png",
@@ -62,7 +62,7 @@ export default {
       position: new Position(51.952787, 7.611551)
     },
     {
-      date: moment("2016-09-15", "YYYY-MM-DD"),
+      date: "2016-09-15",
       key: "new_appartment",
       location: "cologne_germany",
       icon: "/assets/icons-v3/055-wohnung.png",
@@ -70,7 +70,7 @@ export default {
       position: new Position(50.894829, 6.992504)
     },
     {
-      date: moment("2018-09-02", "YYYY-MM-DD"),
+      date: "2018-09-02",
       key: "proposal",
       location: "cologne_germany",
       icon: "/assets/icons/diamond-ring.png",
@@ -78,7 +78,7 @@ export default {
       position: new Position(50.894829, 6.992504)
     },
     {
-      date: moment("2020-09-01", "YYYY-MM"),
+      date: "2020-09-01",
       format: "MMMM YYYY",
       key: "registry",
       location: "cologne_germany",
@@ -87,7 +87,7 @@ export default {
       position: new Position(50.894829, 6.992504)
     },
     {
-      date: moment("2021-01-02", "YYYY-MM-DD"),
+      date: "2021-01-02",
       key: "wedding_day",
       location: "canelones_uruguay",
       icon: "/assets/icons/newly-married-couple.png",

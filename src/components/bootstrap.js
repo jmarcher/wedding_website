@@ -47,10 +47,10 @@ Vue.directive("visible", function(el, binding) {
 });
 
 Vue.component("index-component", require("./IndexComponent.vue").default);
-Vue.component(
-  "countdown-component",
-  require("./CountDownComponent.vue").default
-);
+// Vue.component(
+//   "countdown-component",
+//   require("./CountDownComponent.vue").default
+// );
 Vue.component("navbar-component", require("./NavBarComponent").default);
 
 // Sections
@@ -69,8 +69,8 @@ Vue.component("rsvp-component", require("./Sections/RsvpComponent").default);
 //   require("./Sections/WhatToDoComponent.vue").default
 // );
 
-Vue.component('what-to-do-in-uruguay', require('./WhatToDoInUruguay').default);
-Vue.component('what-to-do-in-germany', require('./WhatToDoInGermany').default);
+Vue.component("what-to-do-in-uruguay", require("./WhatToDoInUruguay").default);
+Vue.component("what-to-do-in-germany", require("./WhatToDoInGermany").default);
 Vue.component("venue-component", require("./Sections/VenueComponent").default);
 Vue.component(
   "our-team-component",

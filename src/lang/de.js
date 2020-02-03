@@ -13,8 +13,7 @@ export default {
   venue: "Wie komm ich hin?",
 
   // Sections
-  section_title_about_us:
-    'Über&nbsp;<span class="has-text-primary">uns</span>',
+  section_title_about_us: 'Über&nbsp;<span class="has-text-primary">uns</span>',
   section_title_venue:
     '¿Wie komm&nbsp;<span class="has-text-primary">ich hin</span>?',
   section_title_party_uruguay:
@@ -146,7 +145,8 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
     "In der Näge des Busbahnhofes 'Tres Cruces' wurde ein Raum geschaffen, der Kunst, Restaurants und Mode verbindet.",
 
   estadio_centenario: "Estadio Centenario",
-  estadio_centenario_description: 'Das erste Weltmeisterschafts-Finale im Jahre 1930 wurde in diesem historischen Stadion gespielt. Das kleine Fußballmuseum (befindet sich im Stadion selbst) ist auch einen Besuch wert.',
+  estadio_centenario_description:
+    "Das erste Weltmeisterschafts-Finale im Jahre 1930 wurde in diesem historischen Stadion gespielt. Das kleine Fußballmuseum (befindet sich im Stadion selbst) ist auch einen Besuch wert.",
 
   rambla_de_montevideo: "Die Rambla von Montevideo",
   rambla_de_montevideo_description:
@@ -181,7 +181,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   la_cocina_de_pedro: "La cocina de Pedro",
   la_cocina_de_pedro_description:
-    "A quienes les gusten las carnes en un ambiente con restaurante romántico y acogedor, la cocina de pedro es la elección perfecta para ellos.",
+    "Wer Fleischliebhaber*in ist und ein schönes Ambiente genießt, ist im Restaurant: 'la cocina de Pedro' richtig",
 
   rudy_burgers: "Rudy Burgers",
   rudy_burgers_description:
@@ -273,8 +273,8 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   timeline_begin: "Beginn",
   timeline_end: "Fortsetzung folgt...",
   first_time: "Erste Begegnung",
-  euro_trip: 'Europareise',
-  registry: 'Standesamt',
+  euro_trip: "Europareise",
+  registry: "Standesamt",
   montevideo_uruguay: "Montevideo, Uruguay",
   first_time_germany: "Wiedersehen in Deutschland",
   second_time_germany: "Ein gemeinsames Jahr in Deutschland",
@@ -282,7 +282,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   muenster_germany: "Münster, Deutschland",
   new_appartment: "Erste gemeinsame Wohnung",
   cologne_germany: "Köln, Deutschland",
-  europa: 'Europa',
+  europa: "Europa",
   paderborn_cologne_germany: "Paderborn | Köln, Deutschland",
   proposal: "Heiratsantrag",
   wedding_day: "Hochzeit",
@@ -292,7 +292,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
     <!--<h5 class="title is-5">Flüge</h5>-->
     <p>
     Flüge nach Montevideo (MVD) buchst du am besten über <a class="link" href="https://www.google.com/flights" target="_blank">Google Flights !icon-link!</a>, hier werden dir die Flugpreise ohne Provision angezeigt.<!-- Der Flughafen heisst 'Aeropuerto Internacional de Carrasco'. --><br>
-    <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum). Denkt auch dran die Gültigkeit eurer Reisepässe zu checken.
+    <strong>Achtung:</strong> Flüge können ab Anfang Februar gebucht werden (Frühestens elf Monate vor deinem Rückflugdatum). Denk auch dran die Gültigkeit deines Reisepasses zu checken.
     </p>
     <p>
     Beim Flugpreis kannst du eventuell Geld sparen, indem du auch nach Flugverbindungen aus Nachbarländern (z.B. Amsterdam) guckst. Buchungen über STA-Travel-Reisebüros sind in der Regel günstiger, solltest du noch Student*in sein. Aber auch für Nicht-Student*innen gibt es dort manchmal gute Angebote. Ein guter Flugpreis in der Hauptsaison (Jan.-Feb.) ist 1.200 - 1.400€. Alles unter 1.000 € wäre ein Schnäppchen.
@@ -326,5 +326,5 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   hotel_europa_description:
     "Hier ist es leider nicht möglich ein Zimmerkontingent zu reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.",
   hotel_bit_description:
-    "Bitte nimm deine Buchung bis zum 15. September, per E-Mail direkt beim Hotel selbst vor. Nur dann erhaltet ihr den vergünstigten Preis von 80 US$. E-Mail-Betreff: \"Reserva casamiento Joaquín Marcher\""
+    'Bitte nimm deine Buchung bis zum 15. September, per E-Mail direkt beim Hotel selbst vor. Nur dann erhaltet ihr den vergünstigten Preis von 80 US$. E-Mail-Betreff: "Reserva casamiento Joaquín Marcher"'
 };

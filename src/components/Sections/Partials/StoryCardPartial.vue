@@ -7,13 +7,17 @@
 </template>
 
 <script>
-import { transMixin } from "../../../core/lang";
+import { transMixin } from "@/core/lang";
+
+import moment from "moment";
 export default {
   props: ["story"],
   mixins: [transMixin],
   computed: {
     formattedDate() {
-        return this.story.date.format(this.story.format? this.story.format : "D.M.YYYY");
+      return moment(this.story.date, "YYYY-MM-DD").format(
+        this.story.format ? this.story.format : "D.M.YYYY"
+      );
     }
   }
 };
