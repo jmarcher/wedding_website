@@ -1,6 +1,6 @@
 <template>
   <section
-    class="hero is-fullheight bd-index-fullscreen content-section"
+    class="hero is-fullheight bd-index-fullscreen content-section items-top"
     data-step="a"
     :class="{
         'has-background-white-bis': this.position%2 === 0, 'has-background-white-ter':this.position%2 !== 0

@@ -39,7 +39,9 @@ div.special-icon{
     background-color: #f5f5f5 !important;
     border-color: #f5f5f5 !important;
 }
-
+.hero.is-fullheight.items-top .hero-body {
+  align-items: flex-start;
+}
 #hero {
   background-image: url(./assets/images/bg.jpg);
   // background-image: url(https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/66804348_425841894693273_2539612414845206922_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=109&_nc_ohc=QiSF-sM1b2IAX9j74LN&oh=e8d52cf5b823b2f2ed880e56f8911de5&oe=5EA1073A);

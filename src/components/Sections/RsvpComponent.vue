@@ -90,7 +90,7 @@ import Constants from "@/core/constants";
 import { transMixin } from "@/core/lang";
 import { listenMixin } from "@/core/events";
 import { sluggifyString } from "@/core/tip";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import moment from "moment";
 
 export default {
@@ -129,12 +129,15 @@ export default {
       this.menu = Constants.FOOD_MENUS[0];
       this.notes = null;
     },
-    sendForm() {
+    async sendForm() {
+      const { default: Swal } = await import(/* webpackChunkName: "sweetalert2" */ 'sweetalert2');
+      const { default: axios } = await import(/* webpackChunkName: "axios" */ 'axios');
+      axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
       if (this.expiredRSVP) {
         return;
       }
       this.formLoading = true;
-      window.axios
+      axios
         .post(`${Constants.API_PATH}/guests`, {
           is_comming: this.is_comming == "im_comming",
           name: this.main_guest,
@@ -164,8 +167,11 @@ export default {
         });
     }
   },
-  created() {
-    window.axios
+  async created() {
+
+    const { default: axios } = await import(/* webpackChunkName: "axios" */ 'axios');
+    axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    axios
       .get(`${Constants.API_PATH}/servertime`)
       .then(({ data }) => {
         this.servertime = moment(data.servertime);

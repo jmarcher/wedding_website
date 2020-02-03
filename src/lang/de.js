@@ -90,7 +90,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   salto_del_penitente_minas: "Minas / Salto del penitente",
   salto_del_penitente_minas_description:
-    "Außerhalb der Stadt Minas gibt es Platz zum Durchatmen sowie kleine, abgelegene Hotels, die beispielsweise alte Eisenbahnwaggons zu Zimmern umgebaut haben oder einen Eco-Spa-Bereich anbieten. Der salto del penitente ist ein kleiner Wasserfall. Es gibt die Möglichkeiten für Spaziergänge, Asado oder Ausritte. Minas ist eine kleine Stadt, die sich den Charme einer typischen Kleinstadt in Uruguay bewahren konnte.",
+    "Außerhalb der Stadt Minas gibt es Platz zum Durchatmen sowie kleine, abgelegene Hotels, die beispielsweise alte Eisenbahnwaggons zu Zimmern umgebaut haben oder einen Eco-Spa-Bereich anbieten. Der salto del penitente ist ein kleiner Wasserfall. Man kann sich die Zeit mit Spaziergängen, Asado oder Ausritten vertreiben. Minas ist eine kleine Stadt, die sich den Charme einer typischen Kleinstadt in Uruguay bewahren konnte.",
 
   cabo_polonio: "Cabo Polonio",
   cabo_polonio_description:
