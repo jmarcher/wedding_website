@@ -67,7 +67,10 @@ export default {
   name: 'WhatToDoComponent',
   props: ["country", "disabled"],
   mixins: [transMixin, triggerMixin, listenMixin],
-  components: { Tip : () => import("./Partials/Tip") },
+  components: { Tip : () => ({
+    component:import("./Partials/Tip"),
+    delay: 1000,
+  }) },
   data() {
     return {
       tabs: ["locations", "restaurants", "activities"],

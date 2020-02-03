@@ -4,8 +4,7 @@ import Vue from "vue";
 import VueScrollActive from "vue-scrollactive";
 import { transMixin } from "./core/lang";
 import { listenMixin } from "./core/events";
-import VueLazyImageLoading from "vue-lazy-image-loading";
-import "./app.scss";
+import("./app.scss");
 import Constants from "@/core/constants";
 
 // Load Vue Components
@@ -19,8 +18,6 @@ Vue.use(Vue2TouchEvents, {
 
 // Import scrollspy
 Vue.use(VueScrollActive);
-
-Vue.use(VueLazyImageLoading);
 
 new Vue({
   el: "#main_app",
