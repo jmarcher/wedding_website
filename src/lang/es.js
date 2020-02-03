@@ -265,7 +265,7 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
 
 
     /////NUEVOSS
-    intro_rsvp: `Te pedimos acá que nos contestes si es que vas a poder venir a la fiesta en Uruguay, además también podés escribirnos algo, como cuáles canciones te parece que no pueden faltar.`,
+    intro_rsvp: `Te pedimos acá que nos contestes antes del 1 de setiembre si es que vas a poder venir a la fiesta en Uruguay, además también podés escribirnos algo, como cuáles canciones te parece que no pueden faltar.`,
     contact_our_guys: 'Equipo organizacional',
     contact_our_guys_description: 'Por preguntas organizacionales o deseos de participación externa al programa, contactar a nuestros famosos testigos:',
     lisa_contact_description: `Con Lisa podés escribir en Alemán, Inglés o Francés`,
