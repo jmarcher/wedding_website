@@ -15,7 +15,7 @@
     <div class="control has-icons-left has-icons-right" v-if="this.fieldType">
       <input
         v-if="type !== 'textarea'"
-        class="input"
+        class="input  data-hj-whitelist"
         @input="updateModel"
         @change="updateModel"
         @keyup="updateModel"
@@ -27,7 +27,7 @@
       />
       <textarea
         v-if="type === 'textarea'"
-        class="textarea"
+        class="textarea data-hj-whitelist"
         @input="updateModel"
         :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}"
         @focus="wasFocused=true"
