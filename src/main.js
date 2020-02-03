@@ -1,10 +1,11 @@
 // Bootstrap vendors
+import "./app.scss";
+
 require("./bootstrap");
 import Vue from "vue";
 import VueScrollActive from "vue-scrollactive";
 import { transMixin } from "./core/lang";
 import { listenMixin } from "./core/events";
-import("./app.scss");
 import Constants from "@/core/constants";
 
 // Load Vue Components

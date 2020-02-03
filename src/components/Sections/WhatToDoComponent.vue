@@ -224,7 +224,9 @@ export default {
     }
   }
 }
-
+.tabs.is-toggle li.is-active a{
+  color: white;
+}
 i {
   border: solid white;
   border-width: 0 3px 3px 0;

@@ -113,7 +113,7 @@ export default {
       plus_one_name: null,
       menu: Constants.FOOD_MENUS[0],
       notes: null,
-      guestlist: {},
+      guestlist: {"_mainguest":Constants.FOOD_MENUS[0]},
       is_comming: "im_comming",
       comming: ["im_comming", "im_not_comming"]
     };
