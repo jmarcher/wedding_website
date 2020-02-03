@@ -55,5 +55,6 @@ export default {
 }
 .hero-foot .button {
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 </style>
