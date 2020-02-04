@@ -15,7 +15,7 @@
     <div class="control has-icons-left has-icons-right" v-if="this.fieldType">
       <input
         v-if="type !== 'textarea'"
-        class="input  data-hj-whitelist"
+        class="input data-hj-whitelist"
         @input="updateModel"
         @change="updateModel"
         @keyup="updateModel"
@@ -28,7 +28,10 @@
       <textarea
         v-if="type === 'textarea'"
         class="textarea data-hj-whitelist"
+        v-model="value"
         @input="updateModel"
+        @change="updateModel"
+        @keyup="updateModel"
         :class="{'is-danger':wasFocused && !valid_input, 'is-success':valid_input}"
         @focus="wasFocused=true"
         :placeholder="placeholderTranslated || ''"
@@ -108,6 +111,8 @@ export default {
           return this.validEmail(this.value);
         case "text":
           return this.value.trim().length > (this.validatables.min - 1 || 0);
+        case "textarea":
+          return true;
       }
       return false;
     },

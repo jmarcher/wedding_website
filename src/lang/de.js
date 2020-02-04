@@ -36,7 +36,7 @@ export default {
     `,
 
   about_us_intro: `Hallo zusammen! Wir möchten euch mithilfe dieser Internetseite erste Infos rund um die Hochzeitsfeier in Uruguay 
-zukommen lassen. Darüber hinaus würden wir euch gerne Anregungen für den Aufenthalt in Uruguay geben, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten in Uruguay verraten. 
+zukommen lassen. Darüber hinaus würden wir euch gerne Anregungen für den Aufenthalt in Uruguay geben, indem wir unsere Lieblingsorte, -restaurants/-bars sowie Aktivitäten verraten. 
 <strong>Mit der Zeit wird es hier noch weitere Informationen geben.</strong> Die wichtigsten Details der Feier werden euch aber auch noch persönlich, per Einladung in Papierform erreichen.
 
 Infos zur standesamtlichen Trauung in Köln werden ebenfalls hier folgen. <br>
@@ -326,5 +326,5 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   hotel_europa_description:
     "Hier ist es leider nicht möglich ein Zimmerkontingent zu reservieren. Nimm deine Reservierung bitte über booking.com selbst vor.",
   hotel_bit_description:
-    'Bitte nimm deine Buchung bis zum 15. September, per E-Mail direkt beim Hotel selbst vor. Nur dann erhaltet ihr den vergünstigten Preis von 80 US$. E-Mail-Betreff: "Reserva casamiento Joaquín Marcher"'
+    'Bitte nimm deine Buchung (per E-Mail) bis zum 15. September direkt beim Hotel selbst vor. Nur dann erhälst du den vergünstigten Preis von 80 US$. E-Mail-Betreff: "Reserva casamiento Joaquín Marcher"'
 };
