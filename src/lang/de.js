@@ -80,7 +80,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   // Punta del este
   punta_del_este: "Punta del este",
   punta_del_este_description:
-    "Punta del Este, der Ort der Reichen und Berühmten. Jahr für Jahr besuchen internationale Prominente die Insel Gorriti. Punta del Este ist der Badeort der Reichen und Schönen. Jährlich kommen internationale Prominente, um auf einer geheimen Insel nahe des Ortes zu feiern. In Punta del Este selbst gibt es luxuriöse Hotels, Parties und Restaurants sowie das Casino 'Enjoy' im Hotel Conrad. Man kann außerdem sehr gut einkaufen und den Strand sowie das Hafenviertel genießen. Im Gegensatz zu den übrigen Badeorten ist Punta del Este von Hotels, Beachclubs und Shoppingmöglichkeiten geprägt.",
+    "Punta del Este ist der Badeort der Reichen und Schönen. Jährlich kommen internationale Prominente, um auf einer geheimen Insel nahe des Ortes zu feiern. In Punta del Este selbst gibt es luxuriöse Hotels, Parties und Restaurants sowie das Casino 'Enjoy' im Hotel Conrad. Man kann außerdem sehr gut einkaufen und den Strand sowie das Hafenviertel genießen. Im Gegensatz zu den übrigen Badeorten ist Punta del Este von Hotels, Beachclubs und Shoppingmöglichkeiten geprägt.",
 
   // Quebrada de los cuervos
   quebrada_de_los_cuervos: "La Quebrada de los Cuervos",
