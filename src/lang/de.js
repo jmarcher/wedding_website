@@ -97,7 +97,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   punta_del_diablo: "Punta del Diablo",
   punta_del_diablo_description:
-    "Punta del Diablo ist ein Paradies für Surfanfänger*innen. Neben der Nähe zu brasilianischen Grenze gibt es noch das Naturschutzgebiet Santa Teresa und La Coronilla, in denen man wunderschöne Strände zu Fuß entdecken kann. Das Baden ist hier jedoch teilweise verständlicherweise verboten. Auch die Tierschutzorganisation Karumbe ist hier zu finden (s. Aktivitäten).",
+    "Punta del Diablo ist ein Paradies für Surfanfänger*innen. Neben der Nähe zu brasilianischen Grenze gibt es noch das Naturschutzgebiet Santa Teresa und La Coronilla, in denen man wunderschöne Strände zu Fuß entdecken kann. Das Baden ist hier jedoch teilweise verständlicherweise verboten. Auch die Tierschutzorganisation Karumbé ist hier zu finden (s. Aktivitäten).",
 
   /////// ------------------ ////
   // Activities
@@ -107,7 +107,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   karumbe: "Karumbé",
   karumbe_description:
-    "Karumbe ist eine NGO, die sich für die Rehabilitation von Meeresschildkröten sowie den Schutz der uruguayischen Biodiversität einsetzt. Wenn du Glück hast, darfst du den Mitarbeiter*innen nach einer kleinen Wanderung am Strand bei der Arbeit zusehen.",
+    "Karumbé ist eine NGO, die sich für die Rehabilitation von Meeresschildkröten sowie den Schutz der uruguayischen Biodiversität einsetzt. Wenn du Glück hast, darfst du den Mitarbeiter*innen nach einer kleinen Wanderung am Strand bei der Arbeit zusehen.",
 
   surfen: "Surfen",
   surfen_description:
@@ -134,7 +134,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   museo_artes_precolombino: "Museo de arte precolombino",
   museo_artes_precolombino_description:
-    "Das MAPI -Museo de Arte Precolombino e Indígena- bietet Besucher*innen eine Dauerausstellung mit archäologischen Stücken und ethnographischen, die verschiedenen Kulturen der Ureinwohner*innen des südamerikanischen Kontinentes angehören. del continente americano.",
+    "Das MAPI -Museo de Arte Precolombino e Indígena- bietet Besucher*innen eine Dauerausstellung mit archäologischen Stücken und ethnographischen, die verschiedenen Kulturen der Ureinwohner*innen des südamerikanischen Kontinentes angehören.",
 
   teatro_solis: "Teatro Solís",
   teatro_solis_description:
@@ -185,7 +185,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
 
   rudy_burgers: "Rudy Burgers",
   rudy_burgers_description:
-    "Hier gibt es die leckersten Burger der Welt! Die Speisekarte in Visitenkartengröße spricht für sich selbst.",
+    "Hier gibt es die leckersten Burger der Welt! Die Speisekarte in Visitenkartengröße spricht für sich.",
 
   la_fonda: "La Fonda",
   la_fonda_description:
@@ -314,7 +314,7 @@ Zum Schluss möchten wir schon einmal danke sagen. Für eure (angebotene) Unters
   montevideo: "Montevideo",
   // colonia_del_sacramento: 'Colonia del ST
 
-  intro_rsvp: `An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
+  intro_rsvp: `An dieser Stelle freuen wir uns bis zum 01. September 2020 über deine Zusage für die Feier am 2.1. in Uruguay. Außerdem kannst du uns hier deine drei liebsten Lieder mitteilen sowie Fragen stellen.`,
   contact_our_guys: "Team Orga & Liebe",
   contact_our_guys_description:
     "Bei organisatorischen Fragen oder dem Wunsch die Festivitäten mitzugestalten, wende dich bitte an unseren famosen Trauzeugen Valentin oder unsere famose Trauzeugin Lisa:",
