@@ -6,7 +6,7 @@ module.exports = {
     moment: {
       locales: ["de", "es"]
     }
-  }
+  },
 
-  //   lintOnSave: true
+  lintOnSave: false
 };
