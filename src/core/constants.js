@@ -9,7 +9,7 @@ export default {
 
   RSVP_DEADLINE: "2020-09-01T00:00:00Z",
   RSVP_DEADLINE_WARNING: 30, // Days
-  DEFAULT_LOCALE: "de",
+  DEFAULT_LOCALE: "es",
   IMAGE_PLACEHOLDER: "/images/placeholder.jpg",
   // API_PATH: 'https://api.joaquinundrebecca.de',
   API_PATH:

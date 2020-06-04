@@ -4,6 +4,8 @@ import Constants from "@/core/constants";
 export default {
   // Main hero
   wedding_date: "2 de enero de 2021 | Finca Clara",
+  reschedule_notice_title: 'Re Save The Date',
+  reschedule_notice: '¡No queremos festejar sin ustedes! Por eso decidimos con mucho dolor atrasar nuestro casamiento preferentemente un año. Aún no tenemos una fecha exacta. Nos comunicaremos nuevamente cuando tengamos más información al respecto.',
 
   // Navbar
   about_us: "Sobre nosotros",

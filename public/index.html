@@ -9,17 +9,35 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://static.hotjar.com https://script.hotjar.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com https://www.gstatic.com https://maps.gstatic.com https://ajax.cloudflare.com https://static.hotjar.com https://script.hotjar.com https://www.googletagmanager.com https://www.google-analytics.com; frame-src 'unsafe-eval' *"
+      content="default-src *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://static.hotjar.com
+      https://script.hotjar.com https://cdn.onesignal.com https://onesignal.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'
+      http://www.google.com
+      https://www.gstatic.com https://maps.gstatic.com https://ajax.cloudflare.com https://static.hotjar.com
+      https://script.hotjar.com https://www.googletagmanager.com https://www.google-analytics.com
+      https://cdn.onesignal.com https://onesignal.com; frame-src 'unsafe-eval' *"
     />
     <title>
       Joaquín & Rebecca
     </title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: window.location.hostname === 'joaquinundrebecca.de' ? "8438ec4c-b3a4-4a98-8fab-9ab28bcdf9c2" :
+          "84823d07-f09b-48e6-b50a-58e1a6f4c6ca",
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Webpage",
         "name": "Joaquín & Rebecca",
-        "description": "Joaquín & Rebecca | 2.1.2021 | Finca Clara, Uruguay",
+        "description": "Joaquín & Rebecca | 1.2022 | Finca Clara, Uruguay",
         "url": "https://joaquinyrebecca.com/",
         "@id": "https://joaquinyrebecca.com/",
         "inLanguage": "Spanish",
@@ -43,7 +61,7 @@
     <meta name="title" content="Joaquín & Rebecca" />
     <meta
       name="description"
-      content="Joaquín & Rebecca | 2.1.2021 | Finca Clara, Uruguay"
+      content="Joaquín & Rebecca | 1.2022 | Finca Clara, Uruguay"
     />
 
     <meta property="og:updated_time" content="1580727414" />
@@ -54,7 +72,7 @@
     <meta property="fb:app_id" content="155969225854717" />
     <meta
       property="og:description"
-      content="Joaquín & Rebecca | 2.1.2021 | Finca Clara, Uruguay"
+      content="Joaquín & Rebecca | 1.2022 | Finca Clara, Uruguay"
     />
     <meta
       property="og:image"
@@ -73,7 +91,7 @@
     <meta property="twitter:title" content="Joaquín & Rebecca" />
     <meta
       property="twitter:description"
-      content="Joaquín & Rebecca | 2.1.2021 | Finca Clara, Uruguay"
+      content="Joaquín & Rebecca | 1.2022 | Finca Clara, Uruguay"
     />
     <meta
       property="twitter:image"
@@ -122,6 +140,7 @@
       >
     </noscript>
     <div id="main_app">
+      <notice-component></notice-component>
       <section class="hero is-fullheight" id="hero">
         <div class="hero-head">
           <navbar-component></navbar-component>
@@ -215,6 +234,7 @@
     src="https://www.googletagmanager.com/gtag/js?id=UA-139397246-1"
   ></script>
   <script>
+    // a
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);

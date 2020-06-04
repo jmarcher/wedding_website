@@ -60,3 +60,5 @@ Vue.component("what-to-do-in-uruguay", require("./WhatToDoInUruguay").default);
 Vue.component("what-to-do-in-germany", require("./WhatToDoInGermany").default);
 Vue.component("venue-component", require("./Sections/VenueComponent").default);
 Vue.component("our-team-component", require("./Sections/OurTeamComponent.vue").default);
+
+Vue.component("notice-component", require("./NoticeComponent").default);
