@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "cp -r ./src/assets ./public && vue-cli-service serve",
     "build": "cp -r ./src/assets ./public && vue-cli-service build",
-    "publish": "cp -r ./src/assets ./public && vue-cli-service build && ./node_modules/.bin/gh-pages -d dist",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "publish": "cp -r ./src/assets ./public && vue-cli-service build && ./node_modules/.bin/gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -36,14 +36,14 @@
     "vue2-touch-events": "^2.2.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.1",
-    "@vue/cli-plugin-eslint": "^4.4.1",
-    "@vue/cli-service": "^4.4.1",
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-service": "^4.5.6",
     "babel-eslint": "^10.1.0",
     "collect.js": "^4.27.3",
     "dinero.js": "^1.8.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.19",
     "moment": "^2.26.0",
