@@ -3,9 +3,11 @@ import Constants from "@/core/constants";
 
 export default {
   // Main hero
-  wedding_date: "2 de enero de 2021 | Finca Clara",
-  reschedule_notice_title: 'Re Save The Date',
-  reschedule_notice: '¡No queremos festejar sin ustedes! Por eso decidimos con mucho dolor atrasar nuestro casamiento preferentemente un año. Aún no tenemos una fecha exacta. Nos comunicaremos nuevamente cuando tengamos más información al respecto.',
+  wedding_date: "11 de septiembre de 2021",
+  thanks: "¡Gracias!",
+  reschedule_notice_title: "Re Save The Date",
+  reschedule_notice:
+    "¡No queremos festejar sin ustedes! Por eso decidimos con mucho dolor atrasar nuestro casamiento preferentemente un año. Aún no tenemos una fecha exacta. Nos comunicaremos nuevamente cuando tengamos más información al respecto.",
 
   // Navbar
   about_us: "Sobre nosotros",
@@ -320,5 +322,5 @@ Finalmente, muchas gracias a todos los que nos brindaron su ayuda y amor. ¡Esta
   hotel_europa_description:
     "Acá no pudimos reservar cupos, tienen que reservar entonces por Booking.",
   hotel_bit_description:
-    'En este Hotel tenemos un acuerdo hasta el 15 de setiembre con el precio, escribir un correo electrónico y hacer la reserva con el asunto "Reserva casamiento Joaquín Marcher".'
+    'En este Hotel tenemos un acuerdo hasta el 15 de setiembre con el precio, escribir un correo electrónico y hacer la reserva con el asunto "Reserva casamiento Joaquín Marcher".',
 };

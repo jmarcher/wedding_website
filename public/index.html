@@ -19,13 +19,18 @@
     <title>
       Joaquín & Rebecca
     </title>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
     <script>
       var OneSignal = window.OneSignal || [];
-      OneSignal.push(function () {
+      OneSignal.push(function() {
         OneSignal.init({
-          appId: window.location.hostname === 'joaquinundrebecca.de' ? "8438ec4c-b3a4-4a98-8fab-9ab28bcdf9c2" :
-          "84823d07-f09b-48e6-b50a-58e1a6f4c6ca",
+          appId:
+            window.location.hostname === "joaquinundrebecca.de"
+              ? "8438ec4c-b3a4-4a98-8fab-9ab28bcdf9c2"
+              : "84823d07-f09b-48e6-b50a-58e1a6f4c6ca",
           notifyButton: {
             enable: true,
           },
@@ -140,15 +145,17 @@
       >
     </noscript>
     <div id="main_app">
-      <notice-component></notice-component>
       <section class="hero is-fullheight" id="hero">
         <div class="hero-head">
-          <navbar-component></navbar-component>
+          <!-- <navbar-component></navbar-component> -->
         </div>
         <div class="hero-body has-text-centered">
           <div class="container">
             <h1 class="title is-size-xl is-hidden-mobile">
               Joaquín <span class="is-size-xl-1">&</span> Rebecca
+            </h1>
+            <h1 class="title is-size-xl is-hidden-mobile">
+              {{ trans('thanks') }}
             </h1>
             <h1 class="title is-size-xl is-hidden-tablet">
               Joaquín <span class="is-size-xl-1"><br />&<br /></span> Rebecca
@@ -160,10 +167,10 @@
           </div>
         </div>
       </section>
-      <single-section-component key="about_us" position="1">
+      <!-- <single-section-component key="about_us" position="1">
         <about-us-component></about-us-component>
-      </single-section-component>
-      <single-section-component key="party_uruguay" position="2">
+      </single-section-component> -->
+      <!-- <single-section-component key="party_uruguay" position="2">
         <venue-component>
           <template v-slot:footer> </template>
         </venue-component>
@@ -176,11 +183,11 @@
             class="is-text-highlighted"
           ></div>
         </template>
-      </single-section-component>
+      </single-section-component> -->
       <!--     <single-section-component key="venue" position="3">
       
     </single-section-component> -->
-      <single-section-component key="party_germany" position="4">
+      <!-- <single-section-component key="party_germany" position="4">
         <template v-slot:header>
           <article class="message">
             <div
@@ -190,16 +197,16 @@
           </article>
         </template>
         <what-to-do-in-germany></what-to-do-in-germany>
-      </single-section-component>
-      <single-section-component key="our_team" position="5">
+      </single-section-component> -->
+      <!-- <single-section-component key="our_team" position="5">
         <our-team-component></our-team-component>
-      </single-section-component>
-      <single-section-component key="rsvp" position="6">
+      </single-section-component> -->
+      <!-- <single-section-component key="rsvp" position="6">
         <rsvp-component></rsvp-component>
         <template v-slot:header>
           <div v-html="trans('intro_rsvp')"></div>
         </template>
-      </single-section-component>
+      </single-section-component> -->
       <footer class="footer" id="footer">
         <div class="content has-text-centered">
           <p>
