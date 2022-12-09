@@ -46,7 +46,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.21",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "popper.js": "^1.16.1",
     "sweetalert2": "^8.19.0",
     "vue-cli-plugin-moment": "^0.1.1",
