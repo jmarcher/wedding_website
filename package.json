@@ -22,9 +22,9 @@
     "local-storage": "^2.0.0",
     "pusher": "^3.0.1",
     "pusher-js": "^5.1.1",
-    "resolve-url-loader": "^3.1.5",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^13.2.0",
     "vue": "^2.6.11",
     "vue-affix": "^0.5.2",
     "vue-clazy-load": "^0.4.2",
@@ -36,8 +36,8 @@
     "vue2-touch-events": "^2.2.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.6",
-    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
     "collect.js": "^4.27.3",
